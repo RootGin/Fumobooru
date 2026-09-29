@@ -301,6 +301,7 @@
   function previewNode(post) {
     const fig = el("article", `post-preview rating-${post.rating}${state.favs.has(post.id) ? " faved" : ""}`);
     fig.tabIndex = 0;
+    fig.dataset.postId = String(post.id);
     fig.setAttribute("role", "button");
     fig.setAttribute("aria-label", `Post ${post.id}: ${allTags(post).slice(0, 3).join(", ")}`);
 
@@ -330,7 +331,7 @@
     }
     fig.appendChild(media);
 
-    const open = () => openPost(post.id);
+    const open = () => openPost(post.id, { history: "push", from: fig });
     fig.addEventListener("click", open);
     fig.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
@@ -440,7 +441,7 @@
         a.addEventListener("click", (e) => {
           e.preventDefault();
           hideModal();
-          history.replaceState(null, "", postsHash());
+          writeHash(postsHash());
           toggleTerm(tag);
         });
         cloud.appendChild(a);
@@ -449,10 +450,49 @@
     return cloud;
   }
 
-  function openPost(id, { push = true } = {}) {
+  // Move through the current result set. Used by the header buttons, the arrow
+  // keys and swipe, so all three behave identically.
+  function step(delta) {
+    const list = currentResults();
+    const idx = list.findIndex((p) => p.id === modalId);
+    const target = list[idx + delta];
+    // "replace" keeps the URL honest about which post is on screen without
+    // stacking a history entry per keystroke
+    if (target) openPost(target.id, { history: "replace" });
+  }
+
+  // Warm the neighbouring full-size images so ←/→ and swipe feel instant.
+  function preloadNeighbours() {
+    const list = currentResults();
+    const idx = list.findIndex((p) => p.id === modalId);
+    const neighbours = [list[idx - 1], list[idx + 1]].filter(Boolean);
+    if (!neighbours.length) return;
+    const warm = () => {
+      for (const p of neighbours) {
+        if (p.type !== "image") continue;
+        const img = new Image();
+        img.src = p.src;
+        if (img.decode) img.decode().catch(() => {});
+      }
+    };
+    // don't compete with the image currently being shown
+    if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 1500 });
+    else setTimeout(warm, 250);
+  }
+
+  function openPost(id, { history: mode = "replace", from = null } = {}) {
     const idx = currentResults().findIndex((p) => p.id === id);
     const post = posts.find((p) => p.id === id);
     if (!post) return;
+    // remember the thumbnail that opened this, so focus can go back to it.
+    // taken from the click target rather than activeElement, because Safari
+    // does not focus an element on click
+    if (modalId === null) {
+      lastFocus = from || document.activeElement;
+      focusPostId = id;
+      pendingFocusPostId = null;
+    }
+
     const box = $("#post-container");
     box.textContent = "";
 
@@ -463,14 +503,14 @@
     const nav = el("div", "nav-btns");
     if (idx > 0) {
       const p = el("button", null, "←");
-      p.title = "Previous post";
-      p.addEventListener("click", () => openPost(currentResults()[idx - 1].id, { push: false }));
+      p.title = "Previous post (Left arrow)";
+      p.addEventListener("click", () => step(-1));
       nav.appendChild(p);
     }
     if (idx > -1 && idx < currentResults().length - 1) {
       const n = el("button", null, "→");
-      n.title = "Next post";
-      n.addEventListener("click", () => openPost(currentResults()[idx + 1].id, { push: false }));
+      n.title = "Next post (Right arrow)";
+      n.addEventListener("click", () => step(1));
       nav.appendChild(n);
     }
     head.appendChild(nav);
@@ -514,16 +554,56 @@
     const body = el("div", "post-body");
     const media = el("div", null, null);
     media.id = "post-media";
+
     if (post.type === "video") {
+      // the browser shows the poster until the video is ready, so no spinner:
+      // waiting on canplay can leave one stuck on screen indefinitely
       const v = el("video");
-      v.src = post.src; v.controls = true; v.loop = true; v.autoplay = true;
+      v.src = post.src;
+      v.poster = post.thumb || "";
+      v.controls = true;
+      v.loop = true;
+      v.autoplay = true;
       media.appendChild(v);
     } else {
-      const img = el("img");
-      img.src = post.src;
+      media.classList.add("loading");
+      // hold the box with the cached thumbnail, then cross-fade to full size
+      if (post.thumb) {
+        const ph = el("img", "media-ph");
+        ph.src = post.thumb;
+        ph.alt = "";
+        ph.setAttribute("aria-hidden", "true");
+        media.appendChild(ph);
+      }
+      const img = el("img", "post-full");
       img.alt = allTags(post).join(" ");
+      const ready = () => {
+        img.classList.add("ready");
+        media.classList.remove("loading");
+        const ph = media.querySelector(".media-ph");
+        if (ph) ph.remove();
+      };
+      img.addEventListener("load", ready, { once: true });
+      img.addEventListener("error", ready, { once: true });
+      img.src = post.src;
+      if (img.complete) ready();
       media.appendChild(img);
     }
+
+    // horizontal swipe to move between posts
+    let sx = 0, sy = 0, swiping = false;
+    media.addEventListener("pointerdown", (e) => {
+      if (e.target.tagName === "VIDEO") return;
+      sx = e.clientX; sy = e.clientY; swiping = true;
+    });
+    media.addEventListener("pointerup", (e) => {
+      if (!swiping) return;
+      swiping = false;
+      const dx = e.clientX - sx, dy = e.clientY - sy;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) step(dx < 0 ? 1 : -1);
+    });
+    media.addEventListener("pointercancel", () => { swiping = false; });
+
     body.appendChild(media);
 
     const side = el("div", "post-side");
@@ -633,8 +713,12 @@
     $("#post-view").hidden = false;
     document.body.style.overflow = "hidden";
     modalId = id;
-    if (push) history.pushState({ post: id }, "", "#post/" + id);
+    if (mode === "push") writeHash("#post/" + id, "push", { post: id });
+    // keep the post marker through a replace too, so closePost can still tell
+    // that it pushed this entry and step back through history
+    else if (mode === "replace") writeHash("#post/" + id, "replace", { post: id });
     syncSocialMeta();
+    preloadNeighbours();
     close.focus();
   }
 
@@ -642,10 +726,20 @@
   function hideModal() {
     const v = document.querySelector("#post-media video");
     if (v) v.pause();
+    const ph = document.querySelector("#post-media .media-ph");
+    if (ph) ph.remove();
     $("#post-view").hidden = true;
     document.body.style.overflow = "";
     modalId = null;
     syncSocialMeta();
+    // Hand focus back to the thumbnail that opened this. Focus it now for the
+    // paths that don't re-render, and remember the post id as well: closing via
+    // history.back() re-renders the grid, which detaches the node we just
+    // focused, so it has to be looked up again rather than reused.
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+    pendingFocusPostId = focusPostId;
+    lastFocus = null;
+    focusPostId = null;
   }
 
   // Close at the user's request. If we pushed the #post entry ourselves, step
@@ -658,13 +752,25 @@
       history.back();
     } else {
       hideModal();
-      history.replaceState(null, "", postsHash());
+      writeHash(postsHash());
     }
   }
   // ── routing ─────────────────────────────────────────────────────────
   // The post view is a real URL (#post/ID) so it can be shared, bookmarked and
   // closed with Back. state.modalId is the source of truth for what's open.
   let modalId = null;
+  // popstate AND hashchange both fire for one history.back(), so the sync
+  // handler must be idempotent per URL or the grid re-renders twice and the
+  // second render detaches whatever the first one focused
+  let handledHash = null;
+  const writeHash = (url, mode = "replace", state = null) => {
+    handledHash = url;
+    if (mode === "push") history.pushState(state, "", url);
+    else history.replaceState(state, "", url);
+  };
+  let lastFocus = null;         // the node to focus back on immediately
+  let focusPostId = null;       // which post, so it survives a re-render
+  let pendingFocusPostId = null;
   // the first render happens before the incoming URL is read, and would
   // otherwise rewrite a shared #post/ID link to #posts before we see it
   let booting = true;
@@ -677,17 +783,21 @@
   function syncHash() {
     // an open post owns the URL; don't let a re-render clobber it
     if (modalId !== null || booting) return;
-    if (location.hash !== postsHash()) history.replaceState(null, "", postsHash());
+    if (location.hash !== postsHash()) writeHash(postsHash());
   }
 
   // Single entry point for both hashchange and popstate, so Back/Forward and a
   // shared link drive exactly the same code path.
   function syncFromLocation() {
+    if (location.hash === handledHash) return; // already processed this URL
+    // claim it up front, before the post/ branch returns early, so a later
+    // traversal back to a URL we have seen before is still handled
+    handledHash = location.hash;
     const h = location.hash.slice(1) || "posts";
 
     if (h.startsWith("post/")) {
       const id = Number(h.slice(5));
-      if (id !== modalId) openPost(id, { push: false });
+      if (id !== modalId) openPost(id, { history: "none" });
       return;
     }
 
@@ -697,12 +807,18 @@
     const [section, query] = h.split("?");
     if (section && section !== "posts") {
       toast(`${section[0].toUpperCase()}${section.slice(1)} is a beautiful lie. Showing posts.`, "※");
-      history.replaceState(null, "", "#posts" + (query ? "?" + query : ""));
+      writeHash("#posts" + (query ? "?" + query : ""));
     }
     state.terms = query ? parseTags(decodeURIComponent(query)) : [];
     state.shuffle = false;
     $("#tags").value = state.terms.join(" ");
     render();
+    // render() replaced the grid, so find the same thumbnail again by post id
+    if (pendingFocusPostId != null) {
+      const target = document.querySelector(`.post-preview[data-post-id="${pendingFocusPostId}"]`);
+      if (target) target.focus();
+      pendingFocusPostId = null;
+    }
   }
 
   // the grid is sized to the viewport, so a resize changes how many previews
@@ -717,6 +833,35 @@
   window.addEventListener("popstate", syncFromLocation);
 
   $("#post-view").addEventListener("click", (e) => { if (e.target.id === "post-view") closePost(); });
+
+  const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), ' +
+                    'select:not([disabled]), textarea:not([disabled]), video[controls], ' +
+                    '[tabindex]:not([tabindex="-1"])';
+
+  // The post view is aria-modal, so Tab has to stay inside it and arrow keys
+  // should walk posts. One listener for the whole overlay; the contents are
+  // rebuilt on every navigation.
+  $("#post-view").addEventListener("keydown", (e) => {
+    if (modalId === null) return;
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
+
+    if (e.key === "ArrowLeft" && !typing) { e.preventDefault(); step(-1); return; }
+    if (e.key === "ArrowRight" && !typing) { e.preventDefault(); step(1); return; }
+
+    if (e.key !== "Tab") return;
+    const items = [...$("#post-container").querySelectorAll(FOCUSABLE)]
+      .filter((n) => n.offsetWidth || n.offsetHeight || n.getClientRects().length);
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && (document.activeElement === first || !$("#post-container").contains(document.activeElement))) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !$("#post-view").hidden) closePost();
     if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
