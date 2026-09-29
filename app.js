@@ -16,6 +16,10 @@
   };
   const RATING_LABEL = { s: "Safe", q: "Questionable", e: "Explicit" };
 
+  // headroom for the pager under the grid, so filling the viewport never
+  // pushes a scrollbar into view
+  const PAGER_RESERVE = 56;
+
   const $ = (sel) => document.querySelector(sel);
   const el = (tag, cls, text) => {
     const n = document.createElement(tag);
@@ -29,7 +33,7 @@
     terms: [],          // raw query terms, "-" prefixed for exclusion
     rating: "all",
     mode: "view",
-    size: 150,
+    size: window.innerWidth < 780 ? 120 : 150, // finer grid on small screens
     showVotes: false,
     showTypes: new Set(TAG_TYPES),
     order: "id",
@@ -39,7 +43,34 @@
     page: 1,
   };
 
-  const PER_PAGE = 24;
+  // How many previews fill the visible grid area? Derived from the real column
+  // count and the space left under the grid, so a page always fills the screen
+  // instead of leaving a big empty band underneath.
+  function capacity() {
+    const grid = $("#grid");
+    const size = parseFloat(getComputedStyle(grid).getPropertyValue("--size")) || state.size;
+    const cols = Math.max(1, Math.floor(grid.clientWidth / size));
+    const top = grid.getBoundingClientRect().top; // relative to viewport
+    const avail = window.innerHeight - top - PAGER_RESERVE;
+    const rows = Math.max(1, Math.floor(avail / size));
+    return cols * rows;
+  }
+
+  let perPage = 1;
+
+  // Measure on the next frame, once scrollbars and the sidebar have settled,
+  // then redraw only if the answer actually changed. Without this settle pass
+  // the first read lands before layout finishes and the page comes out short.
+  function reflow() {
+    render();
+    requestAnimationFrame(() => {
+      const next = capacity();
+      if (next !== perPage) {
+        perPage = next;
+        render();
+      }
+    });
+  }
 
   // ── helpers ─────────────────────────────────────────────────────────
   const allTags = (post) => TAG_TYPES.flatMap((t) => post.tags[t] || []);
@@ -256,12 +287,14 @@
   function render() {
     const results = currentResults();
     const total = results.length;
-    const pages = Math.max(1, Math.ceil(total / PER_PAGE));
-    state.page = Math.min(state.page, pages);
-    const slice = results.slice((state.page - 1) * PER_PAGE, state.page * PER_PAGE);
 
-    $("#grid").style.setProperty("--size", state.size + "px");
     const grid = $("#grid");
+    grid.style.setProperty("--size", state.size + "px");
+
+    const pages = Math.max(1, Math.ceil(total / perPage));
+    state.page = Math.min(state.page, pages);
+    const slice = results.slice((state.page - 1) * perPage, state.page * perPage);
+
     grid.textContent = "";
     for (const post of slice) {
       const cell = el("div", "post-preview-container");
@@ -280,7 +313,7 @@
       empty.appendChild(b);
       bar.appendChild(empty);
     } else {
-      const range = `${(state.page - 1) * PER_PAGE + 1}–${Math.min(state.page * PER_PAGE, total)}`;
+      const range = `${(state.page - 1) * perPage + 1}–${Math.min(state.page * perPage, total)}`;
       bar.append(el("span", null, "Showing "), Object.assign(el("b", null, range),
         {}), el("span", null, ` of ${total} posts`));
       if (state.terms.length) bar.append(el("span", null, `· filter: ${state.terms.join(" ")}`));
@@ -289,18 +322,30 @@
     const pager = $("#pager");
     pager.textContent = "";
     if (pages > 1) {
+      const go = (i) => { state.page = i; render(); scrollTo(0, 0); };
       const prev = el("button", null, "← Prev");
       prev.disabled = state.page === 1;
-      prev.addEventListener("click", () => { state.page--; render(); scrollTo(0, 0); });
+      prev.addEventListener("click", () => go(state.page - 1));
       pager.appendChild(prev);
-      for (let i = 1; i <= pages; i++) {
+
+      // a window of pages around the current one, with first/last reachable —
+      // one button per page overflows the row on narrow screens
+      const W = 2;
+      const nums = new Set([1, pages, state.page]);
+      for (let i = state.page - W; i <= state.page + W; i++) if (i >= 1 && i <= pages) nums.add(i);
+      const shown = [...nums].sort((a, b) => a - b);
+      let prevNum = 0;
+      for (const i of shown) {
+        if (i - prevNum > 1) pager.append(el("span", "gap", "…"));
         const b = el("button", i === state.page ? "on" : null, String(i));
-        b.addEventListener("click", () => { state.page = i; render(); scrollTo(0, 0); });
+        b.addEventListener("click", () => go(i));
         pager.appendChild(b);
+        prevNum = i;
       }
+
       const next = el("button", null, "Next →");
       next.disabled = state.page === pages;
-      next.addEventListener("click", () => { state.page++; render(); scrollTo(0, 0); });
+      next.addEventListener("click", () => go(state.page + 1));
       pager.appendChild(next);
     }
 
@@ -529,6 +574,14 @@
     return false;
   }
 
+  // the grid is sized to the viewport, so a resize changes how many previews
+  // fit per page. Re-render (debounced) instead of leaving a half-empty page.
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(reflow, 150);
+  });
+
   window.addEventListener("hashchange", () => {
     if (!readHash()) { $("#tags").value = state.terms.join(" "); render(); }
   });
@@ -557,6 +610,7 @@
     b.addEventListener("click", () => {
       state.size = Number(b.dataset.size);
       for (const o of document.querySelectorAll("#size-picker button")) o.classList.toggle("on", o === b);
+      perPage = capacity();
       render();
     });
   }
@@ -633,8 +687,12 @@
   async function runSelfTest() {
     const out = document.createElement("pre");
     out.id = "selftest";
-    out.style.cssText = "margin:1em;padding:.75em;background:#111;color:#eee;font:12px monospace;white-space:pre-wrap";
-    document.body.prepend(out);
+    out.style.cssText = "position:fixed;top:0;left:0;z-index:99;margin:0;padding:.75em;" +
+                        "max-height:90vh;overflow:auto;background:#111;color:#eee;" +
+                        "font:12px monospace;white-space:pre-wrap";
+    document.body.appendChild(out); // overlay, so it cannot shift the layout it measures
+    // the boot reflow() settles on the next frame; let that land before measuring
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
 
     let failed = 0;
     const t = (name, cond) => {
@@ -677,8 +735,28 @@
       return matches(p, [a, b]);
     }));
     t("pagination stays in range", (() => {
-      const pages = Math.max(1, Math.ceil(currentResults().length / PER_PAGE));
+      const pages = Math.max(1, Math.ceil(currentResults().length / perPage));
       return state.page >= 1 && state.page <= pages;
+    })());
+    t("a page fills the viewport (no empty band)", (() => {
+      // the reported bug: a fixed page size left a large gap under the grid
+      const grid = $("#grid");
+      const size = parseFloat(getComputedStyle(grid).getPropertyValue("--size"));
+      const cols = Math.max(1, Math.floor(grid.clientWidth / size));
+      const rows = Math.ceil(grid.children.length / cols);
+      const used = rows * size;
+      const top = grid.getBoundingClientRect().top;
+      const avail = window.innerHeight - top - PAGER_RESERVE;
+      const total = currentResults().length;
+      out.append(`  [geo] size=${size} gridW=${grid.clientWidth} cols=${cols} ` +
+                 `shown=${grid.children.length} rows=${rows} top=${top.toFixed(0)} ` +
+                 `avail=${avail.toFixed(0)} used=${used} vh=${window.innerHeight} ` +
+                 `gap=${(window.innerHeight - top - used).toFixed(0)}` +
+                 ` | iw=${window.innerWidth} body=${document.body.scrollWidth}` +
+                 ` page=${$("#page").clientWidth} sb=${$("#sidebar").clientWidth}` +
+                 ` content=${$("#content").clientWidth} mq780=${matchMedia("(max-width: 780px)").matches}\n`);
+      // either the page is full, or we ran out of posts to show
+      return total <= perPage || used >= avail - size;
     })());
 
     // every referenced asset actually loads (images via Image, video via a loaded <video>)
@@ -706,14 +784,19 @@
     document.title = failed ? `SELFTEST FAIL ${failed}` : "SELFTEST PASS";
   }
 
-  if (location.search.includes("selftest") || window.FUMO_RUN_SELFTEST) {
-    runSelfTest();
-  }
-
   // ── boot ────────────────────────────────────────────────────────────
   renderStats();
   renderCategoryToggles();
   readHash();
   $("#tags").value = state.terms.join(" ");
-  render();
+  for (const o of document.querySelectorAll("#size-picker button")) {
+    o.classList.toggle("on", Number(o.dataset.size) === state.size);
+  }
+  perPage = capacity();
+  reflow();
+
+  // self-test runs last, so it can assert against the real rendered layout
+  if (location.search.includes("selftest") || window.FUMO_RUN_SELFTEST) {
+    runSelfTest();
+  }
 })();

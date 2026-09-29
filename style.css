@@ -138,8 +138,10 @@ textarea { resize: vertical; min-height: 5em; }
   align-items: flex-start;
   gap: 1em;
   padding: 1em;
-  max-width: 1900px;
-  margin: 0 auto;
+  /* no max-width: like danbooru, the gallery uses the full viewport so a wide
+     monitor doesn't get wide empty margins either side */
+  width: 100%;
+  margin: 0;
 }
 
 #sidebar {
@@ -273,6 +275,9 @@ textarea { resize: vertical; min-height: 5em; }
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  /* fixed cell height keeps the grid a tidy matrix and makes the
+     columns-x-rows capacity maths exact */
+  height: var(--size);
 }
 .post-preview {
   display: block;
@@ -333,8 +338,9 @@ textarea { resize: vertical; min-height: 5em; }
 }
 .empty-state h3 { color: var(--text-dim); margin: 0 0 0.4em; }
 
-#pager { display: flex; justify-content: center; gap: 0.3em; margin-top: 1em; }
+#pager { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.3em; margin-top: 1em; }
 #pager button.on { background: var(--crimson); border-color: var(--crimson); color: #fff; }
+#pager .gap { color: var(--text-faint); padding: 0 0.2em; }
 
 #page-footer {
   border-top: 1px solid var(--border);
@@ -482,12 +488,20 @@ a.tag-type-meta:hover      { color: var(--tag-meta-hot); }
 
 /* ── responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 780px) {
-  #page { flex-direction: column; padding: 0.5em; }
+  /* align-items: flex-start would stop #content stretching across the column,
+     letting the grid size to max-content and blow out the page width */
+  #page { flex-direction: column; align-items: stretch; padding: 0.5em; }
   #sidebar {
     width: 100%;
     flex: 1 1 auto;
-    position: static;
-    max-height: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* the tag list is very long; cap it and scroll it internally so the
+       gallery is never pushed thousands of pixels below the fold */
+    max-height: 42vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .tagline { display: none; }
 }
