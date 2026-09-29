@@ -7,7 +7,8 @@ window.FUMO_DATA = {
     "posts": 158,
     "tags": 213,
     "users": 1,
-    "artists": 0
+    "artists": 0,
+    "socialImage": "fumos/143-photo.jpg"
   },
   "posts": [
     {

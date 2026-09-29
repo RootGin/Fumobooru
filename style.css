@@ -388,6 +388,15 @@ textarea { resize: vertical; min-height: 5em; }
 #post-view header .spacer { flex: 1; }
 #post-view header .nav-btns { display: flex; gap: 0.2em; }
 #post-view header .close { background: none; border: 0; font-size: 1.2em; line-height: 1; padding: 0.2em 0.5em; }
+#post-view header .copy-link { font-size: 0.85em; padding: 0.3em 0.6em; white-space: nowrap; }
+.clipboard-shim {
+  position: fixed;
+  top: -1000px;
+  left: -1000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
 
 .post-body { display: flex; align-items: flex-start; gap: 1em; padding: 1em; }
 #post-media { flex: 1; min-width: 0; display: flex; justify-content: center; }

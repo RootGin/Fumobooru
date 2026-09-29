@@ -166,6 +166,27 @@
   }
 
   // ── sidebar ─────────────────────────────────────────────────────────
+  // The OG/Twitter tags in index.html are static and absolute, because social
+  // crawlers don't execute JS. This keeps them honest for anything reading the
+  // live DOM (and for a file:// copy), and points the image at the post being
+  // viewed so a copied link previews the right thing in a live tab.
+  function syncSocialMeta() {
+    const web = location.protocol === "http:" || location.protocol === "https:";
+    // off the web there's nothing to absolutise against, and overwriting the
+    // static tags with relative paths would only make them less useful
+    if (!web) return;
+    // the hash is never sent to a server, so og:url is the canonical page
+    const url = location.origin + location.pathname;
+    const img = location.origin + "/" + (modalId !== null
+      ? (posts.find((p) => p.id === modalId) || {}).src
+      : site.socialImage);
+    if (!img) return;
+    const set = (sel, val) => { const n = document.querySelector(sel); if (n) n.setAttribute("content", val); };
+    set('meta[property="og:url"]', url);
+    set('meta[property="og:image"]', img);
+    set('meta[name="twitter:image"]', img);
+  }
+
   function renderStats() {
     const dl = $("#site-stats");
     dl.textContent = "";
@@ -453,6 +474,36 @@
       nav.appendChild(n);
     }
     head.appendChild(nav);
+
+    const copy = el("button", "copy-link", "🔗 Copy link");
+    copy.title = "Copy a direct link to this post";
+    copy.addEventListener("click", async () => {
+      const link = location.href;
+      const done = () => toast("Link copied. It points straight at this post.", "🔗");
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(link);
+          done();
+        } else {
+          throw new Error("clipboard unavailable");
+        }
+      } catch {
+        // file:// and other insecure contexts have no async clipboard, and the
+        // async API rejects without a user gesture in some browsers
+        const ta = el("textarea", "clipboard-shim");
+        ta.value = link;
+        ta.setAttribute("readonly", "");
+        document.body.appendChild(ta);
+        ta.select();
+        let ok = false;
+        try { ok = document.execCommand("copy"); } catch { ok = false; }
+        ta.remove();
+        if (ok) done();
+        else toast("Could not copy. The link is in the address bar.", "…");
+      }
+    });
+    head.appendChild(copy);
+
     const close = el("button", "close", "×");
     close.setAttribute("aria-label", "Close");
     close.addEventListener("click", closePost);
@@ -583,6 +634,7 @@
     document.body.style.overflow = "hidden";
     modalId = id;
     if (push) history.pushState({ post: id }, "", "#post/" + id);
+    syncSocialMeta();
     close.focus();
   }
 
@@ -593,6 +645,7 @@
     $("#post-view").hidden = true;
     document.body.style.overflow = "";
     modalId = null;
+    syncSocialMeta();
   }
 
   // Close at the user's request. If we pushed the #post entry ourselves, step
@@ -791,6 +844,22 @@
     const rel = (s, dir) => typeof s === "string" && s.startsWith(dir) && !s.startsWith("/");
     t("every post has a relative src", posts.every((p) => rel(p.src, "fumos/")));
     t("every post has a relative thumb", posts.every((p) => rel(p.thumb, "thumbs/")));
+
+    // sharing contract: a link encodes tags or a post id, never the page, so it
+    // still means the same thing on a phone as on a desktop
+    t("share URL carries tags only, never the page",
+      /^#posts(\?[^#]*)?$/.test(postsHash()) && !/[?&]page=/.test(postsHash()));
+    t("post URL carries only an id", /^#post\/\d+$/.test("#post/901001"));
+
+    // social crawlers read index.html without running JS, so these must exist
+    // in the static markup and be absolute
+    t("og:image is absolute", /^https?:\/\//.test(
+      (document.querySelector('meta[property="og:image"]') || {}).content || ""));
+    t("twitter:image is absolute", /^https?:\/\//.test(
+      (document.querySelector('meta[name="twitter:image"]') || {}).content || ""));
+    t("og:title and og:description present",
+      !!(document.querySelector('meta[property="og:title"]') || {}).content &&
+      !!(document.querySelector('meta[property="og:description"]') || {}).content);
     t("thumbs are webp and smaller than their source", posts.every((p) =>
       p.thumb.endsWith(".webp") && (p.thumbBytes || 0) < (p.srcBytes || 0)));
     t("empty query matches everything", posts.every((p) => matches(p, [])));
@@ -892,6 +961,7 @@
   // apply the incoming URL last, so a shared #post/ID or ?tags= link is honoured
   syncFromLocation();
   booting = false;
+  syncSocialMeta();
 
   // self-test runs last, so it can assert against the real rendered layout
   if (location.search.includes("selftest") || window.FUMO_RUN_SELFTEST) {
