@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fumobooru</title>
+<meta name="description" content="A purely static, lovingly unhelpful booru for plush.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%230e1015'/><circle cx='8' cy='7' r='4' fill='%23e0483f'/><rect x='5' y='10' width='6' height='5' fill='%23e8c15a'/></svg>">
+</head>
+<body>
+
+<div id="navbar">
+  <span class="brand">Fumo<span class="pip">booru</span><span class="pip2">.</span></span>
+  <span class="tagline" id="tagline"></span>
+  <span class="spacer"></span>
+  <nav>
+    <a href="#posts" class="nav-item active" data-section="posts">Posts</a>
+    <a href="#comments" class="nav-item" data-section="comments">Comments</a>
+    <a href="#wiki" class="nav-item" data-section="wiki">Wiki</a>
+    <a href="#forum" class="nav-item" data-section="forum">Forum</a>
+  </nav>
+  <button id="theme-toggle" title="Toggle light/dark">☾</button>
+  <button id="login-btn">Sign in</button>
+  <button id="upload-btn" class="primary">Upload</button>
+</div>
+
+<div id="page">
+
+  <aside id="sidebar">
+
+    <section id="search-box">
+      <h2>Search</h2>
+      <form id="search-form">
+        <input type="text" id="tags" name="tags" placeholder="e.g. reimu_hakurei shrine" autocomplete="off" autocapitalize="none" spellcheck="false">
+        <button type="submit" title="Search">🔍</button>
+      </form>
+      <div id="active-tags"></div>
+      <p class="search-hint">
+        Space = AND · <code>-tag</code> excludes · <code>rating:s</code> filters ·
+        <code>order:score</code> sorts
+      </p>
+    </section>
+
+    <section id="mode-box">
+      <h2>Mode</h2>
+      <select id="mode-select">
+        <option value="view">View</option>
+        <option value="edit">Edit (parody)</option>
+        <option value="add-fav">Favorite (parody)</option>
+        <option value="remove-fav">Unfavorite (parody)</option>
+      </select>
+      <div class="rating-row" id="rating-row">
+        <button data-rating="all" class="on">All</button>
+        <button data-rating="s">Safe</button>
+        <button data-rating="q">Q</button>
+        <button data-rating="e">E</button>
+      </div>
+    </section>
+
+    <section id="tag-box">
+      <h2>Tags</h2>
+      <div id="category-toggles"></div>
+      <div id="tag-list"></div>
+    </section>
+
+    <section id="related-box">
+      <h2>Related</h2>
+      <ul class="link-list">
+        <li><a href="#hot">Hot</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#random">Random</a></li>
+        <li><a href="#count">Count</a></li>
+      </ul>
+    </section>
+
+    <section id="stats-box">
+      <h2>Posts</h2>
+      <dl class="stat-list" id="site-stats"></dl>
+      <p class="sidebar-note">
+        A static parody. No database, no accounts, no network calls — everything
+        on this page comes from <code>fumosData.js</code>.
+      </p>
+    </section>
+
+  </aside>
+
+  <main id="content">
+
+    <ul id="post-sections">
+      <li class="grow"><a href="#posts" class="active" id="show-posts-link">Posts</a></li>
+      <li class="controls">
+        <span class="label">Size</span>
+        <span class="size-picker" id="size-picker">
+          <button data-size="150" class="on">150</button>
+          <button data-size="180">180</button>
+          <button data-size="225">225</button>
+          <button data-size="270">270</button>
+        </span>
+        <button id="votes-toggle">Show scores</button>
+      </li>
+    </ul>
+
+    <div id="result-bar"></div>
+    <div id="posts"><div class="posts-container" id="grid"></div></div>
+    <div id="pager"></div>
+
+  </main>
+</div>
+
+<footer id="page-footer">
+  Fumobooru — a UI parody. Images belong to their placeholder creators.
+</footer>
+
+<!-- post view -->
+<div id="post-view" hidden>
+  <div class="post-container" id="post-container" role="dialog" aria-modal="true" aria-label="Post view"></div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="fumosData.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

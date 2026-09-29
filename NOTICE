@@ -1,0 +1,40 @@
+Fumobooru
+=========
+
+A static parody of a Danbooru-style booru, themed around Touhou Project plush.
+
+Licensing
+---------
+
+This project is released under the BSD 2-Clause License. The full text is in
+LICENSE, and that license text originates from the Danbooru Project
+(https://github.com/danbooru/danbooru), Copyright (c) 2013~2026 Danbooru
+Project, All rights reserved.
+
+Relationship to Danbooru
+------------------------
+
+The code in this repository is original work. It does not contain any code
+copied from Danbooru.
+
+The gallery layout was, however, modelled on Danbooru's: specifically its
+CSS-grid thumbnail gallery, in which a uniform grid of tracks holds
+variable-aspect-ratio previews that are bottom-aligned inside each cell
+(`repeat(auto-fill, minmax(Npx, 1fr))` with flex-end preview containers), its
+sidebar section ordering, and its convention of colour-coding tags by type
+(character, copyright, artist, general, meta). Danbooru is credited here as
+the origin of that approach.
+
+Because Fumobooru is a parody of a real site, it is not affiliated with,
+endorsed by, or connected to the Danbooru Project or danbooru.donmai.us.
+
+Assets
+------
+
+Files in fumos/ are photographs of Touhou Project merchandise. They are
+included for personal, non-commercial use only and remain the property of
+their respective creators and rights holders. They are not covered by the
+LICENSE above; the license covers the source code in this repository only.
+
+Touhou Project characters are copyright ZUN / Shanghai Alice, and are used
+here without permission or endorsement.
