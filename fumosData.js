@@ -43,7 +43,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/001-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 171607,
+      "thumbBytes": 12758
     },
     {
       "id": 901002,
@@ -80,7 +84,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/002-suika_ibuki.webp",
+      "thumb_height": 300,
+      "srcBytes": 614089,
+      "thumbBytes": 19522
     },
     {
       "id": 901003,
@@ -117,7 +125,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/003-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 80652,
+      "thumbBytes": 16512
     },
     {
       "id": 901004,
@@ -154,7 +166,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/004-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 170922,
+      "thumbBytes": 14616
     },
     {
       "id": 901005,
@@ -191,7 +207,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/005-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 87092,
+      "thumbBytes": 9518
     },
     {
       "id": 901006,
@@ -227,7 +247,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/006-remilia_scarlet.webp",
+      "thumb_height": 300,
+      "srcBytes": 65910,
+      "thumbBytes": 7986
     },
     {
       "id": 901007,
@@ -264,7 +288,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/007-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 155620,
+      "thumbBytes": 12474
     },
     {
       "id": 901008,
@@ -301,7 +329,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/008-kogasa_karasu.webp",
+      "thumb_height": 300,
+      "srcBytes": 98136,
+      "thumbBytes": 10968
     },
     {
       "id": 901009,
@@ -336,7 +368,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/009-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 111625,
+      "thumbBytes": 12436
     },
     {
       "id": 901010,
@@ -370,7 +406,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/010-remilia_scarlet.webp",
+      "thumb_height": 300,
+      "srcBytes": 75286,
+      "thumbBytes": 11900
     },
     {
       "id": 901011,
@@ -405,7 +445,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/011-suika_ibuki.webp",
+      "thumb_height": 300,
+      "srcBytes": 230793,
+      "thumbBytes": 6134
     },
     {
       "id": 901012,
@@ -440,7 +484,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/012-suika_ibuki.webp",
+      "thumb_height": 300,
+      "srcBytes": 330750,
+      "thumbBytes": 4922
     },
     {
       "id": 901013,
@@ -475,7 +523,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/013-suika_ibuki.webp",
+      "thumb_height": 300,
+      "srcBytes": 355766,
+      "thumbBytes": 10676
     },
     {
       "id": 901014,
@@ -512,7 +564,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/014-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 130452,
+      "thumbBytes": 9228
     },
     {
       "id": 901015,
@@ -549,7 +605,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/015-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 266881,
+      "thumbBytes": 9754
     },
     {
       "id": 901016,
@@ -585,7 +645,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/016-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 235219,
+      "thumbBytes": 9176
     },
     {
       "id": 901017,
@@ -622,7 +686,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/017-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 748580,
+      "thumbBytes": 12528
     },
     {
       "id": 901018,
@@ -659,7 +727,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/018-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 1075583,
+      "thumbBytes": 17058
     },
     {
       "id": 901019,
@@ -696,7 +768,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/019-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 390006,
+      "thumbBytes": 8684
     },
     {
       "id": 901020,
@@ -733,7 +809,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/020-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 1084949,
+      "thumbBytes": 16546
     },
     {
       "id": 901021,
@@ -770,7 +850,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/021-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 490912,
+      "thumbBytes": 6128
     },
     {
       "id": 901022,
@@ -807,7 +891,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/022-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 1143757,
+      "thumbBytes": 16568
     },
     {
       "id": 901023,
@@ -844,7 +932,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/023-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 413247,
+      "thumbBytes": 10412
     },
     {
       "id": 901024,
@@ -881,7 +973,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/024-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 1229896,
+      "thumbBytes": 18908
     },
     {
       "id": 901025,
@@ -918,7 +1014,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/025-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 795008,
+      "thumbBytes": 14548
     },
     {
       "id": 901026,
@@ -955,7 +1055,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/026-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 664657,
+      "thumbBytes": 13296
     },
     {
       "id": 901027,
@@ -992,7 +1096,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/027-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 524390,
+      "thumbBytes": 10648
     },
     {
       "id": 901028,
@@ -1029,7 +1137,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/028-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 742689,
+      "thumbBytes": 12532
     },
     {
       "id": 901029,
@@ -1066,7 +1178,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/029-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 702778,
+      "thumbBytes": 12570
     },
     {
       "id": 901030,
@@ -1103,7 +1219,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/030-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 433529,
+      "thumbBytes": 8910
     },
     {
       "id": 901031,
@@ -1140,7 +1260,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/031-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 121701,
+      "thumbBytes": 8258
     },
     {
       "id": 901032,
@@ -1177,7 +1301,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/032-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 297483,
+      "thumbBytes": 16824
     },
     {
       "id": 901033,
@@ -1214,7 +1342,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/033-tenshi.webp",
+      "thumb_height": 300,
+      "srcBytes": 67860,
+      "thumbBytes": 14200
     },
     {
       "id": 901034,
@@ -1252,7 +1384,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/034-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 201313,
+      "thumbBytes": 12820
     },
     {
       "id": 901035,
@@ -1289,7 +1425,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/035-remilia_scarlet.webp",
+      "thumb_height": 300,
+      "srcBytes": 189124,
+      "thumbBytes": 12536
     },
     {
       "id": 901036,
@@ -1326,7 +1466,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/036-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 26145,
+      "thumbBytes": 9998
     },
     {
       "id": 901037,
@@ -1362,7 +1506,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/037-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 100572,
+      "thumbBytes": 6018
     },
     {
       "id": 901038,
@@ -1398,7 +1546,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/038-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 21600,
+      "thumbBytes": 9910
     },
     {
       "id": 901039,
@@ -1435,7 +1587,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/039-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 72862,
+      "thumbBytes": 5334
     },
     {
       "id": 901040,
@@ -1472,7 +1628,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/040-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 241501,
+      "thumbBytes": 6956
     },
     {
       "id": 901041,
@@ -1509,7 +1669,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/041-hong_meiling.webp",
+      "thumb_height": 300,
+      "srcBytes": 117478,
+      "thumbBytes": 7660
     },
     {
       "id": 901042,
@@ -1546,7 +1710,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/042-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 93244,
+      "thumbBytes": 4652
     },
     {
       "id": 901043,
@@ -1583,7 +1751,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/043-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 93960,
+      "thumbBytes": 20364
     },
     {
       "id": 901044,
@@ -1621,7 +1793,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/044-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 244179,
+      "thumbBytes": 15446
     },
     {
       "id": 901045,
@@ -1658,7 +1834,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/045-mokou_fujiwara.webp",
+      "thumb_height": 300,
+      "srcBytes": 88965,
+      "thumbBytes": 10178
     },
     {
       "id": 901046,
@@ -1695,7 +1875,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/046-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 37576,
+      "thumbBytes": 6836
     },
     {
       "id": 901047,
@@ -1731,7 +1915,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/047-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 44853,
+      "thumbBytes": 10296
     },
     {
       "id": 901048,
@@ -1768,7 +1956,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/048-cirno.webp",
+      "thumb_height": 300,
+      "srcBytes": 196570,
+      "thumbBytes": 13186
     },
     {
       "id": 901049,
@@ -1809,7 +2001,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/049-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 37994,
+      "thumbBytes": 16056
     },
     {
       "id": 901050,
@@ -1847,7 +2043,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/050-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 26601,
+      "thumbBytes": 5322
     },
     {
       "id": 901051,
@@ -1886,7 +2086,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/051-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 109846,
+      "thumbBytes": 7386
     },
     {
       "id": 901052,
@@ -1924,7 +2128,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/052-sakuya_izayoi.webp",
+      "thumb_height": 300,
+      "srcBytes": 10617,
+      "thumbBytes": 5200
     },
     {
       "id": 901053,
@@ -1963,7 +2171,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/053-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 179843,
+      "thumbBytes": 14298
     },
     {
       "id": 901054,
@@ -1999,7 +2211,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/054-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 41252,
+      "thumbBytes": 5324
     },
     {
       "id": 901055,
@@ -2036,7 +2252,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/055-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 43719,
+      "thumbBytes": 6278
     },
     {
       "id": 901056,
@@ -2074,7 +2294,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/056-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 29693,
+      "thumbBytes": 11670
     },
     {
       "id": 901057,
@@ -2113,7 +2337,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/057-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 46717,
+      "thumbBytes": 9416
     },
     {
       "id": 901058,
@@ -2152,7 +2380,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/058-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 75222,
+      "thumbBytes": 13436
     },
     {
       "id": 901059,
@@ -2191,7 +2423,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/059-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 30557,
+      "thumbBytes": 8544
     },
     {
       "id": 901060,
@@ -2230,7 +2466,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/060-cirno.webp",
+      "thumb_height": 300,
+      "srcBytes": 185922,
+      "thumbBytes": 13496
     },
     {
       "id": 901061,
@@ -2268,7 +2508,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/061-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 281164,
+      "thumbBytes": 8936
     },
     {
       "id": 901062,
@@ -2305,7 +2549,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/062-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 36912,
+      "thumbBytes": 11112
     },
     {
       "id": 901063,
@@ -2343,7 +2591,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/063-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 274427,
+      "thumbBytes": 6660
     },
     {
       "id": 901064,
@@ -2382,7 +2634,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/064-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 69313,
+      "thumbBytes": 4934
     },
     {
       "id": 901065,
@@ -2418,7 +2674,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/065-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 223163,
+      "thumbBytes": 6848
     },
     {
       "id": 901066,
@@ -2453,7 +2713,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/066-cirno.webp",
+      "thumb_height": 300,
+      "srcBytes": 17352,
+      "thumbBytes": 13140
     },
     {
       "id": 901067,
@@ -2490,7 +2754,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/067-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 307601,
+      "thumbBytes": 12838
     },
     {
       "id": 901068,
@@ -2527,7 +2795,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/068-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 89980,
+      "thumbBytes": 12722
     },
     {
       "id": 901069,
@@ -2564,7 +2836,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/069-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 171129,
+      "thumbBytes": 9156
     },
     {
       "id": 901070,
@@ -2601,7 +2877,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/070-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 83986,
+      "thumbBytes": 19172
     },
     {
       "id": 901071,
@@ -2638,7 +2918,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/071-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 49443,
+      "thumbBytes": 10076
     },
     {
       "id": 901072,
@@ -2675,7 +2959,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/072-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 13913,
+      "thumbBytes": 8528
     },
     {
       "id": 901073,
@@ -2713,7 +3001,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/073-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 41118,
+      "thumbBytes": 13412
     },
     {
       "id": 901074,
@@ -2750,7 +3042,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/074-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 224342,
+      "thumbBytes": 15350
     },
     {
       "id": 901075,
@@ -2786,7 +3082,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/075-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 158076,
+      "thumbBytes": 9110
     },
     {
       "id": 901076,
@@ -2823,7 +3123,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/076-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 157345,
+      "thumbBytes": 11568
     },
     {
       "id": 901077,
@@ -2860,7 +3164,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/077-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 267485,
+      "thumbBytes": 19602
     },
     {
       "id": 901078,
@@ -2896,7 +3204,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/078-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 98427,
+      "thumbBytes": 11978
     },
     {
       "id": 901079,
@@ -2934,7 +3246,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/079-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 102340,
+      "thumbBytes": 7316
     },
     {
       "id": 901080,
@@ -2971,7 +3287,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/080-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 19639,
+      "thumbBytes": 8960
     },
     {
       "id": 901081,
@@ -3009,7 +3329,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/081-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 238217,
+      "thumbBytes": 13024
     },
     {
       "id": 901082,
@@ -3046,7 +3370,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/082-cirno.webp",
+      "thumb_height": 300,
+      "srcBytes": 28053,
+      "thumbBytes": 5744
     },
     {
       "id": 901083,
@@ -3083,7 +3411,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/083-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 243194,
+      "thumbBytes": 8532
     },
     {
       "id": 901084,
@@ -3118,7 +3450,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/084-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 118457,
+      "thumbBytes": 5628
     },
     {
       "id": 901085,
@@ -3156,7 +3492,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/085-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 24541,
+      "thumbBytes": 10154
     },
     {
       "id": 901086,
@@ -3193,7 +3533,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/086-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 9966,
+      "thumbBytes": 5638
     },
     {
       "id": 901087,
@@ -3230,7 +3574,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/087-cirno.webp",
+      "thumb_height": 300,
+      "srcBytes": 61326,
+      "thumbBytes": 10254
     },
     {
       "id": 901088,
@@ -3268,7 +3616,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/088-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 142620,
+      "thumbBytes": 11738
     },
     {
       "id": 901089,
@@ -3306,7 +3658,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/089-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 124732,
+      "thumbBytes": 7470
     },
     {
       "id": 901090,
@@ -3343,7 +3699,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/090-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 58929,
+      "thumbBytes": 13140
     },
     {
       "id": 901091,
@@ -3381,7 +3741,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/091-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 262882,
+      "thumbBytes": 13974
     },
     {
       "id": 901092,
@@ -3419,7 +3783,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/092-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 287848,
+      "thumbBytes": 21384
     },
     {
       "id": 901093,
@@ -3456,7 +3824,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/093-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 108802,
+      "thumbBytes": 6878
     },
     {
       "id": 901094,
@@ -3493,7 +3865,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/094-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 99796,
+      "thumbBytes": 6504
     },
     {
       "id": 901095,
@@ -3530,7 +3906,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/095-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 192055,
+      "thumbBytes": 14704
     },
     {
       "id": 901096,
@@ -3569,7 +3949,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/096-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 190132,
+      "thumbBytes": 11332
     },
     {
       "id": 901097,
@@ -3606,7 +3990,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/097-keine_kamishirasawa.webp",
+      "thumb_height": 300,
+      "srcBytes": 18688,
+      "thumbBytes": 9062
     },
     {
       "id": 901098,
@@ -3641,7 +4029,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/098-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 147429,
+      "thumbBytes": 5148
     },
     {
       "id": 901099,
@@ -3676,7 +4068,11 @@ window.FUMO_DATA = {
           "indoors"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/099-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 25051,
+      "thumbBytes": 6100
     },
     {
       "id": 901100,
@@ -3713,7 +4109,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/100-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 19581,
+      "thumbBytes": 10108
     },
     {
       "id": 901101,
@@ -3749,7 +4149,11 @@ window.FUMO_DATA = {
           "indoors"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/101-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 75135,
+      "thumbBytes": 18006
     },
     {
       "id": 901102,
@@ -3786,7 +4190,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/102-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 25024,
+      "thumbBytes": 7724
     },
     {
       "id": 901103,
@@ -3823,7 +4231,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/103-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 19013,
+      "thumbBytes": 11858
     },
     {
       "id": 901104,
@@ -3859,7 +4271,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/104-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 70972,
+      "thumbBytes": 16682
     },
     {
       "id": 901105,
@@ -3894,7 +4310,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/105-cirno.webp",
+      "thumb_height": 300,
+      "srcBytes": 20003,
+      "thumbBytes": 7974
     },
     {
       "id": 901106,
@@ -3931,7 +4351,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/106-mokou_fujiwara.webp",
+      "thumb_height": 300,
+      "srcBytes": 74148,
+      "thumbBytes": 7144
     },
     {
       "id": 901107,
@@ -3968,7 +4392,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/107-keine_kamishirasawa.webp",
+      "thumb_height": 300,
+      "srcBytes": 2240880,
+      "thumbBytes": 8796
     },
     {
       "id": 901108,
@@ -4004,7 +4432,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/108-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 45367,
+      "thumbBytes": 8624
     },
     {
       "id": 901109,
@@ -4041,7 +4473,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/109-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 149988,
+      "thumbBytes": 10816
     },
     {
       "id": 901110,
@@ -4078,7 +4514,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/110-sakuya_izayoi.webp",
+      "thumb_height": 300,
+      "srcBytes": 40849,
+      "thumbBytes": 8798
     },
     {
       "id": 901111,
@@ -4114,7 +4554,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/111-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 61167,
+      "thumbBytes": 12778
     },
     {
       "id": 901112,
@@ -4151,7 +4595,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/112-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 46880,
+      "thumbBytes": 8196
     },
     {
       "id": 901113,
@@ -4188,7 +4636,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/113-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 57560,
+      "thumbBytes": 12330
     },
     {
       "id": 901114,
@@ -4223,7 +4675,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/114-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 27831,
+      "thumbBytes": 5118
     },
     {
       "id": 901115,
@@ -4257,7 +4713,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/115-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 36442,
+      "thumbBytes": 5420
     },
     {
       "id": 901116,
@@ -4294,7 +4754,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/116-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 44148,
+      "thumbBytes": 11388
     },
     {
       "id": 901117,
@@ -4331,7 +4795,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/117-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 14549,
+      "thumbBytes": 4614
     },
     {
       "id": 901118,
@@ -4369,7 +4837,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/118-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 26915,
+      "thumbBytes": 10706
     },
     {
       "id": 901119,
@@ -4406,7 +4878,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/119-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 116547,
+      "thumbBytes": 7366
     },
     {
       "id": 901120,
@@ -4444,7 +4920,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/120-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 49427,
+      "thumbBytes": 10764
     },
     {
       "id": 901121,
@@ -4481,7 +4961,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/121-remilia_scarlet.webp",
+      "thumb_height": 300,
+      "srcBytes": 109379,
+      "thumbBytes": 12154
     },
     {
       "id": 901122,
@@ -4519,7 +5003,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/122-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 62510,
+      "thumbBytes": 12274
     },
     {
       "id": 901123,
@@ -4557,7 +5045,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/123-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 55802,
+      "thumbBytes": 8888
     },
     {
       "id": 901124,
@@ -4594,7 +5086,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/124-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 53142,
+      "thumbBytes": 11642
     },
     {
       "id": 901125,
@@ -4630,7 +5126,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/125-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 206804,
+      "thumbBytes": 5380
     },
     {
       "id": 901126,
@@ -4667,7 +5167,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/126-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 425306,
+      "thumbBytes": 10296
     },
     {
       "id": 901127,
@@ -4703,7 +5207,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/127-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 19644,
+      "thumbBytes": 10536
     },
     {
       "id": 901128,
@@ -4740,7 +5248,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/128-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 418587,
+      "thumbBytes": 15596
     },
     {
       "id": 901129,
@@ -4777,7 +5289,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/129-honeybee_hakutaku.webp",
+      "thumb_height": 300,
+      "srcBytes": 402957,
+      "thumbBytes": 12588
     },
     {
       "id": 901130,
@@ -4814,7 +5330,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/130-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 80163,
+      "thumbBytes": 9224
     },
     {
       "id": 901131,
@@ -4850,7 +5370,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/131-yuugi_hoshiguma.webp",
+      "thumb_height": 300,
+      "srcBytes": 176706,
+      "thumbBytes": 4278
     },
     {
       "id": 901132,
@@ -4886,7 +5410,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/132-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 63171,
+      "thumbBytes": 13222
     },
     {
       "id": 901133,
@@ -4923,7 +5451,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/133-komachi_onsozuka.webp",
+      "thumb_height": 300,
+      "srcBytes": 61484,
+      "thumbBytes": 11474
     },
     {
       "id": 901134,
@@ -4960,7 +5492,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/134-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 131665,
+      "thumbBytes": 7224
     },
     {
       "id": 901135,
@@ -4997,7 +5533,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/135-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 76207,
+      "thumbBytes": 8756
     },
     {
       "id": 901136,
@@ -5034,7 +5574,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/136-yukari_yakumo.webp",
+      "thumb_height": 300,
+      "srcBytes": 61095,
+      "thumbBytes": 12756
     },
     {
       "id": 901137,
@@ -5071,7 +5615,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/137-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 70266,
+      "thumbBytes": 8938
     },
     {
       "id": 901138,
@@ -5107,7 +5655,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/138-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 104320,
+      "thumbBytes": 8784
     },
     {
       "id": 901139,
@@ -5143,7 +5695,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/139-yukari_yakumo.webp",
+      "thumb_height": 300,
+      "srcBytes": 56626,
+      "thumbBytes": 5958
     },
     {
       "id": 901140,
@@ -5180,7 +5736,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/140-remilia_scarlet.webp",
+      "thumb_height": 300,
+      "srcBytes": 99998,
+      "thumbBytes": 17054
     },
     {
       "id": 901141,
@@ -5217,7 +5777,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/141-keine_kamishirasawa.webp",
+      "thumb_height": 300,
+      "srcBytes": 72473,
+      "thumbBytes": 13080
     },
     {
       "id": 901142,
@@ -5255,7 +5819,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/142-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 57081,
+      "thumbBytes": 11750
     },
     {
       "id": 901143,
@@ -5293,7 +5861,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/143-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 88050,
+      "thumbBytes": 17202
     },
     {
       "id": 901144,
@@ -5329,7 +5901,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/144-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 44196,
+      "thumbBytes": 4970
     },
     {
       "id": 901145,
@@ -5365,7 +5941,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/145-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 221221,
+      "thumbBytes": 6904
     },
     {
       "id": 901146,
@@ -5406,7 +5986,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/146-marisa_kirisame.webp",
+      "thumb_height": 300,
+      "srcBytes": 194317,
+      "thumbBytes": 14182
     },
     {
       "id": 901147,
@@ -5442,7 +6026,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/147-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 534525,
+      "thumbBytes": 6694
     },
     {
       "id": 901148,
@@ -5477,7 +6065,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/148-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 43175,
+      "thumbBytes": 4704
     },
     {
       "id": 901149,
@@ -5514,7 +6106,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/149-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 18624,
+      "thumbBytes": 3970
     },
     {
       "id": 901150,
@@ -5551,7 +6147,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/150-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 97626,
+      "thumbBytes": 10580
     },
     {
       "id": 901151,
@@ -5587,7 +6187,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/151-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 79024,
+      "thumbBytes": 15480
     },
     {
       "id": 901152,
@@ -5624,7 +6228,11 @@ window.FUMO_DATA = {
           "photo"
         ],
         "meta": []
-      }
+      },
+      "thumb": "thumbs/152-reimu_hakurei.webp",
+      "thumb_height": 300,
+      "srcBytes": 82431,
+      "thumbBytes": 13284
     },
     {
       "id": 901153,
@@ -5660,7 +6268,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/153-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 46416,
+      "thumbBytes": 14728
     },
     {
       "id": 901154,
@@ -5697,7 +6309,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/154-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 51267,
+      "thumbBytes": 8650
     },
     {
       "id": 901155,
@@ -5732,7 +6348,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/155-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 90608,
+      "thumbBytes": 6666
     },
     {
       "id": 901156,
@@ -5768,7 +6388,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/156-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 48101,
+      "thumbBytes": 7686
     },
     {
       "id": 901157,
@@ -5804,7 +6428,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/157-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 81681,
+      "thumbBytes": 8764
     },
     {
       "id": 901158,
@@ -5840,7 +6468,11 @@ window.FUMO_DATA = {
         "meta": [
           "tagme"
         ]
-      }
+      },
+      "thumb": "thumbs/158-photo.webp",
+      "thumb_height": 300,
+      "srcBytes": 465582,
+      "thumbBytes": 3222
     }
   ]
 };

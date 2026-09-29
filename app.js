@@ -270,11 +270,24 @@
       fig.append(el("span", "preview-score", `P-${post.score + (state.votes[post.id] || 0)}`));
     }
 
-    const media = el(post.type === "video" ? "video" : "img", "post-preview-image");
-    media.src = post.src;
-    if (post.type === "video") { media.muted = true; media.loop = true; }
-    else media.alt = `Fumo of ${allTags(post).filter((t) => t.includes("_")).join(", ")}`;
-    media.loading = "lazy";
+    // the grid draws the small webp; the post view still uses the full `src`
+    const isVideo = post.type === "video";
+    const media = el(isVideo ? "video" : "img", "post-preview-image");
+    if (isVideo) {
+      // poster frame means the grid never has to decode video, and
+      // preload="metadata" keeps it from pulling the file down
+      media.poster = post.thumb || post.src;
+      media.preload = "metadata";
+      media.playsInline = true;
+      media.muted = true;
+      media.loop = true;
+      media.setAttribute("aria-label", `Video: ${allTags(post).slice(0, 3).join(", ")}`);
+    } else {
+      media.src = post.thumb || post.src;
+      media.alt = `Fumo of ${allTags(post).filter((t) => t.includes("_")).join(", ")}`;
+      media.loading = "lazy";
+      media.decoding = "async";
+    }
     fig.appendChild(media);
 
     const open = () => openPost(post.id);
@@ -706,8 +719,11 @@
     t("dataset loads", posts.length > 0);
     t("every post has tags", posts.every((p) => allTags(p).length > 0));
     // relative paths only: the site must work from file:// and from any Vercel subpath
-    t("every post has a relative src", posts.every((p) =>
-      typeof p.src === "string" && p.src.startsWith("fumos/") && !p.src.startsWith("/")));
+    const rel = (s, dir) => typeof s === "string" && s.startsWith(dir) && !s.startsWith("/");
+    t("every post has a relative src", posts.every((p) => rel(p.src, "fumos/")));
+    t("every post has a relative thumb", posts.every((p) => rel(p.thumb, "thumbs/")));
+    t("thumbs are webp and smaller than their source", posts.every((p) =>
+      p.thumb.endsWith(".webp") && (p.thumbBytes || 0) < (p.srcBytes || 0)));
     t("empty query matches everything", posts.every((p) => matches(p, [])));
     t("AND semantics: unknown term excludes", !matches(posts[0], ["definitely_not_a_real_tag_xyz"]));
     t("rating: accepts matching, rejects other", matches(posts[0], [`rating:${posts[0].rating}`]) && !matches(posts[0], ["rating:zz"]));
@@ -778,8 +794,19 @@
     });
     const results = await Promise.all(posts.map(loadOne));
     const broken = posts.filter((_, i) => !results[i]).map((p) => p.src);
-    t(`all ${posts.length} assets load (${broken.length} broken)`, broken.length === 0);
+    t(`all ${posts.length} source assets load (${broken.length} broken)`, broken.length === 0);
     if (broken.length) out.append("  broken: " + broken.join(", ") + "\n");
+
+    // every grid thumbnail must load too, or previews silently fall back
+    const thumbResults = await Promise.all(posts.map((p) => new Promise((res) => {
+      const img = new Image();
+      img.onload = () => res(true);
+      img.onerror = () => res(false);
+      img.src = p.thumb;
+    })));
+    const brokenThumbs = posts.filter((_, i) => !thumbResults[i]).map((p) => p.thumb);
+    t(`all ${posts.length} thumbs load (${brokenThumbs.length} broken)`, brokenThumbs.length === 0);
+    if (brokenThumbs.length) out.append("  broken thumbs: " + brokenThumbs.join(", ") + "\n");
 
     out.append(`\n${failed ? failed + " FAILING" : "all checks passed"} (${posts.length} posts)\n`);
     document.title = failed ? `SELFTEST FAIL ${failed}` : "SELFTEST PASS";
