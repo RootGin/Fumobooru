@@ -93,8 +93,9 @@
   }
   const TYPE_COUNTS = typeCounts();
 
+  // "+" is the URL-encoded space, so shared links using it must still split
   const parseTags = (raw) =>
-    raw.split(/\s+/).map((s) => s.trim().toLowerCase()).filter(Boolean);
+    raw.split(/[\s+]+/).map((s) => s.trim().toLowerCase()).filter(Boolean);
 
   // A term matches a tag on whole underscore-segments only, so "bow" does not
   // hit "big_bow" but "reimu" does hit "reimu_hakurei".

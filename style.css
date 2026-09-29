@@ -488,6 +488,11 @@ a.tag-type-meta:hover      { color: var(--tag-meta-hot); }
 
 /* ── responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 780px) {
+  /* the navbar wraps to a variable height on small screens, so it can't be
+     given a fixed offset to sit above a sticky sidebar. Let it scroll away
+     and pin the sidebar (search + tags) to the top instead. */
+  #navbar { position: static; }
+
   /* align-items: flex-start would stop #content stretching across the column,
      letting the grid size to max-content and blow out the page width */
   #page { flex-direction: column; align-items: stretch; padding: 0.5em; }
