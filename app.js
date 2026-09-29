@@ -37,6 +37,8 @@
     showVotes: false,
     showTypes: new Set(TAG_TYPES),
     order: "id",
+    shuffle: false,       // random ordering, cleared by any filter change
+    shuffleOrder: null,   // stable across re-renders, so the grid doesn't jump
     votes: {},          // postId -> -1 | 0 | 1
     favs: new Set(),
     comments: {},       // postId -> [{who, when, body}]
@@ -74,6 +76,17 @@
 
   // ── helpers ─────────────────────────────────────────────────────────
   const allTags = (post) => TAG_TYPES.flatMap((t) => post.tags[t] || []);
+
+  // Fisher-Yates. Used for "Random", which shuffles the result set rather than
+  // jumping to a fixed page (a fixed page of a sorted feed isn't random at all).
+  function shuffled(list) {
+    const a = list.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
 
   function tagCounts() {
     const counts = {};
@@ -133,6 +146,10 @@
       if (key === "rank") return (b.views % 97) - (a.views % 97);
       return b.id - a.id;
     });
+    if (state.shuffle && state.shuffleOrder) {
+      const rank = new Map(state.shuffleOrder.map((id, i) => [id, i]));
+      list.sort((a, b) => rank.get(a.id) - rank.get(b.id));
+    }
     return list;
   }
 
@@ -237,6 +254,7 @@
   function toggleTerm(tag) {
     const i = state.terms.indexOf(tag);
     state.terms = i === -1 ? [...state.terms, tag] : state.terms.filter((t) => t !== tag);
+    state.shuffle = false;
     state.page = 1;
     $("#tags").value = state.terms.join(" ");
     render();
@@ -245,6 +263,7 @@
   function clearFilters() {
     state.terms = [];
     state.rating = "all";
+    state.shuffle = false;
     state.page = 1;
     $("#tags").value = "";
     syncRatingButtons();
@@ -331,6 +350,7 @@
       bar.append(el("span", null, "Showing "), Object.assign(el("b", null, range),
         {}), el("span", null, ` of ${total} posts`));
       if (state.terms.length) bar.append(el("span", null, `· filter: ${state.terms.join(" ")}`));
+      if (state.shuffle) bar.append(el("span", null, "· random order"));
     }
 
     const pager = $("#pager");
@@ -396,14 +416,19 @@
         const a = el("a", `tag-type-${type}${tag === "tagme" ? " tagme" : ""}`, tag);
         a.href = "#";
         a.title = `Filter by ${tag}`;
-        a.addEventListener("click", (e) => { e.preventDefault(); closePost(); toggleTerm(tag); });
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          hideModal();
+          history.replaceState(null, "", postsHash());
+          toggleTerm(tag);
+        });
         cloud.appendChild(a);
       }
     }
     return cloud;
   }
 
-  function openPost(id) {
+  function openPost(id, { push = true } = {}) {
     const idx = currentResults().findIndex((p) => p.id === id);
     const post = posts.find((p) => p.id === id);
     if (!post) return;
@@ -418,13 +443,13 @@
     if (idx > 0) {
       const p = el("button", null, "←");
       p.title = "Previous post";
-      p.addEventListener("click", () => openPost(currentResults()[idx - 1].id));
+      p.addEventListener("click", () => openPost(currentResults()[idx - 1].id, { push: false }));
       nav.appendChild(p);
     }
     if (idx > -1 && idx < currentResults().length - 1) {
       const n = el("button", null, "→");
       n.title = "Next post";
-      n.addEventListener("click", () => openPost(currentResults()[idx + 1].id));
+      n.addEventListener("click", () => openPost(currentResults()[idx + 1].id, { push: false }));
       nav.appendChild(n);
     }
     head.appendChild(nav);
@@ -490,7 +515,6 @@
     const rows = [
       ["File", post.fileSize],
       ["Dimensions", `${post.width} × ${post.height}`],
-      ["Resolution", `${post.width} × ${post.height}`],
       ["Area", mpLabel],
       ["Format", post.type === "video" ? "MP4 (HTML5)" : "Image"],
       ["Rating", RATING_LABEL[post.rating]],
@@ -538,13 +562,15 @@
     form.append(el("p", "policy", "Comments live only in this tab. Refreshing the page forgets everything."));
     submit.addEventListener("click", (e) => {
       e.preventDefault();
-      if (!ta.value.trim()) { toast("Write something first.", "…"); return; }
-      commentsFor(post).push({ who: "you", body: ta.value.trim(), when: "just now" });
+      const text = ta.value.trim();
+      if (!text) { toast("Write something first.", "…"); return; }
+      commentsFor(post).push({ who: "you", body: text, when: "just now" });
       ta.value = "";
       comSec.querySelector("h3").textContent = `Comments (${commentsFor(post).length})`;
       const li = el("li");
-      li.append(el("span", "when", "just now"), el("span", "who", "you"), el("div", null, ta.value || ""));
+      li.append(el("span", "when", "just now"), el("span", "who", "you"), el("div", null, text));
       list.appendChild(li);
+      ta.focus();
       toast("Comment posted. The shrine is unmoved.", "✎");
     });
     comSec.appendChild(form);
@@ -555,37 +581,75 @@
 
     $("#post-view").hidden = false;
     document.body.style.overflow = "hidden";
+    modalId = id;
+    if (push) history.pushState({ post: id }, "", "#post/" + id);
     close.focus();
   }
 
-  function closePost() {
+  // hide without touching history — used when the location change already did
+  function hideModal() {
     const v = document.querySelector("#post-media video");
     if (v) v.pause();
     $("#post-view").hidden = true;
     document.body.style.overflow = "";
+    modalId = null;
   }
 
-  // ── hash routing (so Back closes the post view) ─────────────────────
-  function syncHash() {
-    const q = state.terms.join(" ");
-    const hash = q ? `#posts?${encodeURIComponent(q)}` : "#posts";
-    if (location.hash !== hash) history.replaceState(null, "", hash);
-  }
-
-  function readHash() {
-    const h = location.hash.slice(1) || "posts";
-    if (h.startsWith("post/")) {
-      state.terms = [];
-      openPost(Number(h.slice(5)));
-      return true;
+  // Close at the user's request. If we pushed the #post entry ourselves, step
+  // back through history so Back/Forward stay coherent; if we arrived on a
+  // shared post link there is nothing to go back to, so just replace the URL.
+  function closePost() {
+    if (modalId === null) return;
+    if (history.state && history.state.post) {
+      hideModal();
+      history.back();
+    } else {
+      hideModal();
+      history.replaceState(null, "", postsHash());
     }
+  }
+  // ── routing ─────────────────────────────────────────────────────────
+  // The post view is a real URL (#post/ID) so it can be shared, bookmarked and
+  // closed with Back. state.modalId is the source of truth for what's open.
+  let modalId = null;
+  // the first render happens before the incoming URL is read, and would
+  // otherwise rewrite a shared #post/ID link to #posts before we see it
+  let booting = true;
+
+  const postsHash = () => {
+    const q = state.terms.join(" ");
+    return q ? `#posts?${encodeURIComponent(q)}` : "#posts";
+  };
+
+  function syncHash() {
+    // an open post owns the URL; don't let a re-render clobber it
+    if (modalId !== null || booting) return;
+    if (location.hash !== postsHash()) history.replaceState(null, "", postsHash());
+  }
+
+  // Single entry point for both hashchange and popstate, so Back/Forward and a
+  // shared link drive exactly the same code path.
+  function syncFromLocation() {
+    const h = location.hash.slice(1) || "posts";
+
+    if (h.startsWith("post/")) {
+      const id = Number(h.slice(5));
+      if (id !== modalId) openPost(id, { push: false });
+      return;
+    }
+
+    // any non-post URL means the view should be closed
+    if (modalId !== null) hideModal();
+
     const [section, query] = h.split("?");
     if (section && section !== "posts") {
       toast(`${section[0].toUpperCase()}${section.slice(1)} is a beautiful lie. Showing posts.`, "※");
       history.replaceState(null, "", "#posts" + (query ? "?" + query : ""));
     }
     state.terms = query ? parseTags(decodeURIComponent(query)) : [];
-    return false;
+    state.shuffle = false;
+    $("#tags").value = state.terms.join(" ");
+    render();
   }
 
   // the grid is sized to the viewport, so a resize changes how many previews
@@ -596,9 +660,8 @@
     resizeTimer = setTimeout(reflow, 150);
   });
 
-  window.addEventListener("hashchange", () => {
-    if (!readHash()) { $("#tags").value = state.terms.join(" "); render(); }
-  });
+  window.addEventListener("hashchange", syncFromLocation);
+  window.addEventListener("popstate", syncFromLocation);
 
   $("#post-view").addEventListener("click", (e) => { if (e.target.id === "post-view") closePost(); });
   document.addEventListener("keydown", (e) => {
@@ -612,12 +675,18 @@
   $("#search-form").addEventListener("submit", (e) => {
     e.preventDefault();
     state.terms = parseTags($("#tags").value);
+    state.shuffle = false;
     state.page = 1;
     render();
   });
 
   for (const b of document.querySelectorAll("#rating-row button")) {
-    b.addEventListener("click", () => { state.rating = b.dataset.rating; state.page = 1; render(); });
+    b.addEventListener("click", () => {
+      state.rating = b.dataset.rating;
+      state.shuffle = false;
+      state.page = 1;
+      render();
+    });
   }
 
   for (const b of document.querySelectorAll("#size-picker button")) {
@@ -685,9 +754,9 @@
     a.addEventListener("click", (e) => {
       e.preventDefault();
       const kind = a.getAttribute("href").slice(1);
-      if (kind === "hot") { state.terms = parseTags("order:rank"); }
-      else if (kind === "popular") { state.terms = parseTags("order:favs"); }
-      else if (kind === "random") { state.terms = []; state.page = 1 + Math.floor(Math.random() * 3); }
+      if (kind === "hot") { state.terms = parseTags("order:rank"); state.shuffle = false; }
+      else if (kind === "popular") { state.terms = parseTags("order:favs"); state.shuffle = false; }
+      else if (kind === "random") { state.terms = []; state.shuffle = true; state.shuffleOrder = shuffled(posts.map((p) => p.id)); }
       else if (kind === "count") { toast(`${currentResults().length} posts match. That is the count.`, "Σ"); return; }
       state.page = 1;
       $("#tags").value = state.terms.join(" ");
@@ -815,13 +884,14 @@
   // ── boot ────────────────────────────────────────────────────────────
   renderStats();
   renderCategoryToggles();
-  readHash();
-  $("#tags").value = state.terms.join(" ");
   for (const o of document.querySelectorAll("#size-picker button")) {
     o.classList.toggle("on", Number(o.dataset.size) === state.size);
   }
   perPage = capacity();
   reflow();
+  // apply the incoming URL last, so a shared #post/ID or ?tags= link is honoured
+  syncFromLocation();
+  booting = false;
 
   // self-test runs last, so it can assert against the real rendered layout
   if (location.search.includes("selftest") || window.FUMO_RUN_SELFTEST) {
