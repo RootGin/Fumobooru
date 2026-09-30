@@ -164,8 +164,39 @@ textarea { resize: vertical; min-height: 5em; }
 
 #search-form { display: flex; gap: 0.3em; }
 #search-form button { flex: 0 0 auto; }
+#search-field { position: relative; flex: 1 1 auto; min-width: 0; }
 .search-hint { color: var(--text-faint); font-size: 0.8em; margin-top: 0.4em; }
 .search-hint code { background: var(--surface-2); padding: 0 0.3em; border-radius: 3px; }
+
+#tag-suggest {
+  position: absolute;
+  top: calc(100% + 0.2em);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  list-style: none;
+  margin: 0;
+  padding: 0.2em;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  font-size: 0.85em;
+}
+#tag-suggest[hidden] { display: none; }
+#tag-suggest .suggest-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--tag-general);
+}
+#tag-suggest .suggest-row .n { color: var(--text-faint); margin-left: auto; }
+#tag-suggest .suggest-row.on { background: var(--surface-3); color: var(--tag-general-hot); }
 
 #mode-select { margin-bottom: 0.5em; }
 .rating-row { display: flex; gap: 0.25em; margin-top: 0.5em; }
@@ -206,9 +237,13 @@ textarea { resize: vertical; min-height: 5em; }
 
 #tag-list { display: block; }
 .tag-items { display: flex; flex-wrap: wrap; gap: 0.15em 0.5em; }
-.tag-list-item { font-size: 0.85em; }
-.tag-list-item .n { color: var(--text-faint); font-size: 0.85em; margin-left: 0.2em; }
+.tag-list-item { font-size: 0.85em; display: inline-flex; align-items: baseline; gap: 0.2em; }
+.tag-list-item .n { color: var(--text-faint); font-size: 0.85em; }
 .tag-list-item.dim { opacity: 0.45; }
+
+.minus { color: var(--text-faint); font-weight: 700; cursor: pointer; }
+.minus:hover { color: var(--crimson); }
+.tag-cloud a { display: inline-flex; align-items: baseline; gap: 0.15em; }
 
 #category-toggles { display: flex; flex-direction: column; gap: 0.3em; }
 #category-toggles label { display: flex; align-items: center; gap: 0.45em; cursor: pointer; }
@@ -337,6 +372,15 @@ textarea { resize: vertical; min-height: 5em; }
   color: var(--text-faint);
 }
 .empty-state h3 { color: var(--text-dim); margin: 0 0 0.4em; }
+.empty-state .dym { color: var(--text-dim); }
+.empty-state .linkish {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--tag-general);
+  text-decoration: underline;
+}
+.empty-state .linkish:hover { background: none; color: var(--tag-general-hot); }
 
 #pager { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.3em; margin-top: 1em; }
 #pager button.on { background: var(--crimson); border-color: var(--crimson); color: #fff; }
@@ -399,9 +443,23 @@ textarea { resize: vertical; min-height: 5em; }
 }
 
 .post-body { display: flex; align-items: flex-start; gap: 1em; padding: 1em; }
+/* media + the link to the original, stacked. The wrapper is what keeps the
+   absolutely-positioned .post-full centred on the placeholder: the link must
+   not be a flex sibling of the image or the centring maths moves. */
+.post-main { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: .6em; }
+.post-main .orig-link {
+  font-size: .85em; color: var(--text-dim); text-decoration: none; white-space: nowrap;
+  border: 1px solid var(--border); border-radius: 999px; padding: .25em .9em;
+  background: var(--surface-2);
+}
+.post-main .orig-link:hover { color: var(--gold); border-color: var(--gold); text-decoration: none; }
+.post-main .orig-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 #post-media {
-  flex: 1;
+  /* a column item now, so it sizes to its own content: flex:1 would ask for
+     a zero basis and let the placeholder's height go missing */
+  flex: 0 0 auto;
   min-width: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -418,10 +476,17 @@ textarea { resize: vertical; min-height: 5em; }
 }
 #post-media video { outline: 2px solid var(--gold); }
 
-/* While a full-size image decodes, hold the layout with the already-cached
+/* While the mid-size image decodes, hold the layout with the already-cached
    thumbnail and cross-fade to the real thing. Both have the same aspect ratio
-   and the same max constraints, so the boxes coincide exactly. */
+   and the same max constraints, so the boxes coincide exactly. Once faded in,
+   the placeholder is only hidden, not removed: it is the only thing giving
+   this box a height, since .post-full is out of flow. */
 #post-media .media-ph {
+  /* full width so this box ends up the exact size .post-full renders at:
+     without it the placeholder keeps its 300px and the image, which is out of
+     flow, hangs out of a box a third of its height and gets clipped */
+  width: 100%;
+  object-fit: cover;
   max-width: 100%;
   max-height: 76vh;
   filter: blur(14px) saturate(0.65) brightness(0.75);
@@ -437,6 +502,7 @@ textarea { resize: vertical; min-height: 5em; }
   opacity: 0;
   transition: opacity 0.22s ease;
 }
+#post-media:not(.loading) .media-ph { visibility: hidden; }
 #post-media .post-full.ready { opacity: 1; }
 #post-media.loading::after {
   content: "";
@@ -460,6 +526,7 @@ textarea { resize: vertical; min-height: 5em; }
 .post-side { flex: 0 0 300px; max-width: 300px; }
 @media (max-width: 860px) {
   .post-body { flex-direction: column; }
+  .post-main { width: 100%; }
   .post-side { flex: 1; max-width: none; width: 100%; }
 }
 
@@ -542,6 +609,44 @@ a.tag-type-meta:hover      { color: var(--tag-meta-hot); }
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 #toast .spell { color: var(--gold); }
+
+.spell-card {
+  position: fixed;
+  top: 20vh;
+  left: 50%;
+  z-index: 70;
+  pointer-events: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  max-width: 92vw;
+  padding: 0.45em 1.1em;
+  background: var(--surface-3);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  color: var(--gold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font: 600 clamp(1rem, 0.9rem + 1vw, 1.5rem)/1.25 Georgia, "Times New Roman", serif;
+  animation: spell-card 1.7s ease forwards;
+}
+.spell-card .quote { color: var(--text); }
+
+@keyframes spell-card {
+  0%   { opacity: 0; transform: translate(-50%, -1em) scale(0.94); }
+  12%  { opacity: 1; transform: translate(-50%, 0) scale(1); }
+  72%  { opacity: 1; transform: translate(-50%, 0) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -0.4em) scale(1); }
+}
+@keyframes spell-card-fade {
+  0%, 72% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spell-card { animation-name: spell-card-fade; }
+}
 
 /* ── responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 780px) {

@@ -9,23 +9,25 @@
 <!-- Social preview tags.
      Discord, Slack, Twitter and Facebook fetch this file WITHOUT running
      JavaScript, so og:image and og:url have to be absolute and written here.
-     If your Vercel domain differs from the one below, change SITE_URL in
-     these six URLs and nothing else. app.js also rewrites them at runtime
-     from the real origin, so a local file:// copy stays self-consistent. -->
+     Every value below that involves a URL, a size or a count is written by
+     make-thumbs.py: change SITE_URL there, not these tags. A per-post link
+     gets its own document at p/<id>.html, because a crawler never sees the
+     #post/<id> hash. app.js also rewrites the tags at runtime from the real
+     origin, so a local file:// copy stays self-consistent. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fumobooru">
 <meta property="og:title" content="Fumobooru — a booru for plush">
 <meta property="og:description" content="A purely static, lovingly unhelpful booru for plush. 158 photos of Touhou plush dolls, taggable and searchable.">
 <meta property="og:url" content="https://fumobooru.vercel.app/">
-<meta property="og:image" content="https://fumobooru.vercel.app/fumos/143-photo.jpg">
+<meta property="og:image" content="https://fumobooru.vercel.app/card.jpg">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="720">
-<meta property="og:image:height" content="540">
-<meta property="og:image:alt" content="A row of identical plush dolls lined up on a bed.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Touhou, cat ears, blonde hair">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Fumobooru — a booru for plush">
 <meta name="twitter:description" content="A purely static, lovingly unhelpful booru for plush. 158 photos of Touhou plush dolls, taggable and searchable.">
-<meta name="twitter:image" content="https://fumobooru.vercel.app/fumos/143-photo.jpg">
+<meta name="twitter:image" content="https://fumobooru.vercel.app/card.jpg">
 <meta name="theme-color" content="#0e1015">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%230e1015'/><circle cx='8' cy='7' r='4' fill='%23e0483f'/><rect x='5' y='10' width='6' height='5' fill='%23e8c15a'/></svg>">
@@ -54,13 +56,17 @@
     <section id="search-box">
       <h2>Search</h2>
       <form id="search-form">
-        <input type="text" id="tags" name="tags" placeholder="e.g. reimu_hakurei shrine" autocomplete="off" autocapitalize="none" spellcheck="false">
+        <div id="search-field">
+          <input type="text" id="tags" name="tags" placeholder="e.g. reimu_hakurei shrine" autocomplete="off" autocapitalize="none" spellcheck="false" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="tag-suggest">
+          <ul id="tag-suggest" role="listbox" aria-label="Tag suggestions" hidden></ul>
+        </div>
         <button type="submit" title="Search">🔍</button>
       </form>
       <div id="active-tags"></div>
       <p class="search-hint">
-        Space = AND · <code>-tag</code> excludes · <code>rating:s</code> filters ·
-        <code>order:score</code> sorts
+        Space = AND · <code>-tag</code> excludes · <code>*</code> wildcards
+        (<code>*_hakurei</code>) · <code>rating:s</code> filters ·
+        <code>order:score</code> sorts · <code>fav:me</code> is your hat
       </p>
     </section>
 
@@ -81,7 +87,7 @@
     </section>
 
     <section id="tag-box">
-      <h2>Tags</h2>
+      <h2 id="tag-box-title">Tags</h2>
       <div id="category-toggles"></div>
       <div id="tag-list"></div>
     </section>
@@ -92,6 +98,7 @@
         <li><a href="#hot">Hot</a></li>
         <li><a href="#popular">Popular</a></li>
         <li><a href="#random">Random</a></li>
+        <li><a href="#favs">Favourites</a></li>
         <li><a href="#count">Count</a></li>
       </ul>
     </section>
@@ -101,7 +108,8 @@
       <dl class="stat-list" id="site-stats"></dl>
       <p class="sidebar-note">
         A static parody. No database, no accounts, no network calls — everything
-        on this page comes from <code>fumosData.js</code>.
+        comes from <code>fumosData.js</code>. The hat is the exception:
+        favourites are kept in this browser, so they survive a refresh.
       </p>
     </section>
 

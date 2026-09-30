@@ -28,6 +28,13 @@
     return n;
   };
 
+  const FAV_KEY = "fumobooru.favs";
+  function loadFavs() {
+    try { return new Set(JSON.parse(localStorage.getItem(FAV_KEY) || "[]")); }
+    catch { return new Set(); }
+  }
+  const saveFavs = () => { try { localStorage.setItem(FAV_KEY, JSON.stringify([...state.favs])); } catch {} };
+
   // ── state ───────────────────────────────────────────────────────────
   const state = {
     terms: [],          // raw query terms, "-" prefixed for exclusion
@@ -40,7 +47,7 @@
     shuffle: false,       // random ordering, cleared by any filter change
     shuffleOrder: null,   // stable across re-renders, so the grid doesn't jump
     votes: {},          // postId -> -1 | 0 | 1
-    favs: new Set(),
+    favs: loadFavs(),
     comments: {},       // postId -> [{who, when, body}]
     page: 1,
   };
@@ -88,16 +95,22 @@
     return a;
   }
 
-  function tagCounts() {
+  function tagCounts(list) {
     const counts = {};
-    for (const p of posts) {
+    for (const p of list) {
       for (const t of TAG_TYPES) {
         for (const tag of p.tags[t] || []) counts[tag] = (counts[tag] || 0) + 1;
       }
     }
     return counts;
   }
-  const COUNTS = tagCounts();
+  const COUNTS = tagCounts(posts);
+  const ALL_TAGS = Object.keys(COUNTS).sort((a, b) => COUNTS[b] - COUNTS[a] || a.localeCompare(b));
+
+  const TAG_TYPE = {};
+  for (const p of posts) {
+    for (const t of TAG_TYPES) for (const tag of p.tags[t] || []) TAG_TYPE[tag] = t;
+  }
 
   function typeCounts() {
     const c = {};
@@ -110,10 +123,21 @@
   const parseTags = (raw) =>
     raw.split(/[\s+]+/).map((s) => s.trim().toLowerCase()).filter(Boolean);
 
+  const GLOBS = new Map();
+  function globOf(pattern) {
+    let re = GLOBS.get(pattern);
+    if (!re) {
+      const body = pattern.replace(/[.+?^${}()|[\]\\]/g, "\\$&").split("*").join(".*");
+      GLOBS.set(pattern, re = new RegExp("^" + body + "$"));
+    }
+    return re;
+  }
+
   // A term matches a tag on whole underscore-segments only, so "bow" does not
   // hit "big_bow" but "reimu" does hit "reimu_hakurei".
   const termHitsTag = (term, tag) =>
-    tag === term || tag.startsWith(term + "_") || term.startsWith(tag + "_");
+    term.includes("*") ? globOf(term).test(tag)
+      : tag === term || tag.startsWith(term + "_") || term.startsWith(tag + "_");
 
   // Does a post satisfy every search term? Supports "x -y rating:s order:score".
   function matches(post, terms) {
@@ -122,6 +146,10 @@
       if (term.startsWith("order:")) continue;
       if (term.startsWith("rating:")) {
         if (post.rating !== term.slice(7)) return false;
+        continue;
+      }
+      if (term === "fav:me") {
+        if (!state.favs.has(post.id)) return false;
         continue;
       }
       if (term.startsWith("-")) {
@@ -153,6 +181,37 @@
     return list;
   }
 
+  function levenshtein(a, b) {
+    if (a === b) return 0;
+    let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+    for (let i = 1; i <= a.length; i++) {
+      const row = [i];
+      for (let j = 1; j <= b.length; j++) {
+        row[j] = Math.min(
+          prev[j] + 1,                                   // delete
+          row[j - 1] + 1,                                // insert
+          prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)  // substitute
+        );
+      }
+      prev = row;
+    }
+    return prev[b.length];
+  }
+
+  function didYouMean(term) {
+    if (term.length < 3) return [];
+    const budget = term.length > 8 ? 3 : 2;
+    return ALL_TAGS
+      .map((t) => [levenshtein(term, t), t])
+      .filter(([d]) => d > 0 && d <= budget)
+      .sort((x, y) => x[0] - y[0] || COUNTS[y[1]] - COUNTS[x[1]])
+      .slice(0, 3)
+      .map(([, t]) => t);
+  }
+
+  const deadTerms = () => state.terms.filter(
+    (t) => !t.startsWith("-") && !t.includes(":") && !posts.some((p) => matches(p, [t])));
+
   // ── parody toast ────────────────────────────────────────────────────
   let toastTimer;
   function toast(msg, spell) {
@@ -165,11 +224,22 @@
     toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
   }
 
+  function spellCard(terms) {
+    const signs = terms.filter((t) => !t.startsWith("-") && !t.includes(":"));
+    const [head, ...rest] = signs;
+    if (!head || !rest.length) return;
+    const n = el("div", "spell-card");
+    n.append(el("span", "sign", human(head) + " Sign"),
+             el("span", "quote", "「" + rest.map(human).join(" × ") + "」"));
+    document.body.appendChild(n);
+    n.addEventListener("animationend", () => n.remove());
+  }
+
   // ── sidebar ─────────────────────────────────────────────────────────
-  // The OG/Twitter tags in index.html are static and absolute, because social
-  // crawlers don't execute JS. This keeps them honest for anything reading the
-  // live DOM (and for a file:// copy), and points the image at the post being
-  // viewed so a copied link previews the right thing in a live tab.
+  // Crawlers read p/<id>.html (make-thumbs.py writes one per post) because
+  // they never see the hash, so the static tags in index.html only have to
+  // cover the bare site. This keeps the live DOM honest for anything reading
+  // it — and for a file:// copy, where nothing is absolute at all.
   function syncSocialMeta() {
     const web = location.protocol === "http:" || location.protocol === "https:";
     // off the web there's nothing to absolutise against, and overwriting the
@@ -177,9 +247,9 @@
     if (!web) return;
     // the hash is never sent to a server, so og:url is the canonical page
     const url = location.origin + location.pathname;
-    const img = location.origin + "/" + (modalId !== null
-      ? (posts.find((p) => p.id === modalId) || {}).src
-      : site.socialImage);
+    const post = modalId === null ? null : posts.find((p) => p.id === modalId);
+    // the mid, not src: a copied link should not preview a 2.2MB PNG
+    const img = location.origin + "/" + (post ? post.mid || site.socialImage : site.socialImage);
     if (!img) return;
     const set = (sel, val) => { const n = document.querySelector(sel); if (n) n.setAttribute("content", val); };
     set('meta[property="og:url"]', url);
@@ -222,15 +292,39 @@
     }
   }
 
-  function renderTagList() {
+  function wireTag(node, tag, before) {
+    node.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (before) before();
+      if (e.altKey) toggleTerm(tag, "-");
+      else toggleTerm(tag);
+    });
+    return node;
+  }
+
+  function minusNode(tag) {
+    const m = el("span", "minus", "−");
+    m.title = `Exclude ${tag}`;
+    m.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleTerm(tag, "-");
+    });
+    return m;
+  }
+
+  function renderTagList(results) {
     const box = $("#tag-list");
     box.textContent = "";
     const active = new Set(state.terms.filter((t) => !t.startsWith("-") && !t.includes(":")));
+    const counts = tagCounts(results);
+    $("#tag-box-title").textContent =
+      state.terms.length || state.rating !== "all" ? "Related tags" : "Tags";
 
     for (const type of TAG_TYPES) {
-      const tags = [...new Set(posts.flatMap((p) => p.tags[type] || []))]
-        .filter((t) => COUNTS[t] > 0)
-        .sort((a, b) => COUNTS[b] - COUNTS[a] || a.localeCompare(b));
+      if (!state.showTypes.has(type)) continue;
+      const tags = ALL_TAGS.filter((t) => counts[t] && TAG_TYPE[t] === type)
+        .sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
       if (!tags.length) continue;
 
       const group = el("div", "tag-group");
@@ -240,15 +334,17 @@
 
       const items = el("div", "tag-items");
       for (const tag of tags) {
-        const a = el("a", `tag-type-${type}${active.has(tag) ? "" : " dim"}`, tag);
+        const a = el("a", `tag-list-item tag-type-${type}${active.has(tag) ? "" : " dim"}`, tag);
         a.href = "#";
-        a.append(el("span", "n", String(COUNTS[tag])));
-        a.addEventListener("click", (e) => { e.preventDefault(); toggleTerm(tag); });
+        a.title = `Filter by ${tag} (alt-click to exclude)`;
+        a.append(el("span", "n", String(counts[tag])), minusNode(tag));
+        wireTag(a, tag);
         items.appendChild(a);
       }
       group.appendChild(items);
       box.appendChild(group);
     }
+    if (!box.children.length) box.append(el("p", "sidebar-note", "No tags in this list."));
   }
 
   function renderActiveTags() {
@@ -272,9 +368,10 @@
     }
   }
 
-  function toggleTerm(tag) {
-    const i = state.terms.indexOf(tag);
-    state.terms = i === -1 ? [...state.terms, tag] : state.terms.filter((t) => t !== tag);
+  function toggleTerm(tag, prefix = "") {
+    const term = prefix + tag;
+    const i = state.terms.indexOf(term);
+    state.terms = i === -1 ? [...state.terms, term] : state.terms.filter((t) => t !== term);
     state.shuffle = false;
     state.page = 1;
     $("#tags").value = state.terms.join(" ");
@@ -363,6 +460,22 @@
       const empty = el("div", "empty-state");
       empty.append(el("h3", null, "No posts found"));
       empty.append(el("p", null, "The rumbling of the danmaku has stopped. Try fewer tags."));
+      for (const term of deadTerms()) {
+        const near = didYouMean(term);
+        if (!near.length) continue;
+        const line = el("p", "dym");
+        line.append("Did you mean: ");
+        for (const t of near) {
+          const b = el("button", "linkish", t);
+          b.addEventListener("click", () => {
+            state.terms = state.terms.map((x) => (x === term ? t : x));
+            $("#tags").value = state.terms.join(" ");
+            render();
+          });
+          line.append(b, " ");
+        }
+        empty.appendChild(line);
+      }
       const b = el("button", null, "Reset filters");
       b.addEventListener("click", clearFilters);
       empty.appendChild(b);
@@ -405,27 +518,48 @@
       pager.appendChild(next);
     }
 
-    renderTagList();
+    renderTagList(results);
     renderActiveTags();
     syncHash();
   }
 
   // ── post view ───────────────────────────────────────────────────────
   const MOCK_COMMENTS = [
-    ["spell_practice", "these danmaku don't even reach the plush"],
+    ["spell_practice", "these danmaku don't even reach {character}'s seam"],
     ["aura_user", "the hat is doing all the work here"],
-    ["th10_gremlin", "post-q quality, would stack again"],
-    ["bunny_cat", "bought one of these on a dare. regrets nothing."],
-    ["mod_beacon", "nice framing, the shrine reads well"],
+    ["th10_gremlin", "{character} looks smug. The hat approves."],
+    ["bunny_cat", "bought {character} on a dare. regrets nothing."],
+    ["mod_beacon", "nice framing, {character} reads well against the shrine"],
     ["ichiban_fan", "P-Items farming arc continues"],
+    ["sakuya_maid", "the {general} carries this one, not the plush"],
+    ["ran_yukkuri", "{character} again, {general} again. no complaints."],
+    ["yuyuko_offer", "if the {general} is this good, {character} owes you a favour"],
+    ["komachi_lamp", "put {second} next to {character} and tell me that isn't a set"],
   ];
+
+  const human = (tag) => tag.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+  function commentVars(post) {
+    const chars = (post.tags.character || []).map(human);
+    const gen = (post.tags.general || []).filter((t) => t !== "plush" && t !== "photo" && t !== "tagme");
+    return {
+      character: chars[0] || "this plush",
+      second: chars[1] || "a second plush",
+      general: (gen[post.id % (gen.length || 1)] || "sewing").replace(/_/g, " "),
+    };
+  }
 
   function commentsFor(post) {
     if (!state.comments[post.id]) {
       const n = Math.min(post.comments, MOCK_COMMENTS.length);
+      const vars = commentVars(post);
       state.comments[post.id] = Array.from({ length: n }, (_, i) => {
-        const [who, body] = MOCK_COMMENTS[(post.id + i * 5) % MOCK_COMMENTS.length];
-        return { who, body, when: `2026-0${1 + i}-1${i + 2} 0${i}:1${i}` };
+        const [who, body] = MOCK_COMMENTS[(post.id + i * 3) % MOCK_COMMENTS.length];
+        return {
+          who,
+          body: body.replace(/\{(\w+)\}/g, (m, key) => vars[key] || m),
+          when: `2026-0${1 + i}-1${i + 2} 0${i}:1${i}`,
+        };
       });
     }
     return state.comments[post.id];
@@ -437,13 +571,8 @@
       for (const tag of post.tags[type] || []) {
         const a = el("a", `tag-type-${type}${tag === "tagme" ? " tagme" : ""}`, tag);
         a.href = "#";
-        a.title = `Filter by ${tag}`;
-        a.addEventListener("click", (e) => {
-          e.preventDefault();
-          hideModal();
-          writeHash(postsHash());
-          toggleTerm(tag);
-        });
+        a.title = `Filter by ${tag} (alt-click to exclude)`;
+        wireTag(a, tag, () => { hideModal(); writeHash(postsHash()); });
         cloud.appendChild(a);
       }
     }
@@ -461,19 +590,17 @@
     if (target) openPost(target.id, { history: "replace" });
   }
 
-  // Warm the neighbouring full-size images so ←/→ and swipe feel instant.
+  // Warm the next post's mid-size image so → and swipe feel instant. Only
+  // forward, and only the mid: preloading both neighbours meant two full
+  // sources, one of which was a 2.2MB PNG.
   function preloadNeighbours() {
     const list = currentResults();
-    const idx = list.findIndex((p) => p.id === modalId);
-    const neighbours = [list[idx - 1], list[idx + 1]].filter(Boolean);
-    if (!neighbours.length) return;
+    const next = list[list.findIndex((p) => p.id === modalId) + 1];
+    if (!next) return;
     const warm = () => {
-      for (const p of neighbours) {
-        if (p.type !== "image") continue;
-        const img = new Image();
-        img.src = p.src;
-        if (img.decode) img.decode().catch(() => {});
-      }
+      const img = new Image();
+      img.src = next.mid || next.src;
+      if (img.decode) img.decode().catch(() => {});
     };
     // don't compete with the image currently being shown
     if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 1500 });
@@ -483,7 +610,7 @@
   function openPost(id, { history: mode = "replace", from = null } = {}) {
     const idx = currentResults().findIndex((p) => p.id === id);
     const post = posts.find((p) => p.id === id);
-    if (!post) return;
+    if (!post) return openMissing(id);
     // remember the thumbnail that opened this, so focus can go back to it.
     // taken from the click target rather than activeElement, because Safari
     // does not focus an element on click
@@ -518,7 +645,12 @@
     const copy = el("button", "copy-link", "🔗 Copy link");
     copy.title = "Copy a direct link to this post";
     copy.addEventListener("click", async () => {
-      const link = location.href;
+      // On the web, hand out p/<id>.html rather than the #post/<id> hash: a
+      // crawler never receives the hash, so only the stub previews the right
+      // image. It redirects to the real thing, so the link still opens the post.
+      const link = /^https?:$/.test(location.protocol)
+        ? location.origin + location.pathname.replace(/[^/]*$/, "") + `p/${post.id}.html`
+        : location.href;
       const done = () => toast("Link copied. It points straight at this post.", "🔗");
       try {
         if (navigator.clipboard && window.isSecureContext) {
@@ -552,8 +684,10 @@
 
     // media + sidebar
     const body = el("div", "post-body");
+    const main = el("div", "post-main");
     const media = el("div", null, null);
     media.id = "post-media";
+    main.append(media);
 
     if (post.type === "video") {
       // the browser shows the poster until the video is ready, so no spinner:
@@ -577,18 +711,29 @@
       }
       const img = el("img", "post-full");
       img.alt = allTags(post).join(" ");
+      // the placeholder stays, just hidden: .post-full is out of flow, so it is
+      // the only thing giving #post-media a height
       const ready = () => {
         img.classList.add("ready");
         media.classList.remove("loading");
-        const ph = media.querySelector(".media-ph");
-        if (ph) ph.remove();
       };
       img.addEventListener("load", ready, { once: true });
       img.addEventListener("error", ready, { once: true });
-      img.src = post.src;
+      // the mid is a 1600px webp: full enough for the 76vh post view, small
+      // enough that a phone photo does not cost 2MB to open
+      img.src = post.mid || post.src;
       if (img.complete) ready();
       media.appendChild(img);
     }
+
+    // the original, for anyone who wants it. Sits under the image, not over
+    // it: over a video it would cover the controls.
+    const orig = el("a", "orig-link", "View original");
+    orig.href = post.src;
+    orig.target = "_blank";
+    orig.rel = "noopener";
+    orig.title = `${post.width} × ${post.height} · ${post.fileSize}`;
+    main.append(orig);
 
     // horizontal swipe to move between posts
     let sx = 0, sy = 0, swiping = false;
@@ -604,7 +749,7 @@
     });
     media.addEventListener("pointercancel", () => { swiping = false; });
 
-    body.appendChild(media);
+    body.appendChild(main);
 
     const side = el("div", "post-side");
 
@@ -633,6 +778,7 @@
     fav.addEventListener("click", () => {
       if (state.favs.has(post.id)) { state.favs.delete(post.id); toast("Removed from the hat."); }
       else { state.favs.add(post.id); toast("Plush placed in the hat. It fits perfectly.", "🃏"); }
+      saveFavs();
       fav.textContent = state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat";
       fav.classList.toggle("on", state.favs.has(post.id));
       render();
@@ -722,6 +868,36 @@
     close.focus();
   }
 
+  function openMissing(id) {
+    const box = $("#post-container");
+    box.textContent = "";
+
+    const head = el("header");
+    head.append(el("span", "title", `Post #${id}`), el("span", "spacer"));
+    const close = el("button", "close", "×");
+    close.setAttribute("aria-label", "Close");
+    close.addEventListener("click", closePost);
+    head.appendChild(close);
+    box.appendChild(head);
+
+    const empty = el("div", "empty-state");
+    empty.append(el("h3", null, "This post does not exist"));
+    empty.append(el("p", null,
+      `Nothing in the archive answers to #${id}. It may have been deleted, or the link may have been mistyped.`));
+    const back = el("button", null, "Back to posts");
+    back.addEventListener("click", closePost);
+    empty.appendChild(back);
+    box.appendChild(empty);
+
+    $("#post-view").hidden = false;
+    document.body.style.overflow = "hidden";
+    modalId = null;
+    missingId = id;
+    writeHash("#post/" + id, "replace", { post: id });
+    syncSocialMeta();
+    close.focus();
+  }
+
   // hide without touching history — used when the location change already did
   function hideModal() {
     const v = document.querySelector("#post-media video");
@@ -731,6 +907,7 @@
     $("#post-view").hidden = true;
     document.body.style.overflow = "";
     modalId = null;
+    missingId = null;
     syncSocialMeta();
     // Hand focus back to the thumbnail that opened this. Focus it now for the
     // paths that don't re-render, and remember the post id as well: closing via
@@ -746,7 +923,7 @@
   // back through history so Back/Forward stay coherent; if we arrived on a
   // shared post link there is nothing to go back to, so just replace the URL.
   function closePost() {
-    if (modalId === null) return;
+    if (modalId === null && missingId === null) return;
     if (history.state && history.state.post) {
       hideModal();
       history.back();
@@ -759,6 +936,7 @@
   // The post view is a real URL (#post/ID) so it can be shared, bookmarked and
   // closed with Back. state.modalId is the source of truth for what's open.
   let modalId = null;
+  let missingId = null;
   // popstate AND hashchange both fire for one history.back(), so the sync
   // handler must be idempotent per URL or the grid re-renders twice and the
   // second render detaches whatever the first one focused
@@ -782,7 +960,7 @@
 
   function syncHash() {
     // an open post owns the URL; don't let a re-render clobber it
-    if (modalId !== null || booting) return;
+    if (modalId !== null || missingId !== null || booting) return;
     if (location.hash !== postsHash()) writeHash(postsHash());
   }
 
@@ -802,7 +980,7 @@
     }
 
     // any non-post URL means the view should be closed
-    if (modalId !== null) hideModal();
+    if (modalId !== null || missingId !== null) hideModal();
 
     const [section, query] = h.split("?");
     if (section && section !== "posts") {
@@ -865,17 +1043,97 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !$("#post-view").hidden) closePost();
     if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
-      e.preventDefault(); $("#tags").focus();
+      e.preventDefault(); $("#tags").focus(); renderSuggest();
     }
   });
 
   // ── wiring ──────────────────────────────────────────────────────────
-  $("#search-form").addEventListener("submit", (e) => {
-    e.preventDefault();
+  function commitSearch() {
     state.terms = parseTags($("#tags").value);
     state.shuffle = false;
     state.page = 1;
     render();
+    spellCard(state.terms);
+  }
+  $("#search-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    closeSuggest();
+    commitSearch();
+  });
+
+  const $tags = $("#tags");
+  let suggest = [];
+  let suggestAt = -1;
+
+  function lastToken() {
+    const v = $tags.value;
+    const i = v.search(/\S+$/);
+    return i === -1 ? { word: "", at: v.length } : { word: v.slice(i).toLowerCase(), at: i };
+  }
+
+  function paintSuggest() {
+    [...$("#tag-suggest").children].forEach((row, i) => row.classList.toggle("on", i === suggestAt));
+    $tags.setAttribute("aria-activedescendant", suggestAt === -1 ? "" : "sug-" + suggestAt);
+  }
+
+  function closeSuggest() {
+    suggest = [];
+    suggestAt = -1;
+    $("#tag-suggest").hidden = true;
+    $("#tag-suggest").textContent = "";
+    $tags.setAttribute("aria-expanded", "false");
+  }
+
+  function renderSuggest() {
+    const { word } = lastToken();
+    const bare = word.replace(/^-/, "");
+    suggest = bare.length < 2 ? []
+      : ALL_TAGS.filter((t) => t.includes(bare)).slice(0, 12);
+    suggestAt = suggest.length ? 0 : -1;
+
+    const box = $("#tag-suggest");
+    box.textContent = "";
+    box.hidden = !suggest.length;
+    $tags.setAttribute("aria-expanded", String(!!suggest.length));
+    for (const [i, tag] of suggest.entries()) {
+      const row = el("li", "suggest-row");
+      row.id = "sug-" + i;
+      row.setAttribute("role", "option");
+      row.append(el("span", "sw", tag), el("span", "n", String(COUNTS[tag])), minusNode(tag));
+      row.addEventListener("mousedown", (e) => e.preventDefault());
+      wireTag(row, tag);
+      box.appendChild(row);
+    }
+    paintSuggest();
+  }
+
+  function pickSuggest(i) {
+    const tag = suggest[i];
+    if (!tag) return;
+    const { word, at } = lastToken();
+    $tags.value = $tags.value.slice(0, at) + (word.startsWith("-") ? "-" : "") + tag + " ";
+    closeSuggest();
+    commitSearch();
+    $tags.focus();
+  }
+
+  $tags.addEventListener("input", renderSuggest);
+  $tags.addEventListener("click", renderSuggest);
+  $tags.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      if (!suggest.length) return;
+      e.preventDefault();
+      suggestAt = (suggestAt + (e.key === "ArrowDown" ? 1 : suggest.length - 1)) % suggest.length;
+      paintSuggest();
+    } else if ((e.key === "Enter" || e.key === "Tab") && suggest.length) {
+      e.preventDefault();
+      pickSuggest(suggestAt);
+    } else if (e.key === "Escape") {
+      closeSuggest();
+    }
+  });
+  $("#search-form").addEventListener("focusout", (e) => {
+    if (!$("#search-form").contains(e.relatedTarget)) closeSuggest();
   });
 
   for (const b of document.querySelectorAll("#rating-row button")) {
@@ -905,15 +1163,16 @@
   $("#mode-select").addEventListener("change", (e) => {
     state.mode = e.target.value;
     if (state.mode === "view") return;
+    const n = currentResults().length;
     const labels = {
       edit: "Quick edit is a spell you have not learned. Nothing was changed.",
-      "add-fav": "Bulk-favourite: every visible plush is now in the hat. (Locally.)",
-      "remove-fav": "Bulk-unfavourite: the hat is empty again.",
+      "add-fav": `Bulk-favourite: all ${n} matching posts are in the hat, not just this page. (Locally.)`,
+      "remove-fav": `Bulk-unfavourite: the hat is empty again. (All ${n} matching posts, in case that mattered.)`,
     };
     toast(labels[state.mode]);
     if (state.mode === "add-fav") currentResults().forEach((p) => state.favs.add(p.id));
     if (state.mode === "remove-fav") state.favs.clear();
-    if (state.mode === "view") return render();
+    saveFavs();
     e.target.value = "view";
     render();
   });
@@ -955,6 +1214,7 @@
       if (kind === "hot") { state.terms = parseTags("order:rank"); state.shuffle = false; }
       else if (kind === "popular") { state.terms = parseTags("order:favs"); state.shuffle = false; }
       else if (kind === "random") { state.terms = []; state.shuffle = true; state.shuffleOrder = shuffled(posts.map((p) => p.id)); }
+      else if (kind === "favs") { state.terms = parseTags("fav:me"); state.shuffle = false; }
       else if (kind === "count") { toast(`${currentResults().length} posts match. That is the count.`, "Σ"); return; }
       state.page = 1;
       $("#tags").value = state.terms.join(" ");
@@ -989,6 +1249,10 @@
     const rel = (s, dir) => typeof s === "string" && s.startsWith(dir) && !s.startsWith("/");
     t("every post has a relative src", posts.every((p) => rel(p.src, "fumos/")));
     t("every post has a relative thumb", posts.every((p) => rel(p.thumb, "thumbs/")));
+    // videos have no mid, and neither do the sources already smaller than one
+    t("every mid is a relative path", posts.every((p) => p.mid === undefined || rel(p.mid, "mids/")));
+    t("a post never views more bytes than its original", posts.every((p) =>
+      p.mid === undefined || p.midBytes < p.srcBytes));
 
     // sharing contract: a link encodes tags or a post id, never the page, so it
     // still means the same thing on a phone as on a desktop
@@ -1019,6 +1283,91 @@
     t("segment matching: prefix still hits", (() => {
       const p = posts.find((x) => allTags(x).includes("reimu_hakurei"));
       return !p || matches(p, ["reimu"]);
+    })());
+    t("wildcards: *_hakurei hits only hakurei", (() => {
+      const isHaku = (x) => x.endsWith("_hakurei");
+      const hit = posts.filter((p) => matches(p, ["*_hakurei"]));
+      const other = posts.find((p) => !allTags(p).some(isHaku));
+      return hit.length > 0 && hit.every((p) => allTags(p).some(isHaku)) &&
+        (!other || !matches(other, ["*_hakurei"]));
+    })());
+    t("wildcards: negated too", (() => {
+      const isHaku = (x) => x.endsWith("_hakurei");
+      return posts.every((p) => !matches(p, ["-*_hakurei"]) || !allTags(p).some(isHaku));
+    })());
+    t("fav:me keeps only the hat", (() => {
+      const saved = [...state.favs];
+      state.favs = new Set([posts[0].id, posts[1].id]);
+      const hit = posts.filter((p) => matches(p, ["fav:me"]));
+      state.favs = new Set(saved);
+      return hit.length === 2 && hit.every((p) => p.id === posts[0].id || p.id === posts[1].id);
+    })());
+    t("levenshtein: known distances", levenshtein("abc", "abc") === 0 && levenshtein("abc", "abd") === 1 &&
+      levenshtein("abc", "ab") === 1 && levenshtein("kitten", "sitting") === 3);
+    t("did you mean finds the typo'd tag", didYouMean("remiu_hakurei").includes("reimu_hakurei") &&
+      !didYouMean("reimu_hakurei").includes("reimu_hakurei"));
+    t("sidebar shows related tags only, with local counts", (() => {
+      const all = document.querySelectorAll("#tag-list .tag-list-item").length;
+      const saved = state.terms;
+      state.terms = ["reimu_hakurei"];
+      render();
+      const narrow = [...document.querySelectorAll("#tag-list .tag-list-item")];
+      const ok = narrow.length > 0 && narrow.length < all &&
+        narrow.every((n) => n.classList.contains("dim") || n.textContent.startsWith("reimu_hakurei")) &&
+        narrow.every((n) => posts.filter((p) => matches(p, ["reimu_hakurei"]))
+          .some((p) => allTags(p).includes(n.firstChild.textContent)));
+      state.terms = saved;
+      $("#tags").value = saved.join(" ");
+      render();
+      return ok;
+    })());
+    t("a bad post id opens a not-found state, not nothing", (() => {
+      const was = location.hash;
+      openPost(999999, { history: "none" });
+      const shown = !$("#post-view").hidden && /does not exist/.test($("#post-container").textContent);
+      hideModal();
+      writeHash(was || "#posts", "replace", null);
+      state.terms = [];
+      $("#tags").value = "";
+      render();
+      return shown && $("#post-view").hidden;
+    })());
+    t("comment templates are filled in, never left as {placeholders}", (() => {
+      const bodies = posts.flatMap((p) => commentsFor(p).map((c) => c.body));
+      return bodies.length > 0 && !bodies.some((b) => /\{\w+\}/.test(b));
+    })());
+    t("the hat survives a round trip through storage", (() => {
+      const saved = [...state.favs];
+      try {
+        state.favs = new Set([posts[0].id]);
+        saveFavs();
+        const back = loadFavs();
+        return back.size === 1 && back.has(posts[0].id);
+      } catch {
+        return false;
+      } finally {
+        state.favs = new Set(saved);
+        saveFavs();
+      }
+    })());
+    t("a multi-tag search declares a spell card, a single tag does not", (() => {
+      const value = $("#tags").value, terms = state.terms;
+      $("#tags").value = "reimu_hakurei big_bow";
+      commitSearch();
+      const card = document.querySelector(".spell-card");
+      const said = card && /Reimu Hakurei Sign/.test(card.textContent) && /「Big Bow」/.test(card.textContent);
+      const clear = () => document.querySelectorAll(".spell-card").forEach((n) => n.remove());
+      clear();
+      spellCard(["reimu_hakurei", "-big_bow"]);
+      const withExclusion = !!document.querySelector(".spell-card");
+      clear();
+      spellCard(["reimu_hakurei"]);
+      const solo = !!document.querySelector(".spell-card");
+      clear();
+      state.terms = terms;
+      $("#tags").value = value;
+      render();
+      return !!said && !withExclusion && !solo;
     })());
     t("AND semantics: unrelated term rejects the post", (() => {
       // pick a term sharing no underscore-segment prefix with anything the post has
@@ -1090,6 +1439,18 @@
     const brokenThumbs = posts.filter((_, i) => !thumbResults[i]).map((p) => p.thumb);
     t(`all ${posts.length} thumbs load (${brokenThumbs.length} broken)`, brokenThumbs.length === 0);
     if (brokenThumbs.length) out.append("  broken thumbs: " + brokenThumbs.join(", ") + "\n");
+
+    // and the mids, since that is what the post view and the preload now read
+    const mids = posts.filter((p) => p.mid);
+    const midResults = await Promise.all(mids.map((p) => new Promise((res) => {
+      const img = new Image();
+      img.onload = () => res(true);
+      img.onerror = () => res(false);
+      img.src = p.mid;
+    })));
+    const brokenMids = mids.filter((_, i) => !midResults[i]).map((p) => p.mid);
+    t(`all ${mids.length} mids load (${brokenMids.length} broken)`, brokenMids.length === 0);
+    if (brokenMids.length) out.append("  broken mids: " + brokenMids.join(", ") + "\n");
 
     out.append(`\n${failed ? failed + " FAILING" : "all checks passed"} (${posts.length} posts)\n`);
     document.title = failed ? `SELFTEST FAIL ${failed}` : "SELFTEST PASS";
