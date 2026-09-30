@@ -1,7 +1,8 @@
 Fumobooru
 =========
 
-A static parody of a Danbooru-style booru, themed around Touhou Project plush.
+A static parody of a Danbooru-style booru, themed around plush, mostly Touhou
+Project.
 
 Licensing
 ---------
@@ -31,10 +32,19 @@ endorsed by, or connected to the Danbooru Project or danbooru.donmai.us.
 Assets
 ------
 
-Files in fumos/ are photographs of Touhou Project merchandise. They are
-included for personal, non-commercial use only and remain the property of
-their respective creators and rights holders. They are not covered by the
-LICENSE above; the license covers the source code in this repository only.
+Files in fumos/ are photographs of plush merchandise. They are included for
+personal, non-commercial use only and remain the property of their respective
+creators and rights holders. They are not covered by the LICENSE above; the
+license covers the source code in this repository only.
 
-Touhou Project characters are copyright ZUN / Shanghai Alice, and are used
-here without permission or endorsement.
+The collection is mostly Touhou Project, but not entirely: it also contains
+plush of characters and franchises unrelated to the Touhou Project, which
+belong to their own rights holders. Touhou Project characters are copyright
+ZUN / Shanghai Alice. Nothing in this repository is a claim on any of them,
+and nothing is used with permission or endorsement.
+
+The three sound effects here — p-item.wav, se_extend.wav and se_cancel00.wav —
+are unmodified files from Touhou Eiyashou: Imperishable Night (PC,
+"Miscellaneous" sound effects), copyright ZUN / Shanghai Alice, used without
+permission. Two keep their original names; p-item.wav is se_item00.wav,
+byte-for-byte, renamed because the site calls the thing a P-Item.
