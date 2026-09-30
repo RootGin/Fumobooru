@@ -611,7 +611,50 @@
     ["ran_yukkuri", "{character} again, {general} again. no complaints."],
     ["yuyuko_offer", "if the {general} is this good, {character} owes you a favour"],
     ["komachi_lamp", "put {second} next to {character} and tell me that isn't a set"],
+    ["plush_hoarder", "a {general} plush is a genre and this is a strong entry"],
+    ["seam_stresser", "stitch count on {character} could mean business"],
+    ["tag_wrangler", "unclear if this is {character} or a very committed {general}"],
+    ["danmaku_dan", "{character} would never. which is exactly why it works."],
+    ["shrine_clerk", "offering box was full and I'm still not {character}"],
+    ["hat_apologist", "the hat stays. the hat always stays."],
+    ["button_bearer", "one button, one eye, zero complaints about {general}"],
+    ["ribbon_coil", "{second} and {character} in the same frame. illegal."],
+    ["pocket_pal", "this {general} is doing more for {character} than I am"],
+    ["plushie_purist", "no hat. finally. a clean {character}"],
+    ["sew_serene", "four hours in the {general} alone. worth it for {character}"],
+    ["mochi_moth", "{character} under lamp light is a whole mood"],
+    ["lantern_lore", "the {general} placement is historically accurate"],
+    ["glass_eye", "that eye is doing more work than {character} is"],
+    ["velour_vision", "velvet reads differently in every shot of {second}"],
+    ["pnpm_wraith", "third {character} this week. the arc is consistent."],
+    ["thumb_tester", "{general} is crisp here, softer on {second}"],
+    ["archive_archivist", "this one's going in the {general} pile. top shelf."],
+    ["fiber_fiend", "{character} survived the wash. legend."],
+    ["cloud_9", "the {general} and {second} combo is unfair and I support it"],
   ];
+
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+
+  const COMMENT_STEPS = Array.from({ length: MOCK_COMMENTS.length - 1 }, (_, k) => k + 1)
+    .filter((s) => gcd(s, MOCK_COMMENTS.length) === 1);
+
+  const COMMENT_GAPS = [7, 41, 190, 640, 1500, 3100, 5200, 9000, 14400, 20100];
+
+  const scramble = (n) => {
+    let h = (n ^ 0x9e3779b9) >>> 0;
+    h = Math.imul(h ^ (h >>> 16), 0x21f0aaad) >>> 0;
+    h = Math.imul(h ^ (h >>> 15), 0x735a2d97) >>> 0;
+    return (h ^ (h >>> 15)) >>> 0;
+  };
+
+  const uploadedAt = (stamp) => {
+    const m = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})$/.exec(stamp || "");
+    return m ? new Date(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]) : null;
+  };
+
+  const clockOf = (d) =>
+    `${d.getFullYear()}-${`${d.getMonth() + 1}`.padStart(2, "0")}-${`${d.getDate()}`.padStart(2, "0")}` +
+    ` ${`${d.getHours()}`.padStart(2, "0")}:${`${d.getMinutes()}`.padStart(2, "0")}`;
 
   const human = (tag) => tag.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
@@ -629,12 +672,17 @@
     if (!state.comments[post.id]) {
       const n = Math.min(post.comments, MOCK_COMMENTS.length);
       const vars = commentVars(post);
+      const h = scramble(post.id);
+      const start = h % MOCK_COMMENTS.length;
+      const step = COMMENT_STEPS[(h >>> 9) % COMMENT_STEPS.length];
+      let at = uploadedAt(post.date);
       state.comments[post.id] = Array.from({ length: n }, (_, i) => {
-        const [who, body] = MOCK_COMMENTS[(post.id + i * 3) % MOCK_COMMENTS.length];
+        const [who, body] = MOCK_COMMENTS[(start + i * step) % MOCK_COMMENTS.length];
+        if (at) at = new Date(at.getTime() + COMMENT_GAPS[scramble(post.id * 131 + i) % COMMENT_GAPS.length] * 60000);
         return {
           who,
           body: body.replace(/\{(\w+)\}/g, (m, key) => vars[key] || m),
-          when: `2026-0${1 + i}-1${i + 2} 0${i}:1${i}`,
+          when: at ? clockOf(at) : "just now",
         };
       });
     }
