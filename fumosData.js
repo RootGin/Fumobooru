@@ -5,7 +5,7 @@ window.FUMO_DATA = {
   "site": {
     "name": "Fumobooru",
     "tagline": "The place where plush circulate",
-    "posts": 739,
+    "posts": 741,
     "tags": 318,
     "users": 34,
     "artists": 1,
@@ -33705,6 +33705,84 @@ window.FUMO_DATA = {
       "midRecipe": "auto-orient strip fit1600 webp q80 m6",
       "mid": "mids/739-pinterest_9922061675720334_3261740037.webp",
       "midBytes": 157046
+    },
+    {
+      "id": 901740,
+      "type": "image",
+      "src": "fumos/740-reimuFumo.jpg",
+      "width": 1920,
+      "height": 1080,
+      "date": "2026-09-30 23:35",
+      "source": "local://Downloads",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 139,
+      "pitems": 1,
+      "favs": 39,
+      "comments": 2,
+      "views": 13911,
+      "thumb": "thumbs/740-reimuFumo.webp",
+      "srcMtime": 1790786152421,
+      "srcBytes": 155750,
+      "fileSize": "152 KB",
+      "thumbBytes": 3994,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "mid": "mids/740-reimuFumo.webp",
+      "midBytes": 47606,
+      "midRecipe": "auto-orient strip fit1600 webp q80 m6"
+    },
+    {
+      "id": 901741,
+      "type": "image",
+      "src": "fumos/741-reimuFumo.webp",
+      "width": 500,
+      "height": 500,
+      "date": "2026-09-30 23:35",
+      "source": "local://Downloads",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 83,
+      "pitems": 2,
+      "favs": 108,
+      "comments": 0,
+      "views": 2467,
+      "thumb": "thumbs/741-reimuFumo.webp",
+      "srcMtime": 1790786152421,
+      "srcBytes": 30178,
+      "fileSize": "29 KB",
+      "thumbBytes": 10254,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: source is already smaller"
     }
   ]
 };
