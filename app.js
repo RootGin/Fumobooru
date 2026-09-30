@@ -642,6 +642,17 @@
     } catch {}
   }
 
+  const CANCEL_AUDIO = "se_cancel00.wav";
+  const cancelAudio = new Audio(CANCEL_AUDIO);
+  cancelAudio.preload = "auto";
+  function cancelSound() {
+    if (state.muted) return;
+    try {
+      cancelAudio.currentTime = 0;
+      cancelAudio.play().catch(() => {});
+    } catch {}
+  }
+
   const CONFETTI = ["✦", "◆", "●", "▲", "■"];
   function confetti(box) {
     for (let i = 0; i < 15; i++) {
@@ -680,7 +691,10 @@
         toast("Unlocked. Every blurred post, permanently. Nothing was charged.", "🔓");
         render();
       });
-      never.addEventListener("click", () => checkout.close());
+      never.addEventListener("click", () => {
+        cancelSound();
+        checkout.close();
+      });
       const row = el("div", "checkout-row");
       row.append(go, never);
       checkout.append(perks, row);
@@ -1637,6 +1651,10 @@
     t("the unlock burst is se_extend, not a re-pitched P-Item", (() => {
       return unlockAudio.getAttribute("src") === "se_extend.wav" &&
         unlockAudio.playbackRate === 1;
+    })());
+    t("backing out of the checkout plays se_cancel00, unpitched", (() => {
+      return cancelAudio.getAttribute("src") === "se_cancel00.wav" &&
+        cancelAudio.playbackRate === 1;
     })());
     t("locked posts are badged and blurred, and stay that way", (() => {
       const was = state.subscribed;
