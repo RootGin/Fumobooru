@@ -39,6 +39,22 @@
   const loadMuted = () => { try { return localStorage.getItem(MUTE_KEY) === "1"; } catch { return false; } };
   const saveMuted = () => { try { localStorage.setItem(MUTE_KEY, state.muted ? "1" : "0"); } catch {} };
 
+  const SUB_KEY = "fumobooru.subscribed";
+  const loadSub = () => { try { return localStorage.getItem(SUB_KEY) === "1"; } catch { return false; } };
+  const saveSub = () => { try { localStorage.setItem(SUB_KEY, state.subscribed ? "1" : "0"); } catch {} };
+
+  const PITEM_KEY = "fumobooru.pitems";
+  const PITEM_START = 12;
+  function loadPitems() {
+    try {
+      const raw = localStorage.getItem(PITEM_KEY);
+      if (raw === null) return PITEM_START;
+      const n = JSON.parse(raw);
+      return Number.isFinite(n) ? Math.max(0, Math.min(PITEM_START, Math.trunc(n))) : PITEM_START;
+    } catch { return PITEM_START; }
+  }
+  const savePitems = () => { try { localStorage.setItem(PITEM_KEY, JSON.stringify(state.pitems)); } catch {} };
+
   // ── state ───────────────────────────────────────────────────────────
   const state = {
     terms: [],          // raw query terms, "-" prefixed for exclusion
@@ -53,6 +69,8 @@
     votes: {},          // postId -> -1 | 0 | 1
     favs: loadFavs(),
     muted: loadMuted(),
+    subscribed: loadSub(),
+    pitems: loadPitems(),
     comments: {},       // postId -> [{who, when, body}]
     page: 1,
   };
@@ -444,11 +462,18 @@
     fig.setAttribute("role", "button");
     fig.setAttribute("aria-label", `Post ${post.id}: ${allTags(post).slice(0, 3).join(", ")}`);
 
+    const locked = isLocked(post);
+    if (locked) {
+      fig.classList.add("locked");
+      fig.setAttribute("aria-label", `Post ${post.id}: subscribers only`);
+    }
+
     if (post.type === "video") fig.append(el("span", "preview-badge", "▶ VIDEO"));
     if (state.favs.has(post.id)) fig.append(el("span", "preview-badge fav", "★ FAVED"));
     if (state.showVotes) {
       fig.append(el("span", "preview-score", `P-${post.score + (state.votes[post.id] || 0)}`));
     }
+    if (locked) fig.append(el("span", "preview-badge lock", "🔒 Subscribers only"));
 
     // the grid draws the small webp; the post view still uses the full `src`
     const isVideo = post.type === "video";
@@ -468,9 +493,10 @@
       media.loading = "lazy";
       media.decoding = "async";
     }
+    if (locked) media.style.filter = `blur(${lockBlur(post)}px)`;
     fig.appendChild(media);
 
-    const open = () => PostView.open(post.id, { history: "push", from: fig });
+    const open = () => (locked ? openCheckout(fig) : PostView.open(post.id, { history: "push", from: fig }));
     fig.addEventListener("click", open);
     fig.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
@@ -599,6 +625,70 @@
       s.addEventListener("animationend", () => s.remove());
       document.body.appendChild(s);
     }
+  }
+
+  const LOCK_PCT = 15;
+  const isLocked = (post) => !state.subscribed && scramble(post.id ^ 0x10c4) % 100 < LOCK_PCT;
+  const lockBlur = (post) => 7 + (scramble(post.id ^ 0xb10b) % 9);
+
+  const UNLOCK_AUDIO = "p-item.wav";
+  const unlockAudio = new Audio(UNLOCK_AUDIO);
+  unlockAudio.preload = "auto";
+  function unlockSound() {
+    if (state.muted) return;
+    try {
+      unlockAudio.currentTime = 0;
+      unlockAudio.playbackRate = 1.35;
+      unlockAudio.play().catch(() => {});
+    } catch {}
+  }
+
+  const CONFETTI = ["✦", "◆", "●", "▲", "■"];
+  function confetti(box) {
+    for (let i = 0; i < 15; i++) {
+      const s = el("span", "confetti", CONFETTI[i % CONFETTI.length]);
+      s.style.left = box.left + box.width / 2 + (i - 7) * 9 + "px";
+      s.style.top = box.top + box.height / 2 + "px";
+      s.style.setProperty("--dx", (i * 41) % 130 - 65 + "px");
+      s.style.animationDelay = i * 40 + "ms";
+      s.addEventListener("animationend", () => s.remove());
+      document.body.appendChild(s);
+    }
+  }
+
+  let checkout;
+  function openCheckout(anchor) {
+    if (!checkout) {
+      checkout = el("dialog", "checkout");
+      checkout.append(
+        el("h2", null, "OnlyFumos"),
+        el("p", "checkout-sub", "The internet's least exclusive club."),
+        el("p", "checkout-price", "$0.00/month, cancel never"),
+      );
+      const perks = el("ul", "checkout-perks");
+      for (const perk of ["Every blurred post, unlocked at once", "Unlimited P-Items to tip with", "A terms-of-service page we did not write"]) {
+        perks.append(el("li", null, perk));
+      }
+      const go = el("button", "checkout-go", "Subscribe");
+      const never = el("button", "checkout-no", "No thanks");
+      go.addEventListener("click", () => {
+        const box = go.getBoundingClientRect();
+        state.subscribed = true;
+        saveSub();
+        checkout.close();
+        confetti(box);
+        unlockSound();
+        toast("Unlocked. Every blurred post, permanently. Nothing was charged.", "🔓");
+        render();
+      });
+      never.addEventListener("click", () => checkout.close());
+      const row = el("div", "checkout-row");
+      row.append(go, never);
+      checkout.append(perks, row);
+      document.body.appendChild(checkout);
+    }
+    checkout.showModal();
+    if (anchor) anchor.focus();
   }
   const MOCK_COMMENTS = [
     ["spell_practice", "these danmaku don't even reach {character}'s seam"],
@@ -831,6 +921,18 @@
       orig.target = "_blank";
       orig.rel = "noopener";
       orig.title = `${post.width} × ${post.height} · ${post.fileSize}`;
+
+      if (isLocked(post)) {
+        media.classList.add("locked");
+        for (const node of media.children) node.style.filter = `blur(${lockBlur(post) * 1.6}px)`;
+        const cover = el("div", "lock-cover");
+        cover.append(el("span", "lock-cta", "🔒 Subscribers only"));
+        const cta = el("button", "lock-btn", `Unlock everything — $0.00/month`);
+        cta.addEventListener("click", () => openCheckout(cta));
+        cover.append(cta, el("p", "lock-fine", "One payment. Every blurred post. Cancel never, because there is nothing to cancel."));
+        main.append(cover);
+      }
+
       main.append(orig);
 
       // horizontal swipe to move between posts
@@ -875,6 +977,26 @@
       vote.append(up, count, down);
       side.appendChild(vote);
       side.append(el("p", "policy-note", "P-Items are imaginary currency. Casting one changes nothing but this number."));
+
+      const tip = el("button", "tip-btn", `🔺 Tip the fumo — ${state.pitems} P-Item${state.pitems === 1 ? "" : "s"}`);
+      const spent = () => {
+        tip.textContent = `🔺 Tip the fumo — ${state.pitems} P-Item${state.pitems === 1 ? "" : "s"}`;
+        tip.classList.toggle("off", state.pitems <= 0);
+      };
+      tip.addEventListener("click", (e) => {
+        if (state.pitems <= 0) {
+          toast("No P-Items left. The fumo is understanding.");
+          return;
+        }
+        state.pitems--;
+        savePitems();
+        spent();
+        confetti(e.currentTarget);
+        unlockSound();
+        toast("The fumo says thank you. It does not have a mouth.", "✦");
+      });
+      spent();
+      side.appendChild(tip);
 
       // parody favourite
       const fav = el("button", "fav-btn" + (state.favs.has(post.id) ? " on" : ""),
@@ -1512,6 +1634,77 @@
     t("comment templates are filled in, never left as {placeholders}", (() => {
       const bodies = posts.flatMap((p) => commentsFor(p).map((c) => c.body));
       return bodies.length > 0 && !bodies.some((b) => /\{\w+\}/.test(b));
+    })());
+    t("locked posts are badged and blurred, and stay that way", (() => {
+      const was = state.subscribed;
+      state.subscribed = false;
+      const locked = posts.filter(isLocked);
+      const ok = locked.length > 0 && locked.length * 4 < posts.length &&
+        locked.every((p) => {
+          const fig = previewNode(p);
+          return fig.classList.contains("locked") &&
+            !!fig.querySelector(".preview-badge.lock") &&
+            /blur\(\d+px\)/.test(fig.querySelector(".post-preview-image").style.filter);
+        }) &&
+        posts.map((p) => isLocked(p)).join() === posts.map((p) => isLocked(p)).join();
+      state.subscribed = was;
+      return ok;
+    })());
+    t("one subscription unlocks every locked post at once", (() => {
+      const was = state.subscribed;
+      state.subscribed = false;
+      const before = posts.filter(isLocked).length;
+      state.subscribed = true;
+      const after = posts.filter(isLocked).length;
+      state.subscribed = was;
+      return before > 0 && after === 0;
+    })());
+    t("the checkout quotes $0.00/month, cancel never", (() => {
+      openCheckout(null);
+      const text = checkout.textContent;
+      checkout.close();
+      return /\$0\.00\/month, cancel never/.test(text);
+    })());
+    t("tipping spends a P-Item, and the wallet floors at zero", (() => {
+      const wasP = state.pitems, wasHash = location.hash;
+      try {
+        state.pitems = 2;
+        PostView.open(posts[0].id, { history: "none" });
+        const tip = document.querySelector(".tip-btn");
+        tip.click();
+        tip.click();
+        tip.click();
+        return state.pitems === 0 && tip.classList.contains("off");
+      } finally {
+        state.pitems = wasP;
+        PostView.hide();
+        writeHash(wasHash || "#posts", "replace", null);
+        render();
+      }
+    })());
+    t("the P-Item wallet survives storage and refuses to go negative", (() => {
+      const was = state.pitems;
+      try {
+        state.pitems = 5;
+        savePitems();
+        const back = loadPitems();
+        localStorage.setItem(PITEM_KEY, "-9");
+        return back === 5 && loadPitems() === 0;
+      } finally {
+        localStorage.removeItem(PITEM_KEY);
+        state.pitems = was;
+      }
+    })());
+    t("the unlock persists, so a reload does not re-lock anything", (() => {
+      const was = state.subscribed;
+      try {
+        state.subscribed = true;
+        saveSub();
+        return localStorage.getItem(SUB_KEY) === "1" && loadSub() === true;
+      } finally {
+        localStorage.removeItem(SUB_KEY);
+        state.subscribed = was;
+      }
     })());
     t("the hat survives a round trip through storage", (() => {
       const saved = [...state.favs];
