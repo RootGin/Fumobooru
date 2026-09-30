@@ -707,7 +707,6 @@
   window.fumo = () => {
     const art = ($("#fumo-art") || {}).textContent || "";
     console.log(art.trim() || "no art found");
-    return art.trim();
   };
   const MOCK_COMMENTS = [
     ["spell_practice", "these danmaku don't even reach {character}'s seam"],
@@ -1959,7 +1958,8 @@
   }
 
   // ── boot ────────────────────────────────────────────────────────────
-  console.log("%cFumobooru", "color:#e8c15a;font:700 13px system-ui", "— type fumo() for a friend.");
+  console.log("%cFumobooru", "color:#e8c15a;font:700 13px system-ui", "— type fumo() to print it again.");
+  window.fumo();
   renderStats();
   renderCategoryToggles();
   for (const o of document.querySelectorAll("#size-picker button")) {
