@@ -631,14 +631,13 @@
   const isLocked = (post) => !state.subscribed && scramble(post.id ^ 0x10c4) % 100 < LOCK_PCT;
   const lockBlur = (post) => 7 + (scramble(post.id ^ 0xb10b) % 9);
 
-  const UNLOCK_AUDIO = "p-item.wav";
+  const UNLOCK_AUDIO = "se_extend.wav";
   const unlockAudio = new Audio(UNLOCK_AUDIO);
   unlockAudio.preload = "auto";
   function unlockSound() {
     if (state.muted) return;
     try {
       unlockAudio.currentTime = 0;
-      unlockAudio.playbackRate = 1.35;
       unlockAudio.play().catch(() => {});
     } catch {}
   }
@@ -1634,6 +1633,10 @@
     t("comment templates are filled in, never left as {placeholders}", (() => {
       const bodies = posts.flatMap((p) => commentsFor(p).map((c) => c.body));
       return bodies.length > 0 && !bodies.some((b) => /\{\w+\}/.test(b));
+    })());
+    t("the unlock burst is se_extend, not a re-pitched P-Item", (() => {
+      return unlockAudio.getAttribute("src") === "se_extend.wav" &&
+        unlockAudio.playbackRate === 1;
     })());
     t("locked posts are badged and blurred, and stay that way", (() => {
       const was = state.subscribed;
