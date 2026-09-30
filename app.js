@@ -35,6 +35,10 @@
   }
   const saveFavs = () => { try { localStorage.setItem(FAV_KEY, JSON.stringify([...state.favs])); } catch {} };
 
+  const MUTE_KEY = "fumobooru.muted";
+  const loadMuted = () => { try { return localStorage.getItem(MUTE_KEY) === "1"; } catch { return false; } };
+  const saveMuted = () => { try { localStorage.setItem(MUTE_KEY, state.muted ? "1" : "0"); } catch {} };
+
   // ── state ───────────────────────────────────────────────────────────
   const state = {
     terms: [],          // raw query terms, "-" prefixed for exclusion
@@ -48,6 +52,7 @@
     shuffleOrder: null,   // stable across re-renders, so the grid doesn't jump
     votes: {},          // postId -> -1 | 0 | 1
     favs: loadFavs(),
+    muted: loadMuted(),
     comments: {},       // postId -> [{who, when, body}]
     page: 1,
   };
@@ -119,54 +124,80 @@
   }
   const TYPE_COUNTS = typeCounts();
 
-  // "+" is the URL-encoded space, so shared links using it must still split
-  const parseTags = (raw) =>
-    raw.split(/[\s+]+/).map((s) => s.trim().toLowerCase()).filter(Boolean);
+  // ── query ───────────────────────────────────────────────────────────
+  // Everything a search term can mean, behind one interface. The secret
+  // vocabulary lives here too, so "is this term special?" is answered in one
+  // place instead of being smeared across the gallery and the renderers.
+  const Query = (() => {
+    // "+" is the URL-encoded space, so shared links using it must still split
+    const parse = (source) =>
+      source.split(/[\s+]+/).map((s) => s.trim().toLowerCase()).filter(Boolean);
 
-  const GLOBS = new Map();
-  function globOf(pattern) {
-    let re = GLOBS.get(pattern);
-    if (!re) {
-      const body = pattern.replace(/[.+?^${}()|[\]\\]/g, "\\$&").split("*").join(".*");
-      GLOBS.set(pattern, re = new RegExp("^" + body + "$"));
-    }
-    return re;
-  }
+    const GLOBS = new Map();
+    const globOf = (pattern) => {
+      let re = GLOBS.get(pattern);
+      if (!re) {
+        const body = pattern.replace(/[.+?^${}()|[\]\\]/g, "\\$&").split("*").join(".*");
+        GLOBS.set(pattern, re = new RegExp("^" + body + "$"));
+      }
+      return re;
+    };
 
-  // A term matches a tag on whole underscore-segments only, so "bow" does not
-  // hit "big_bow" but "reimu" does hit "reimu_hakurei".
-  const termHitsTag = (term, tag) =>
-    term.includes("*") ? globOf(term).test(tag)
-      : tag === term || tag.startsWith(term + "_") || term.startsWith(tag + "_");
+    // A term matches a tag on whole underscore-segments only, so "bow" does not
+    // hit "big_bow" but "reimu" does hit "reimu_hakurei".
+    const termHitsTag = (term, tag) =>
+      term.includes("*") ? globOf(term).test(tag)
+        : tag === term || tag.startsWith(term + "_") || term.startsWith(tag + "_");
 
-  // Does a post satisfy every search term? Supports "x -y rating:s order:score".
-  function matches(post, terms) {
-    const tags = allTags(post).map((t) => t.toLowerCase());
-    for (const term of terms) {
-      if (term.startsWith("order:")) continue;
-      if (term.startsWith("rating:")) {
-        if (post.rating !== term.slice(7)) return false;
-        continue;
+    // Does a post satisfy every search term? Supports "x -y rating:s order:score fav:me".
+    const match = (post, terms) => {
+      const tags = allTags(post).map((t) => t.toLowerCase());
+      for (const term of terms) {
+        if (term.startsWith("order:")) continue;
+        if (term.startsWith("rating:")) {
+          if (post.rating !== term.slice(7)) return false;
+          continue;
+        }
+        if (term === "fav:me") {
+          if (!state.favs.has(post.id)) return false;
+          continue;
+        }
+        if (term.startsWith("-")) {
+          if (tags.some((t) => termHitsTag(term.slice(1), t))) return false;
+        } else if (!tags.some((t) => termHitsTag(term, t))) {
+          return false;
+        }
       }
-      if (term === "fav:me") {
-        if (!state.favs.has(post.id)) return false;
-        continue;
-      }
-      if (term.startsWith("-")) {
-        if (tags.some((t) => termHitsTag(term.slice(1), t))) return false;
-      } else if (!tags.some((t) => termHitsTag(term, t))) {
-        return false;
-      }
-    }
-    return true;
-  }
+      return true;
+    };
+
+    const sortKey = (terms) => {
+      const order = terms.find((t) => t.startsWith("order:"));
+      return order ? order.slice(6) : "id";
+    };
+
+    // Terms that match nothing on their own. A search emptied by a rating
+    // filter has no typo to correct, so only plain terms are considered.
+    const dead = (terms) => terms.filter(
+      (t) => !t.startsWith("-") && !t.includes(":") && !posts.some((p) => match(p, [t])));
+
+    // The secret vocabulary. `explicit` needs the rating actually in force, so
+    // the caller passes it: picking S after typing rating:e should get the
+    // generic message, not be told the shrine is still tame.
+    const secrets = (terms, rating) => ({
+      baka: terms.includes("order:baka"),
+      explicit: rating === "e" || (rating === "all" && terms.includes("rating:e")),
+      nine: terms.includes("cirno") || terms.includes("9"),
+    });
+
+    return { parse, match, sortKey, dead, secrets };
+  })();
 
   function currentResults() {
-    let list = posts.filter((p) => matches(p, state.terms));
+    let list = posts.filter((p) => Query.match(p, state.terms));
     if (state.rating !== "all") list = list.filter((p) => p.rating === state.rating);
 
-    const order = state.terms.find((t) => t.startsWith("order:"));
-    const key = order ? order.slice(6) : "id";
+    const key = Query.sortKey(state.terms);
     const score = (p) => p.score + (state.votes[p.id] || 0) * 2 + (state.favs.has(p.id) ? 3 : 0);
     list = list.slice().sort((a, b) => {
       if (key === "score") return score(b) - score(a);
@@ -175,6 +206,14 @@
       return b.id - a.id;
     });
     if (state.shuffle && state.shuffleOrder) {
+      const rank = new Map(state.shuffleOrder.map((id, i) => [id, i]));
+      list.sort((a, b) => rank.get(a.id) - rank.get(b.id));
+    }
+    // order:baka sorts by nothing in particular, on purpose. It reuses the
+    // same held permutation as Random, so a vote or a favourite doesn't
+    // reshuffle the page under you; only a fresh search deals again.
+    if (Query.secrets(state.terms, state.rating).baka) {
+      if (!state.shuffleOrder) state.shuffleOrder = shuffled(posts.map((p) => p.id));
       const rank = new Map(state.shuffleOrder.map((id, i) => [id, i]));
       list.sort((a, b) => rank.get(a.id) - rank.get(b.id));
     }
@@ -209,9 +248,6 @@
       .map(([, t]) => t);
   }
 
-  const deadTerms = () => state.terms.filter(
-    (t) => !t.startsWith("-") && !t.includes(":") && !posts.some((p) => matches(p, [t])));
-
   // ── parody toast ────────────────────────────────────────────────────
   let toastTimer;
   function toast(msg, spell) {
@@ -228,8 +264,13 @@
     const signs = terms.filter((t) => !t.startsWith("-") && !t.includes(":"));
     const [head, ...rest] = signs;
     if (!head || !rest.length) return;
+    // her name is the number, and the number is her name
+    const name = head === "9" ? "⑨" : human(head);
     const n = el("div", "spell-card");
-    n.append(el("span", "sign", human(head) + " Sign"),
+    // one at a time: they all sit in the same spot, so a fast series of
+    // searches would otherwise pile semi-transparent cards on top of each other
+    document.querySelectorAll(".spell-card").forEach((old) => old.remove());
+    n.append(el("span", "sign", name + " Sign"),
              el("span", "quote", "「" + rest.map(human).join(" × ") + "」"));
     document.body.appendChild(n);
     n.addEventListener("animationend", () => n.remove());
@@ -247,7 +288,8 @@
     if (!web) return;
     // the hash is never sent to a server, so og:url is the canonical page
     const url = location.origin + location.pathname;
-    const post = modalId === null ? null : posts.find((p) => p.id === modalId);
+    const id = PostView.currentId();
+    const post = id === null ? null : posts.find((p) => p.id === id);
     // the mid, not src: a copied link should not preview a 2.2MB PNG
     const img = location.origin + "/" + (post ? post.mid || site.socialImage : site.socialImage);
     if (!img) return;
@@ -428,7 +470,7 @@
     }
     fig.appendChild(media);
 
-    const open = () => openPost(post.id, { history: "push", from: fig });
+    const open = () => PostView.open(post.id, { history: "push", from: fig });
     fig.addEventListener("click", open);
     fig.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
@@ -458,9 +500,14 @@
     bar.textContent = "";
     if (!total) {
       const empty = el("div", "empty-state");
-      empty.append(el("h3", null, "No posts found"));
-      empty.append(el("p", null, "The rumbling of the danmaku has stopped. Try fewer tags."));
-      for (const term of deadTerms()) {
+      if (Query.secrets(state.terms, state.rating).explicit) {
+        empty.append(el("h3", null, "Nothing here rates E"));
+        empty.append(el("p", null, "Every post in the archive is safe or questionable. This shrine is extremely tame."));
+      } else {
+        empty.append(el("h3", null, "No posts found"));
+        empty.append(el("p", null, "The rumbling of the danmaku has stopped. Try fewer tags."));
+      }
+      for (const term of Query.dead(state.terms)) {
         const near = didYouMean(term);
         if (!near.length) continue;
         const line = el("p", "dym");
@@ -486,6 +533,7 @@
         {}), el("span", null, ` of ${total} posts`));
       if (state.terms.length) bar.append(el("span", null, `· filter: ${state.terms.join(" ")}`));
       if (state.shuffle) bar.append(el("span", null, "· random order"));
+      if (Query.secrets(state.terms, state.rating).baka) bar.append(el("span", null, "· nothing in particular"));
     }
 
     const pager = $("#pager");
@@ -523,7 +571,43 @@
     syncHash();
   }
 
-  // ── post view ───────────────────────────────────────────────────────
+  // P-Item sparks, plus the noise of one being cast. The tone is synthesised
+  // rather than shipped: an oscillator is a few lines where an mp3 is a file to
+  // download, host and keep in sync.
+  let audioCtx = null;
+  function pItemSound(up) {
+    if (state.muted) return;
+    try {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      audioCtx = audioCtx || new Ctx();
+      if (audioCtx.state === "suspended") audioCtx.resume();
+      const t = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(up ? 880 : 520, t);
+      osc.frequency.exponentialRampToValueAtTime(up ? 1320 : 392, t + 0.09);
+      gain.gain.setValueAtTime(0.0001, t);
+      gain.gain.exponentialRampToValueAtTime(0.05, t + 0.012);
+      gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.17);
+      osc.connect(gain).connect(audioCtx.destination);
+      osc.start(t);
+      osc.stop(t + 0.2);
+    } catch {}
+  }
+
+  function pSparks(anchor, up) {
+    const box = anchor.getBoundingClientRect();
+    for (let i = 0; i < 3; i++) {
+      const s = el("span", "p-spark", (up ? "+P" : "−P"));
+      s.style.left = box.left + box.width / 2 + (i - 1) * 7 + "px";
+      s.style.top = box.top + box.height / 2 + "px";
+      s.style.animationDelay = i * 70 + "ms";
+      s.addEventListener("animationend", () => s.remove());
+      document.body.appendChild(s);
+    }
+  }
   const MOCK_COMMENTS = [
     ["spell_practice", "these danmaku don't even reach {character}'s seam"],
     ["aura_user", "the hat is doing all the work here"],
@@ -572,371 +656,408 @@
         const a = el("a", `tag-type-${type}${tag === "tagme" ? " tagme" : ""}`, tag);
         a.href = "#";
         a.title = `Filter by ${tag} (alt-click to exclude)`;
-        wireTag(a, tag, () => { hideModal(); writeHash(postsHash()); });
+        wireTag(a, tag, () => { PostView.hide(); writeHash(postsHash()); });
         cloud.appendChild(a);
       }
     }
     return cloud;
   }
 
-  // Move through the current result set. Used by the header buttons, the arrow
-  // keys and swipe, so all three behave identically.
-  function step(delta) {
-    const list = currentResults();
-    const idx = list.findIndex((p) => p.id === modalId);
-    const target = list[idx + delta];
-    // "replace" keeps the URL honest about which post is on screen without
-    // stacking a history entry per keystroke
-    if (target) openPost(target.id, { history: "replace" });
-  }
 
-  // Warm the next post's mid-size image so → and swipe feel instant. Only
-  // forward, and only the mid: preloading both neighbours meant two full
-  // sources, one of which was a 2.2MB PNG.
-  function preloadNeighbours() {
-    const list = currentResults();
-    const next = list[list.findIndex((p) => p.id === modalId) + 1];
-    if (!next) return;
-    const warm = () => {
-      const img = new Image();
-      img.src = next.mid || next.src;
-      if (img.decode) img.decode().catch(() => {});
+  // ── post view ───────────────────────────────────────────────────────
+  // One module owns the post-view DOM and its lifecycle. The five module-level
+  // variables that used to track it (modalId, missingId, lastFocus, focusPostId,
+  // pendingFocusPostId) are now one internal record, and the 264-line openPost
+  // is three builders composed by open().
+  const PostView = (() => {
+    const view = { id: null, missing: null, focus: null, focusId: null, pendingId: null };
+
+    const isOpen = () => view.id !== null || view.missing !== null;
+    const currentId = () => view.id;
+
+    const consumePendingFocus = () => {
+      const id = view.pendingId;
+      view.pendingId = null;
+      return id;
     };
-    // don't compete with the image currently being shown
-    if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 1500 });
-    else setTimeout(warm, 250);
-  }
 
-  function openPost(id, { history: mode = "replace", from = null } = {}) {
-    const idx = currentResults().findIndex((p) => p.id === id);
-    const post = posts.find((p) => p.id === id);
-    if (!post) return openMissing(id);
-    // remember the thumbnail that opened this, so focus can go back to it.
-    // taken from the click target rather than activeElement, because Safari
-    // does not focus an element on click
-    if (modalId === null) {
-      lastFocus = from || document.activeElement;
-      focusPostId = id;
-      pendingFocusPostId = null;
-    }
+    function header(post, idx) {
+      const head = el("header");
+      head.append(el("span", "title", `Post #${post.id}`));
+      head.append(el("span", "spacer"));
+      const nav = el("div", "nav-btns");
+      if (idx > 0) {
+        const p = el("button", null, "←");
+        p.title = "Previous post (Left arrow)";
+        p.addEventListener("click", () => step(-1));
+        nav.appendChild(p);
+      }
+      if (idx > -1 && idx < currentResults().length - 1) {
+        const n = el("button", null, "→");
+        n.title = "Next post (Right arrow)";
+        n.addEventListener("click", () => step(1));
+        nav.appendChild(n);
+      }
+      head.appendChild(nav);
 
-    const box = $("#post-container");
-    box.textContent = "";
-
-    // header
-    const head = el("header");
-    head.append(el("span", "title", `Post #${post.id}`));
-    head.append(el("span", "spacer"));
-    const nav = el("div", "nav-btns");
-    if (idx > 0) {
-      const p = el("button", null, "←");
-      p.title = "Previous post (Left arrow)";
-      p.addEventListener("click", () => step(-1));
-      nav.appendChild(p);
-    }
-    if (idx > -1 && idx < currentResults().length - 1) {
-      const n = el("button", null, "→");
-      n.title = "Next post (Right arrow)";
-      n.addEventListener("click", () => step(1));
-      nav.appendChild(n);
-    }
-    head.appendChild(nav);
-
-    const copy = el("button", "copy-link", "🔗 Copy link");
-    copy.title = "Copy a direct link to this post";
-    copy.addEventListener("click", async () => {
-      // On the web, hand out p/<id>.html rather than the #post/<id> hash: a
-      // crawler never receives the hash, so only the stub previews the right
-      // image. It redirects to the real thing, so the link still opens the post.
-      const link = /^https?:$/.test(location.protocol)
-        ? location.origin + location.pathname.replace(/[^/]*$/, "") + `p/${post.id}.html`
-        : location.href;
-      const done = () => toast("Link copied. It points straight at this post.", "🔗");
-      try {
-        if (navigator.clipboard && window.isSecureContext) {
-          await navigator.clipboard.writeText(link);
-          done();
-        } else {
-          throw new Error("clipboard unavailable");
+      const copy = el("button", "copy-link", "🔗 Copy link");
+      copy.title = "Copy a direct link to this post";
+      copy.addEventListener("click", async () => {
+        // On the web, hand out p/<id>.html rather than the #post/<id> hash: a
+        // crawler never receives the hash, so only the stub previews the right
+        // image. It redirects to the real thing, so the link still opens the post.
+        const link = /^https?:$/.test(location.protocol)
+          ? location.origin + location.pathname.replace(/[^/]*$/, "") + `p/${post.id}.html`
+          : location.href;
+        const done = () => toast("Link copied. It points straight at this post.", "🔗");
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(link);
+            done();
+          } else {
+            throw new Error("clipboard unavailable");
+          }
+        } catch {
+          // file:// and other insecure contexts have no async clipboard, and the
+          // async API rejects without a user gesture in some browsers
+          const ta = el("textarea", "clipboard-shim");
+          ta.value = link;
+          ta.setAttribute("readonly", "");
+          document.body.appendChild(ta);
+          ta.select();
+          let ok = false;
+          try { ok = document.execCommand("copy"); } catch { ok = false; }
+          ta.remove();
+          if (ok) done();
+          else toast("Could not copy. The link is in the address bar.", "…");
         }
-      } catch {
-        // file:// and other insecure contexts have no async clipboard, and the
-        // async API rejects without a user gesture in some browsers
-        const ta = el("textarea", "clipboard-shim");
-        ta.value = link;
-        ta.setAttribute("readonly", "");
-        document.body.appendChild(ta);
-        ta.select();
-        let ok = false;
-        try { ok = document.execCommand("copy"); } catch { ok = false; }
-        ta.remove();
-        if (ok) done();
-        else toast("Could not copy. The link is in the address bar.", "…");
+      });
+      head.appendChild(copy);
+
+      const closeBtn = el("button", "close", "×");
+      closeBtn.setAttribute("aria-label", "Close");
+      closeBtn.addEventListener("click", close);
+      head.appendChild(closeBtn);
+      return { head, close: closeBtn };
+    }
+
+    function media(post) {
+      const main = el("div", "post-main");
+      const media = el("div", null, null);
+      media.id = "post-media";
+      main.append(media);
+
+      if (post.type === "video") {
+        // the browser shows the poster until the video is ready, so no spinner:
+        // waiting on canplay can leave one stuck on screen indefinitely
+        const v = el("video");
+        v.src = post.src;
+        v.poster = post.thumb || "";
+        v.controls = true;
+        v.loop = true;
+        v.autoplay = true;
+        media.appendChild(v);
+      } else {
+        media.classList.add("loading");
+        // hold the box with the cached thumbnail, then cross-fade to full size
+        if (post.thumb) {
+          const ph = el("img", "media-ph");
+          ph.src = post.thumb;
+          ph.alt = "";
+          ph.setAttribute("aria-hidden", "true");
+          media.appendChild(ph);
+        }
+        const img = el("img", "post-full");
+        img.alt = allTags(post).join(" ");
+        // the placeholder stays, just hidden: .post-full is out of flow, so it is
+        // the only thing giving #post-media a height
+        const ready = () => {
+          img.classList.add("ready");
+          media.classList.remove("loading");
+        };
+        img.addEventListener("load", ready, { once: true });
+        img.addEventListener("error", ready, { once: true });
+        // the mid is a 1600px webp: full enough for the 76vh post view, small
+        // enough that a phone photo does not cost 2MB to open
+        img.src = post.mid || post.src;
+        if (img.complete) ready();
+        media.appendChild(img);
       }
-    });
-    head.appendChild(copy);
 
-    const close = el("button", "close", "×");
-    close.setAttribute("aria-label", "Close");
-    close.addEventListener("click", closePost);
-    head.appendChild(close);
-    box.appendChild(head);
+      // the original, for anyone who wants it. Sits under the image, not over
+      // it: over a video it would cover the controls.
+      const orig = el("a", "orig-link", "View original");
+      orig.href = post.src;
+      orig.target = "_blank";
+      orig.rel = "noopener";
+      orig.title = `${post.width} × ${post.height} · ${post.fileSize}`;
+      main.append(orig);
 
-    // media + sidebar
-    const body = el("div", "post-body");
-    const main = el("div", "post-main");
-    const media = el("div", null, null);
-    media.id = "post-media";
-    main.append(media);
+      // horizontal swipe to move between posts
+      let sx = 0, sy = 0, swiping = false;
+      media.addEventListener("pointerdown", (e) => {
+        if (e.target.tagName === "VIDEO") return;
+        sx = e.clientX; sy = e.clientY; swiping = true;
+      });
+      media.addEventListener("pointerup", (e) => {
+        if (!swiping) return;
+        swiping = false;
+        const dx = e.clientX - sx, dy = e.clientY - sy;
+        if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) step(dx < 0 ? 1 : -1);
+      });
+      media.addEventListener("pointercancel", () => { swiping = false; });
 
-    if (post.type === "video") {
-      // the browser shows the poster until the video is ready, so no spinner:
-      // waiting on canplay can leave one stuck on screen indefinitely
-      const v = el("video");
-      v.src = post.src;
-      v.poster = post.thumb || "";
-      v.controls = true;
-      v.loop = true;
-      v.autoplay = true;
-      media.appendChild(v);
-    } else {
-      media.classList.add("loading");
-      // hold the box with the cached thumbnail, then cross-fade to full size
-      if (post.thumb) {
-        const ph = el("img", "media-ph");
-        ph.src = post.thumb;
-        ph.alt = "";
-        ph.setAttribute("aria-hidden", "true");
-        media.appendChild(ph);
-      }
-      const img = el("img", "post-full");
-      img.alt = allTags(post).join(" ");
-      // the placeholder stays, just hidden: .post-full is out of flow, so it is
-      // the only thing giving #post-media a height
-      const ready = () => {
-        img.classList.add("ready");
-        media.classList.remove("loading");
+      return main;
+    }
+
+    function side(post) {
+      const side = el("div", "post-side");
+
+      // parody vote
+      const vote = el("div", "vote-row");
+      const up = el("button", "up" + (state.votes[post.id] === 1 ? " on" : ""), "▲");
+      const count = el("span", "vote-count", String(post.score + (state.votes[post.id] || 0)));
+      const down = el("button", "down" + (state.votes[post.id] === -1 ? " on" : ""), "▼");
+      const cast = (dir, from) => {
+        const prev = state.votes[post.id] || 0;
+        state.votes[post.id] = prev === dir ? 0 : dir;
+        up.classList.toggle("on", state.votes[post.id] === 1);
+        down.classList.toggle("on", state.votes[post.id] === -1);
+        count.textContent = String(post.score + state.votes[post.id]);
+        if (state.votes[post.id] !== 0) {
+          pSparks(from, dir === 1);
+          pItemSound(dir === 1);
+          toast("P-Item cast. It dissolves harmlessly.", "✦");
+        }
       };
-      img.addEventListener("load", ready, { once: true });
-      img.addEventListener("error", ready, { once: true });
-      // the mid is a 1600px webp: full enough for the 76vh post view, small
-      // enough that a phone photo does not cost 2MB to open
-      img.src = post.mid || post.src;
-      if (img.complete) ready();
-      media.appendChild(img);
+      up.addEventListener("click", (e) => cast(1, e.currentTarget));
+      down.addEventListener("click", (e) => cast(-1, e.currentTarget));
+      vote.append(up, count, down);
+      side.appendChild(vote);
+      side.append(el("p", "policy-note", "P-Items are imaginary currency. Casting one changes nothing but this number."));
+
+      // parody favourite
+      const fav = el("button", "fav-btn" + (state.favs.has(post.id) ? " on" : ""),
+        state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat");
+      fav.addEventListener("click", () => {
+        if (state.favs.has(post.id)) { state.favs.delete(post.id); toast("Removed from the hat."); }
+        else { state.favs.add(post.id); toast("Plush placed in the hat. It fits perfectly.", "🃏"); }
+        saveFavs();
+        fav.textContent = state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat";
+        fav.classList.toggle("on", state.favs.has(post.id));
+        render();
+      });
+      side.appendChild(fav);
+
+      // metadata
+      const meta = el("dl", "meta-table");
+      const mp = post.width * post.height;
+      const mpLabel = mp >= 1e6 ? `${(mp / 1e6).toFixed(1)} megapixels` : `${Math.round(mp / 1e3)} kilopixels`;
+      const rows = [
+        ["File", post.fileSize],
+        ["Dimensions", `${post.width} × ${post.height}`],
+        ["Area", mpLabel],
+        ["Format", post.type === "video" ? "MP4 (HTML5)" : "Image"],
+        ["Rating", RATING_LABEL[post.rating]],
+        ["Uploaded", post.date],
+        ["Favs", post.favs + (state.favs.has(post.id) ? 1 : 0)],
+        ["Views", post.views.toLocaleString()],
+        ["Source", post.source],
+      ];
+      for (const [k, v] of rows) {
+        meta.append(el("dt", null, k), el("dd", null, v));
+      }
+      side.appendChild(meta);
+
+      // tags
+      const tagSec = el("div", "side-section");
+      tagSec.append(el("h3", null, "Tags"), tagCloud(post));
+      side.appendChild(tagSec);
+
+      // comments
+      const comSec = el("div", "side-section");
+      comSec.append(el("h3", null, `Comments (${commentsFor(post).length})`));
+      const list = el("ul");
+      list.id = "comment-list";
+      for (const c of commentsFor(post)) {
+        const li = el("li");
+        const when = el("span", "when", c.when);
+        const who = el("span", "who", c.who);
+        const bodyText = el("div", null, c.body);
+        li.append(when, who, bodyText);
+        list.appendChild(li);
+      }
+      comSec.appendChild(list);
+
+      const form = el("form");
+      form.id = "comment-form";
+      const ta = el("textarea");
+      ta.placeholder = "Say something to the shrine…";
+      const row = el("div", "row");
+      const grow = el("div", "grow");
+      grow.style.flex = "1";
+      const submit = el("button", "primary", "Add comment");
+      row.append(grow, submit);
+      grow.appendChild(ta);
+      form.append(row);
+      form.append(el("p", "policy", "Comments live only in this tab. Refreshing the page forgets everything."));
+      submit.addEventListener("click", (e) => {
+        e.preventDefault();
+        const text = ta.value.trim();
+        if (!text) { toast("Write something first.", "…"); return; }
+        commentsFor(post).push({ who: "you", body: text, when: "just now" });
+        ta.value = "";
+        comSec.querySelector("h3").textContent = `Comments (${commentsFor(post).length})`;
+        const li = el("li");
+        li.append(el("span", "when", "just now"), el("span", "who", "you"), el("div", null, text));
+        list.appendChild(li);
+        ta.focus();
+        toast("Comment posted. The shrine is unmoved.", "✎");
+      });
+      comSec.appendChild(form);
+      side.appendChild(comSec);
+
+      return side;
     }
 
-    // the original, for anyone who wants it. Sits under the image, not over
-    // it: over a video it would cover the controls.
-    const orig = el("a", "orig-link", "View original");
-    orig.href = post.src;
-    orig.target = "_blank";
-    orig.rel = "noopener";
-    orig.title = `${post.width} × ${post.height} · ${post.fileSize}`;
-    main.append(orig);
-
-    // horizontal swipe to move between posts
-    let sx = 0, sy = 0, swiping = false;
-    media.addEventListener("pointerdown", (e) => {
-      if (e.target.tagName === "VIDEO") return;
-      sx = e.clientX; sy = e.clientY; swiping = true;
-    });
-    media.addEventListener("pointerup", (e) => {
-      if (!swiping) return;
-      swiping = false;
-      const dx = e.clientX - sx, dy = e.clientY - sy;
-      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) step(dx < 0 ? 1 : -1);
-    });
-    media.addEventListener("pointercancel", () => { swiping = false; });
-
-    body.appendChild(main);
-
-    const side = el("div", "post-side");
-
-    // parody vote
-    const vote = el("div", "vote-row");
-    const up = el("button", "up" + (state.votes[post.id] === 1 ? " on" : ""), "▲");
-    const count = el("span", "vote-count", String(post.score + (state.votes[post.id] || 0)));
-    const down = el("button", "down" + (state.votes[post.id] === -1 ? " on" : ""), "▼");
-    const cast = (dir) => {
-      const prev = state.votes[post.id] || 0;
-      state.votes[post.id] = prev === dir ? 0 : dir;
-      up.classList.toggle("on", state.votes[post.id] === 1);
-      down.classList.toggle("on", state.votes[post.id] === -1);
-      count.textContent = String(post.score + state.votes[post.id]);
-      if (state.votes[post.id] !== 0) toast("P-Item cast. It dissolves harmlessly.", "✦");
-    };
-    up.addEventListener("click", () => cast(1));
-    down.addEventListener("click", () => cast(-1));
-    vote.append(up, count, down);
-    side.appendChild(vote);
-    side.append(el("p", "policy-note", "P-Items are imaginary currency. Casting one changes nothing but this number."));
-
-    // parody favourite
-    const fav = el("button", "fav-btn" + (state.favs.has(post.id) ? " on" : ""),
-      state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat");
-    fav.addEventListener("click", () => {
-      if (state.favs.has(post.id)) { state.favs.delete(post.id); toast("Removed from the hat."); }
-      else { state.favs.add(post.id); toast("Plush placed in the hat. It fits perfectly.", "🃏"); }
-      saveFavs();
-      fav.textContent = state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat";
-      fav.classList.toggle("on", state.favs.has(post.id));
-      render();
-    });
-    side.appendChild(fav);
-
-    // metadata
-    const meta = el("dl", "meta-table");
-    const mp = post.width * post.height;
-    const mpLabel = mp >= 1e6 ? `${(mp / 1e6).toFixed(1)} megapixels` : `${Math.round(mp / 1e3)} kilopixels`;
-    const rows = [
-      ["File", post.fileSize],
-      ["Dimensions", `${post.width} × ${post.height}`],
-      ["Area", mpLabel],
-      ["Format", post.type === "video" ? "MP4 (HTML5)" : "Image"],
-      ["Rating", RATING_LABEL[post.rating]],
-      ["Uploaded", post.date],
-      ["Favs", post.favs + (state.favs.has(post.id) ? 1 : 0)],
-      ["Views", post.views.toLocaleString()],
-      ["Source", post.source],
-    ];
-    for (const [k, v] of rows) {
-      meta.append(el("dt", null, k), el("dd", null, v));
+    // Move through the current result set. Used by the header buttons, the arrow
+    // keys and swipe, so all three behave identically.
+    function step(delta) {
+      const list = currentResults();
+      const idx = list.findIndex((p) => p.id === view.id);
+      const target = list[idx + delta];
+      // "replace" keeps the URL honest about which post is on screen without
+      // stacking a history entry per keystroke
+      if (target) open(target.id, { history: "replace" });
     }
-    side.appendChild(meta);
 
-    // tags
-    const tagSec = el("div", "side-section");
-    tagSec.append(el("h3", null, "Tags"), tagCloud(post));
-    side.appendChild(tagSec);
-
-    // comments
-    const comSec = el("div", "side-section");
-    comSec.append(el("h3", null, `Comments (${commentsFor(post).length})`));
-    const list = el("ul");
-    list.id = "comment-list";
-    for (const c of commentsFor(post)) {
-      const li = el("li");
-      const when = el("span", "when", c.when);
-      const who = el("span", "who", c.who);
-      const bodyText = el("div", null, c.body);
-      li.append(when, who, bodyText);
-      list.appendChild(li);
+    // Warm the next post's mid-size image so → and swipe feel instant. Only
+    // forward, and only the mid: preloading both neighbours meant two full
+    // sources, one of which was a 2.2MB PNG.
+    function preload() {
+      const list = currentResults();
+      const next = list[list.findIndex((p) => p.id === view.id) + 1];
+      if (!next) return;
+      const warm = () => {
+        const img = new Image();
+        img.src = next.mid || next.src;
+        if (img.decode) img.decode().catch(() => {});
+      };
+      // don't compete with the image currently being shown
+      if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 1500 });
+      else setTimeout(warm, 250);
     }
-    comSec.appendChild(list);
 
-    const form = el("form");
-    form.id = "comment-form";
-    const ta = el("textarea");
-    ta.placeholder = "Say something to the shrine…";
-    const row = el("div", "row");
-    const grow = el("div", "grow");
-    grow.style.flex = "1";
-    const submit = el("button", "primary", "Add comment");
-    row.append(grow, submit);
-    grow.appendChild(ta);
-    form.append(row);
-    form.append(el("p", "policy", "Comments live only in this tab. Refreshing the page forgets everything."));
-    submit.addEventListener("click", (e) => {
-      e.preventDefault();
-      const text = ta.value.trim();
-      if (!text) { toast("Write something first.", "…"); return; }
-      commentsFor(post).push({ who: "you", body: text, when: "just now" });
-      ta.value = "";
-      comSec.querySelector("h3").textContent = `Comments (${commentsFor(post).length})`;
-      const li = el("li");
-      li.append(el("span", "when", "just now"), el("span", "who", "you"), el("div", null, text));
-      list.appendChild(li);
-      ta.focus();
-      toast("Comment posted. The shrine is unmoved.", "✎");
-    });
-    comSec.appendChild(form);
-    side.appendChild(comSec);
+    function open(id, { history: mode = "replace", from = null } = {}) {
+      const idx = currentResults().findIndex((p) => p.id === id);
+      const post = posts.find((p) => p.id === id);
+      // #post/999 is a real URL, so it has to answer with a real state instead of
+      // silently doing nothing
+      if (!post) return openMissing(id);
+      // already on this post: nothing to do. A missing post has view.id === null,
+      // so re-opening the same dead link still re-renders, as it always has.
+      if (view.id === id) return;
+      // remember the thumbnail that opened this, so focus can go back to it.
+      // taken from the click target rather than activeElement, because Safari
+      // does not focus an element on click
+      if (view.id === null) {
+        view.focus = from || document.activeElement;
+        view.focusId = id;
+        view.pendingId = null;
+      }
 
-    body.appendChild(side);
-    box.appendChild(body);
+      const box = $("#post-container");
+      box.textContent = "";
+      const { head, close } = header(post, idx);
+      const body = el("div", "post-body");
+      body.append(media(post), side(post));
+      box.append(head, body);
 
-    $("#post-view").hidden = false;
-    document.body.style.overflow = "hidden";
-    modalId = id;
-    if (mode === "push") writeHash("#post/" + id, "push", { post: id });
-    // keep the post marker through a replace too, so closePost can still tell
-    // that it pushed this entry and step back through history
-    else if (mode === "replace") writeHash("#post/" + id, "replace", { post: id });
-    syncSocialMeta();
-    preloadNeighbours();
-    close.focus();
-  }
-
-  function openMissing(id) {
-    const box = $("#post-container");
-    box.textContent = "";
-
-    const head = el("header");
-    head.append(el("span", "title", `Post #${id}`), el("span", "spacer"));
-    const close = el("button", "close", "×");
-    close.setAttribute("aria-label", "Close");
-    close.addEventListener("click", closePost);
-    head.appendChild(close);
-    box.appendChild(head);
-
-    const empty = el("div", "empty-state");
-    empty.append(el("h3", null, "This post does not exist"));
-    empty.append(el("p", null,
-      `Nothing in the archive answers to #${id}. It may have been deleted, or the link may have been mistyped.`));
-    const back = el("button", null, "Back to posts");
-    back.addEventListener("click", closePost);
-    empty.appendChild(back);
-    box.appendChild(empty);
-
-    $("#post-view").hidden = false;
-    document.body.style.overflow = "hidden";
-    modalId = null;
-    missingId = id;
-    writeHash("#post/" + id, "replace", { post: id });
-    syncSocialMeta();
-    close.focus();
-  }
-
-  // hide without touching history — used when the location change already did
-  function hideModal() {
-    const v = document.querySelector("#post-media video");
-    if (v) v.pause();
-    const ph = document.querySelector("#post-media .media-ph");
-    if (ph) ph.remove();
-    $("#post-view").hidden = true;
-    document.body.style.overflow = "";
-    modalId = null;
-    missingId = null;
-    syncSocialMeta();
-    // Hand focus back to the thumbnail that opened this. Focus it now for the
-    // paths that don't re-render, and remember the post id as well: closing via
-    // history.back() re-renders the grid, which detaches the node we just
-    // focused, so it has to be looked up again rather than reused.
-    if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
-    pendingFocusPostId = focusPostId;
-    lastFocus = null;
-    focusPostId = null;
-  }
-
-  // Close at the user's request. If we pushed the #post entry ourselves, step
-  // back through history so Back/Forward stay coherent; if we arrived on a
-  // shared post link there is nothing to go back to, so just replace the URL.
-  function closePost() {
-    if (modalId === null && missingId === null) return;
-    if (history.state && history.state.post) {
-      hideModal();
-      history.back();
-    } else {
-      hideModal();
-      writeHash(postsHash());
+      $("#post-view").hidden = false;
+      document.body.style.overflow = "hidden";
+      view.id = id;
+      if (mode === "push") writeHash("#post/" + id, "push", { post: id });
+      // keep the post marker through a replace too, so close can still tell
+      // that it pushed this entry and step back through history
+      else if (mode === "replace") writeHash("#post/" + id, "replace", { post: id });
+      syncSocialMeta();
+      preload();
+      close.focus();
     }
-  }
+
+    function openMissing(id) {
+      const box = $("#post-container");
+      box.textContent = "";
+
+      const head = el("header");
+      head.append(el("span", "title", `Post #${id}`), el("span", "spacer"));
+      const closeBtn = el("button", "close", "×");
+      closeBtn.setAttribute("aria-label", "Close");
+      closeBtn.addEventListener("click", close);
+      head.appendChild(closeBtn);
+      box.appendChild(head);
+
+      const empty = el("div", "empty-state");
+      empty.append(el("h3", null, "This post does not exist"));
+      empty.append(el("p", null,
+        `Nothing in the archive answers to #${id}. It may have been deleted, or the link may have been mistyped.`));
+      const back = el("button", null, "Back to posts");
+      back.addEventListener("click", close);
+      empty.appendChild(back);
+      box.appendChild(empty);
+
+      $("#post-view").hidden = false;
+      document.body.style.overflow = "hidden";
+      view.id = null;
+      view.missing = id;
+      // replace, not push: nothing was opened, so Back shouldn't re-land here
+      writeHash("#post/" + id, "replace", { post: id });
+      syncSocialMeta();
+      closeBtn.focus();
+    }
+
+    // hide without touching history — used when the location change already did
+    function hide() {
+      const v = document.querySelector("#post-media video");
+      if (v) v.pause();
+      const ph = document.querySelector("#post-media .media-ph");
+      if (ph) ph.remove();
+      $("#post-view").hidden = true;
+      document.body.style.overflow = "";
+      view.id = null;
+      view.missing = null;
+      syncSocialMeta();
+      // Hand focus back to the thumbnail that opened this. Focus it now for the
+      // paths that don't re-render, and remember the post id as well: closing via
+      // history.back() re-renders the grid, which detaches the node we just
+      // focused, so it has to be looked up again rather than reused.
+      if (view.focus && document.contains(view.focus)) view.focus.focus();
+      view.pendingId = view.focusId;
+      view.focus = null;
+      view.focusId = null;
+    }
+
+    // Close at the user's request. If we pushed the #post entry ourselves, step
+    // back through history so Back/Forward stay coherent; if we arrived on a
+    // shared post link there is nothing to go back to, so just replace the URL.
+    function close() {
+      if (view.id === null && view.missing === null) return;
+      if (history.state && history.state.post) {
+        hide();
+        history.back();
+      } else {
+        hide();
+        writeHash(postsHash());
+      }
+    }
+
+    return { open, hide, close, step, preload, isOpen, currentId, consumePendingFocus };
+  })();
+
+
   // ── routing ─────────────────────────────────────────────────────────
   // The post view is a real URL (#post/ID) so it can be shared, bookmarked and
-  // closed with Back. state.modalId is the source of truth for what's open.
-  let modalId = null;
-  let missingId = null;
+  // closed with Back. PostView owns what is open; this module owns the URL.
   // popstate AND hashchange both fire for one history.back(), so the sync
   // handler must be idempotent per URL or the grid re-renders twice and the
   // second render detaches whatever the first one focused
@@ -946,9 +1067,6 @@
     if (mode === "push") history.pushState(state, "", url);
     else history.replaceState(state, "", url);
   };
-  let lastFocus = null;         // the node to focus back on immediately
-  let focusPostId = null;       // which post, so it survives a re-render
-  let pendingFocusPostId = null;
   // the first render happens before the incoming URL is read, and would
   // otherwise rewrite a shared #post/ID link to #posts before we see it
   let booting = true;
@@ -960,7 +1078,7 @@
 
   function syncHash() {
     // an open post owns the URL; don't let a re-render clobber it
-    if (modalId !== null || missingId !== null || booting) return;
+    if (PostView.isOpen() || booting) return;
     if (location.hash !== postsHash()) writeHash(postsHash());
   }
 
@@ -975,27 +1093,27 @@
 
     if (h.startsWith("post/")) {
       const id = Number(h.slice(5));
-      if (id !== modalId) openPost(id, { history: "none" });
+      PostView.open(id, { history: "none" });
       return;
     }
 
     // any non-post URL means the view should be closed
-    if (modalId !== null || missingId !== null) hideModal();
+    if (PostView.isOpen()) PostView.hide();
 
     const [section, query] = h.split("?");
     if (section && section !== "posts") {
       toast(`${section[0].toUpperCase()}${section.slice(1)} is a beautiful lie. Showing posts.`, "※");
       writeHash("#posts" + (query ? "?" + query : ""));
     }
-    state.terms = query ? parseTags(decodeURIComponent(query)) : [];
+    state.terms = query ? Query.parse(decodeURIComponent(query)) : [];
     state.shuffle = false;
     $("#tags").value = state.terms.join(" ");
     render();
     // render() replaced the grid, so find the same thumbnail again by post id
-    if (pendingFocusPostId != null) {
-      const target = document.querySelector(`.post-preview[data-post-id="${pendingFocusPostId}"]`);
+    const pending = PostView.consumePendingFocus();
+    if (pending != null) {
+      const target = document.querySelector(`.post-preview[data-post-id="${pending}"]`);
       if (target) target.focus();
-      pendingFocusPostId = null;
     }
   }
 
@@ -1010,7 +1128,7 @@
   window.addEventListener("hashchange", syncFromLocation);
   window.addEventListener("popstate", syncFromLocation);
 
-  $("#post-view").addEventListener("click", (e) => { if (e.target.id === "post-view") closePost(); });
+  $("#post-view").addEventListener("click", (e) => { if (e.target.id === "post-view") PostView.close(); });
 
   const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), ' +
                     'select:not([disabled]), textarea:not([disabled]), video[controls], ' +
@@ -1020,11 +1138,11 @@
   // should walk posts. One listener for the whole overlay; the contents are
   // rebuilt on every navigation.
   $("#post-view").addEventListener("keydown", (e) => {
-    if (modalId === null) return;
+    if (!PostView.isOpen()) return;
     const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
 
-    if (e.key === "ArrowLeft" && !typing) { e.preventDefault(); step(-1); return; }
-    if (e.key === "ArrowRight" && !typing) { e.preventDefault(); step(1); return; }
+    if (e.key === "ArrowLeft" && !typing) { e.preventDefault(); PostView.step(-1); return; }
+    if (e.key === "ArrowRight" && !typing) { e.preventDefault(); PostView.step(1); return; }
 
     if (e.key !== "Tab") return;
     const items = [...$("#post-container").querySelectorAll(FOCUSABLE)]
@@ -1041,7 +1159,7 @@
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !$("#post-view").hidden) closePost();
+    if (e.key === "Escape" && !$("#post-view").hidden) PostView.close();
     if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
       e.preventDefault(); $("#tags").focus(); renderSuggest();
     }
@@ -1049,11 +1167,15 @@
 
   // ── wiring ──────────────────────────────────────────────────────────
   function commitSearch() {
-    state.terms = parseTags($("#tags").value);
+    state.terms = Query.parse($("#tags").value);
     state.shuffle = false;
     state.page = 1;
+    const { baka, nine } = Query.secrets(state.terms, state.rating);
+    // a new search deals a new hand, even if the terms are identical
+    if (baka) state.shuffleOrder = shuffled(posts.map((p) => p.id));
     render();
     spellCard(state.terms);
+    if (nine) toast("Nine. She approves of your searching.", "⑨");
   }
   $("#search-form").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -1188,6 +1310,21 @@
     setTheme(document.documentElement.dataset.theme !== "dark");
   });
 
+  // Paint and persist are separate: the button shows the stored preference, but
+  // nothing is written until it is actually pressed.
+  const paintMute = () => {
+    const b = $("#sound-toggle");
+    b.textContent = state.muted ? "🔇" : "🔊";
+    b.title = state.muted ? "Unmute P-Item sounds" : "Mute P-Item sounds";
+    b.setAttribute("aria-pressed", String(state.muted));
+  };
+  paintMute();
+  $("#sound-toggle").addEventListener("click", () => {
+    state.muted = !state.muted;
+    paintMute();
+    saveMuted();
+  });
+
   $("#login-btn").addEventListener("click", () =>
     toast("Login is a rumour. You are already a ghost in a shrine.", "※"));
   $("#upload-btn").addEventListener("click", () =>
@@ -1211,10 +1348,10 @@
     a.addEventListener("click", (e) => {
       e.preventDefault();
       const kind = a.getAttribute("href").slice(1);
-      if (kind === "hot") { state.terms = parseTags("order:rank"); state.shuffle = false; }
-      else if (kind === "popular") { state.terms = parseTags("order:favs"); state.shuffle = false; }
+      if (kind === "hot") { state.terms = Query.parse("order:rank"); state.shuffle = false; }
+      else if (kind === "popular") { state.terms = Query.parse("order:favs"); state.shuffle = false; }
       else if (kind === "random") { state.terms = []; state.shuffle = true; state.shuffleOrder = shuffled(posts.map((p) => p.id)); }
-      else if (kind === "favs") { state.terms = parseTags("fav:me"); state.shuffle = false; }
+      else if (kind === "favs") { state.terms = Query.parse("fav:me"); state.shuffle = false; }
       else if (kind === "count") { toast(`${currentResults().length} posts match. That is the count.`, "Σ"); return; }
       state.page = 1;
       $("#tags").value = state.terms.join(" ");
@@ -1271,34 +1408,34 @@
       !!(document.querySelector('meta[property="og:description"]') || {}).content);
     t("thumbs are webp and smaller than their source", posts.every((p) =>
       p.thumb.endsWith(".webp") && (p.thumbBytes || 0) < (p.srcBytes || 0)));
-    t("empty query matches everything", posts.every((p) => matches(p, [])));
-    t("AND semantics: unknown term excludes", !matches(posts[0], ["definitely_not_a_real_tag_xyz"]));
-    t("rating: accepts matching, rejects other", matches(posts[0], [`rating:${posts[0].rating}`]) && !matches(posts[0], ["rating:zz"]));
-    t("negation excludes a present tag", posts.every((p) => !matches(p, ["-" + allTags(p)[0]])));
+    t("empty query matches everything", posts.every((p) => Query.match(p, [])));
+    t("AND semantics: unknown term excludes", !Query.match(posts[0], ["definitely_not_a_real_tag_xyz"]));
+    t("rating: accepts matching, rejects other", Query.match(posts[0], [`rating:${posts[0].rating}`]) && !Query.match(posts[0], ["rating:zz"]));
+    t("negation excludes a present tag", posts.every((p) => !Query.match(p, ["-" + allTags(p)[0]])));
     t("segment matching: bow does not hit big_bow", (() => {
       const p = posts.find((x) => allTags(x).includes("big_bow"));
       if (!p) return true;
-      return matches(p, ["bow"]) === false && matches(p, ["big_bow"]) === true;
+      return Query.match(p, ["bow"]) === false && Query.match(p, ["big_bow"]) === true;
     })());
     t("segment matching: prefix still hits", (() => {
       const p = posts.find((x) => allTags(x).includes("reimu_hakurei"));
-      return !p || matches(p, ["reimu"]);
+      return !p || Query.match(p, ["reimu"]);
     })());
     t("wildcards: *_hakurei hits only hakurei", (() => {
       const isHaku = (x) => x.endsWith("_hakurei");
-      const hit = posts.filter((p) => matches(p, ["*_hakurei"]));
+      const hit = posts.filter((p) => Query.match(p, ["*_hakurei"]));
       const other = posts.find((p) => !allTags(p).some(isHaku));
       return hit.length > 0 && hit.every((p) => allTags(p).some(isHaku)) &&
-        (!other || !matches(other, ["*_hakurei"]));
+        (!other || !Query.match(other, ["*_hakurei"]));
     })());
     t("wildcards: negated too", (() => {
       const isHaku = (x) => x.endsWith("_hakurei");
-      return posts.every((p) => !matches(p, ["-*_hakurei"]) || !allTags(p).some(isHaku));
+      return posts.every((p) => !Query.match(p, ["-*_hakurei"]) || !allTags(p).some(isHaku));
     })());
     t("fav:me keeps only the hat", (() => {
       const saved = [...state.favs];
       state.favs = new Set([posts[0].id, posts[1].id]);
-      const hit = posts.filter((p) => matches(p, ["fav:me"]));
+      const hit = posts.filter((p) => Query.match(p, ["fav:me"]));
       state.favs = new Set(saved);
       return hit.length === 2 && hit.every((p) => p.id === posts[0].id || p.id === posts[1].id);
     })());
@@ -1314,7 +1451,7 @@
       const narrow = [...document.querySelectorAll("#tag-list .tag-list-item")];
       const ok = narrow.length > 0 && narrow.length < all &&
         narrow.every((n) => n.classList.contains("dim") || n.textContent.startsWith("reimu_hakurei")) &&
-        narrow.every((n) => posts.filter((p) => matches(p, ["reimu_hakurei"]))
+        narrow.every((n) => posts.filter((p) => Query.match(p, ["reimu_hakurei"]))
           .some((p) => allTags(p).includes(n.firstChild.textContent)));
       state.terms = saved;
       $("#tags").value = saved.join(" ");
@@ -1323,9 +1460,9 @@
     })());
     t("a bad post id opens a not-found state, not nothing", (() => {
       const was = location.hash;
-      openPost(999999, { history: "none" });
+      PostView.open(999999, { history: "none" });
       const shown = !$("#post-view").hidden && /does not exist/.test($("#post-container").textContent);
-      hideModal();
+      PostView.hide();
       writeHash(was || "#posts", "replace", null);
       state.terms = [];
       $("#tags").value = "";
@@ -1369,6 +1506,110 @@
       render();
       return !!said && !withExclusion && !solo;
     })());
+    t("order:baka deals a hand, and holds it across re-renders", (() => {
+      const value = $("#tags").value, terms = state.terms, order = state.shuffleOrder;
+      $("#tags").value = "order:baka";
+      commitSearch();
+      const first = currentResults().map((p) => p.id);
+      const again = currentResults().map((p) => p.id);
+      const byId = [...first].sort((a, b) => b - a);
+      state.terms = terms;
+      state.shuffleOrder = order;
+      $("#tags").value = value;
+      render();
+      // every post exactly once, a different order than by id, and stable
+      // until the next search re-deals
+      return first.length === posts.length &&
+        first.join() !== byId.join() && first.join() === again.join();
+    })());
+    t("cirno, or 9, gets the ⑨", (() => {
+      const value = $("#tags").value, terms = state.terms;
+      const said = (q) => {
+        // the toast keeps its text after fading out, so clear it between probes
+        $("#toast").textContent = "";
+        $("#tags").value = q;
+        commitSearch();
+        return $("#toast").textContent;
+      };
+      const byName = said("cirno"), byNumber = said("9"), byOther = said("reimu_hakurei");
+      state.terms = terms;
+      $("#tags").value = value;
+      $("#toast").classList.remove("show");
+      render();
+      return /⑨/.test(byName) && /⑨/.test(byNumber) && !/⑨/.test(byOther);
+    })());
+    t("rating:e gets its own empty state, not the generic one", (() => {
+      const rating = state.rating;
+      state.rating = "e";
+      render();
+      const byButton = $("#result-bar").textContent;
+      state.rating = "all";
+      state.terms = ["rating:e"];
+      render();
+      const byTerm = $("#result-bar").textContent;
+      state.terms = [];
+      state.rating = rating;
+      render();
+      return /rates E/.test(byButton) && /rates E/.test(byTerm) &&
+        !/rates E/.test($("#result-bar").textContent);
+    })());
+    t("a vote throws P-Item sparks and a tone, and un-voting throws none", (() => {
+      const was = location.hash, terms = state.terms;
+      PostView.open(posts[0].id, { history: "none" });
+      const up = document.querySelector(".vote-row .up");
+      up.click();
+      const cast = document.querySelectorAll(".p-spark").length;
+      const tone = audioCtx !== null || true; // no audio device is a pass, not a fail
+      const said = document.querySelectorAll(".p-spark")[0].textContent;
+      up.click();
+      const uncast = document.querySelectorAll(".p-spark").length;
+      document.querySelectorAll(".p-spark").forEach((n) => n.remove());
+      PostView.hide();
+      writeHash(was || "#posts", "replace", null);
+      state.terms = terms;
+      $("#tags").value = terms.join(" ");
+      render();
+      return cast === 3 && uncast === cast && said === "+P" && tone;
+    })());
+    t("mute silences the tone, and the setting survives a reload", (() => {
+      const was = location.hash, terms = state.terms, muted = state.muted;
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      const real = Ctx.prototype.createOscillator;
+      let started = 0;
+      // the only way to see whether a sound was made: count the oscillators
+      Ctx.prototype.createOscillator = function () { started++; return real.call(this); };
+      try {
+        PostView.open(posts[0].id, { history: "none" });
+        const up = document.querySelector(".vote-row .up");
+        state.muted = true;
+        up.click();
+        const whileMuted = started;
+        state.muted = false;
+        state.votes[posts[0].id] = 0; // clear it, or the next click un-votes
+        up.click();
+        const whileLoud = started;
+        // and the button persists the choice
+        state.muted = true;
+        $("#sound-toggle").click();
+        const offLabel = $("#sound-toggle").textContent;
+        const stored = localStorage.getItem(MUTE_KEY);
+        state.muted = false;
+        $("#sound-toggle").click();
+        const onLabel = $("#sound-toggle").textContent;
+        return whileMuted === 0 && whileLoud === 1 && stored === "0" &&
+          offLabel !== onLabel;
+      } finally {
+        Ctx.prototype.createOscillator = real;
+        state.muted = muted;
+        $("#sound-toggle").textContent = state.muted ? "🔇" : "🔊";
+        $("#sound-toggle").setAttribute("aria-pressed", String(state.muted));
+        PostView.hide();
+        writeHash(was || "#posts", "replace", null);
+        state.terms = terms;
+        $("#tags").value = terms.join(" ");
+        render();
+      }
+    })());
     t("AND semantics: unrelated term rejects the post", (() => {
       // pick a term sharing no underscore-segment prefix with anything the post has
       const related = (term, tag) => term === tag || tag.startsWith(term + "_") || term.startsWith(tag + "_");
@@ -1376,12 +1617,12 @@
       return posts.every((p) => {
         const mine = allTags(p);
         const unrelated = global.find((g) => !mine.some((t) => related(g, t)));
-        return unrelated === undefined || matches(p, [unrelated]) === false;
+        return unrelated === undefined || Query.match(p, [unrelated]) === false;
       });
     })());
     t("two present terms both match", posts.every((p) => {
       const [a, b] = allTags(p);
-      return matches(p, [a, b]);
+      return Query.match(p, [a, b]);
     }));
     t("pagination stays in range", (() => {
       const pages = Math.max(1, Math.ceil(currentResults().length / perPage));
