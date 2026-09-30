@@ -1009,6 +1009,7 @@
         state.pitems--;
         savePitems();
         spent();
+        pSparks(e.currentTarget, true);
         confetti(e.currentTarget);
         unlockSound();
         toast("The fumo says thank you. It does not have a mouth.", "✦");
@@ -1019,12 +1020,17 @@
       // parody favourite
       const fav = el("button", "fav-btn" + (state.favs.has(post.id) ? " on" : ""),
         state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat");
-      fav.addEventListener("click", () => {
-        if (state.favs.has(post.id)) { state.favs.delete(post.id); toast("Removed from the hat."); }
+      fav.addEventListener("click", (e) => {
+        const from = e.currentTarget;
+        const added = !state.favs.has(post.id);
+        if (!added) { state.favs.delete(post.id); toast("Removed from the hat."); }
         else { state.favs.add(post.id); toast("Plush placed in the hat. It fits perfectly.", "🃏"); }
         saveFavs();
         fav.textContent = state.favs.has(post.id) ? "★ Fumo in the hat" : "☆ Put in the hat";
         fav.classList.toggle("on", state.favs.has(post.id));
+        if (added) {
+          pSparks(from, true);
+        }
         render();
       });
       side.appendChild(fav);
