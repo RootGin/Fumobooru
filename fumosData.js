@@ -6,9 +6,9 @@ window.FUMO_DATA = {
     "name": "Fumobooru",
     "tagline": "The place where plush circulate",
     "posts": 739,
-    "tags": 317,
-    "users": 1,
-    "artists": 0,
+    "tags": 318,
+    "users": 34,
+    "artists": 1,
     "socialImage": "card.jpg",
     "cardPost": 901151
   },
@@ -26,14 +26,16 @@ window.FUMO_DATA = {
       "favs": 56,
       "comments": 1,
       "views": 5011,
-      "date": "2026-09-30 00:01",
-      "source": "local://Downloads",
+      "date": "2026-08-05 14:55",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -67,8 +69,8 @@ window.FUMO_DATA = {
       "favs": 109,
       "comments": 2,
       "views": 9222,
-      "date": "2026-09-30 00:02",
-      "source": "local://Downloads",
+      "date": "2026-08-05 20:41",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "suika_ibuki"
@@ -76,7 +78,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "bee_costume",
@@ -112,8 +116,8 @@ window.FUMO_DATA = {
       "favs": 22,
       "comments": 3,
       "views": 13433,
-      "date": "2026-09-30 00:03",
-      "source": "local://Downloads",
+      "date": "2026-08-05 20:43",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -121,7 +125,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -155,14 +161,16 @@ window.FUMO_DATA = {
       "favs": 75,
       "comments": 4,
       "views": 17644,
-      "date": "2026-09-30 00:04",
+      "date": "2026-08-05 21:43",
       "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "crown",
@@ -198,14 +206,16 @@ window.FUMO_DATA = {
       "favs": 128,
       "comments": 0,
       "views": 21855,
-      "date": "2026-09-30 00:05",
-      "source": "local://Downloads",
+      "date": "2026-08-06 04:28",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -241,8 +251,8 @@ window.FUMO_DATA = {
       "favs": 41,
       "comments": 1,
       "views": 26066,
-      "date": "2026-09-30 00:06",
-      "source": "local://Downloads",
+      "date": "2026-08-06 04:56",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -250,7 +260,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -283,14 +295,16 @@ window.FUMO_DATA = {
       "favs": 94,
       "comments": 2,
       "views": 30277,
-      "date": "2026-09-30 00:07",
-      "source": "local://Downloads",
+      "date": "2026-08-06 05:09",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "poster",
@@ -328,8 +342,8 @@ window.FUMO_DATA = {
       "favs": 7,
       "comments": 3,
       "views": 34488,
-      "date": "2026-09-30 00:08",
-      "source": "local://Downloads",
+      "date": "2026-08-06 08:09",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "kogasa_karasu"
@@ -337,7 +351,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -373,8 +389,8 @@ window.FUMO_DATA = {
       "favs": 60,
       "comments": 4,
       "views": 38699,
-      "date": "2026-09-30 00:09",
-      "source": "local://Downloads",
+      "date": "2026-08-06 11:16",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -382,7 +398,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "big_bow",
@@ -416,8 +434,8 @@ window.FUMO_DATA = {
       "favs": 113,
       "comments": 0,
       "views": 42910,
-      "date": "2026-09-30 00:10",
-      "source": "local://Downloads",
+      "date": "2026-08-06 16:37",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -425,7 +443,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -456,8 +476,8 @@ window.FUMO_DATA = {
       "favs": 26,
       "comments": 1,
       "views": 47121,
-      "date": "2026-09-30 00:11",
-      "source": "local://Downloads",
+      "date": "2026-08-06 18:09",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "suika_ibuki"
@@ -465,7 +485,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "bee_costume",
@@ -499,8 +521,8 @@ window.FUMO_DATA = {
       "favs": 79,
       "comments": 2,
       "views": 51332,
-      "date": "2026-09-30 00:12",
-      "source": "local://Downloads",
+      "date": "2026-08-06 19:36",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "suika_ibuki"
@@ -508,7 +530,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -542,8 +566,8 @@ window.FUMO_DATA = {
       "favs": 132,
       "comments": 3,
       "views": 55543,
-      "date": "2026-09-30 00:13",
-      "source": "local://Downloads",
+      "date": "2026-08-06 22:39",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "suika_ibuki"
@@ -551,7 +575,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "laptop",
@@ -585,14 +611,16 @@ window.FUMO_DATA = {
       "favs": 45,
       "comments": 4,
       "views": 59754,
-      "date": "2026-09-30 00:14",
+      "date": "2026-08-07 01:10",
       "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -628,8 +656,8 @@ window.FUMO_DATA = {
       "favs": 98,
       "comments": 0,
       "views": 63965,
-      "date": "2026-09-30 00:15",
-      "source": "local://Downloads",
+      "date": "2026-08-07 05:59",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -637,7 +665,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -673,8 +703,8 @@ window.FUMO_DATA = {
       "favs": 11,
       "comments": 1,
       "views": 68176,
-      "date": "2026-09-30 00:16",
-      "source": "local://Downloads",
+      "date": "2026-08-07 10:36",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -682,7 +712,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "big_bow",
@@ -717,8 +749,8 @@ window.FUMO_DATA = {
       "favs": 64,
       "comments": 2,
       "views": 72387,
-      "date": "2026-09-30 00:17",
-      "source": "local://Downloads",
+      "date": "2026-08-07 13:56",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -726,7 +758,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -762,7 +796,7 @@ window.FUMO_DATA = {
       "favs": 117,
       "comments": 3,
       "views": 76598,
-      "date": "2026-09-30 00:18",
+      "date": "2026-08-07 16:03",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -771,7 +805,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "hands",
@@ -807,7 +843,7 @@ window.FUMO_DATA = {
       "favs": 30,
       "comments": 4,
       "views": 80809,
-      "date": "2026-09-30 00:19",
+      "date": "2026-08-07 18:29",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -816,7 +852,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -852,8 +890,8 @@ window.FUMO_DATA = {
       "favs": 83,
       "comments": 0,
       "views": 85020,
-      "date": "2026-09-30 00:20",
-      "source": "local://Downloads",
+      "date": "2026-08-08 00:03",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -861,7 +899,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "hands",
@@ -897,14 +937,16 @@ window.FUMO_DATA = {
       "favs": 136,
       "comments": 1,
       "views": 89231,
-      "date": "2026-09-30 00:21",
-      "source": "local://Downloads",
+      "date": "2026-08-08 00:55",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -940,8 +982,8 @@ window.FUMO_DATA = {
       "favs": 49,
       "comments": 2,
       "views": 3442,
-      "date": "2026-09-30 00:22",
-      "source": "local://Downloads",
+      "date": "2026-08-08 04:09",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -949,7 +991,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "hands",
@@ -985,8 +1029,8 @@ window.FUMO_DATA = {
       "favs": 102,
       "comments": 3,
       "views": 7653,
-      "date": "2026-09-30 00:23",
-      "source": "local://Downloads",
+      "date": "2026-08-08 13:26",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -994,7 +1038,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "outdoors",
@@ -1030,8 +1076,8 @@ window.FUMO_DATA = {
       "favs": 15,
       "comments": 4,
       "views": 11864,
-      "date": "2026-09-30 00:24",
-      "source": "local://Downloads",
+      "date": "2026-08-08 14:04",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1039,7 +1085,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "soap_bubbles",
@@ -1075,8 +1123,8 @@ window.FUMO_DATA = {
       "favs": 68,
       "comments": 0,
       "views": 16075,
-      "date": "2026-09-30 00:25",
-      "source": "local://Downloads",
+      "date": "2026-08-08 16:18",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1084,7 +1132,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -1120,8 +1170,8 @@ window.FUMO_DATA = {
       "favs": 121,
       "comments": 1,
       "views": 20286,
-      "date": "2026-09-30 00:26",
-      "source": "local://Downloads",
+      "date": "2026-08-08 16:43",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1129,7 +1179,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "soap_bubbles",
@@ -1165,8 +1217,8 @@ window.FUMO_DATA = {
       "favs": 34,
       "comments": 2,
       "views": 24497,
-      "date": "2026-09-30 00:27",
-      "source": "local://Downloads",
+      "date": "2026-08-08 16:53",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1174,7 +1226,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -1210,8 +1264,8 @@ window.FUMO_DATA = {
       "favs": 87,
       "comments": 3,
       "views": 28708,
-      "date": "2026-09-30 00:28",
-      "source": "local://Downloads",
+      "date": "2026-08-08 18:17",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1219,7 +1273,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "soap_bubbles",
@@ -1255,8 +1311,8 @@ window.FUMO_DATA = {
       "favs": 140,
       "comments": 4,
       "views": 32919,
-      "date": "2026-09-30 00:29",
-      "source": "local://Downloads",
+      "date": "2026-08-08 20:27",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1264,7 +1320,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -1300,8 +1358,8 @@ window.FUMO_DATA = {
       "favs": 53,
       "comments": 0,
       "views": 37130,
-      "date": "2026-09-30 00:30",
-      "source": "local://Downloads",
+      "date": "2026-08-08 21:44",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1309,7 +1367,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -1345,14 +1405,16 @@ window.FUMO_DATA = {
       "favs": 106,
       "comments": 1,
       "views": 41341,
-      "date": "2026-09-30 00:31",
-      "source": "local://Downloads",
+      "date": "2026-08-09 01:45",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -1390,14 +1452,16 @@ window.FUMO_DATA = {
       "favs": 19,
       "comments": 2,
       "views": 45552,
-      "date": "2026-09-30 00:32",
-      "source": "local://Downloads",
+      "date": "2026-08-09 02:49",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -1433,8 +1497,8 @@ window.FUMO_DATA = {
       "favs": 72,
       "comments": 3,
       "views": 49763,
-      "date": "2026-09-30 00:33",
-      "source": "local://Downloads",
+      "date": "2026-08-09 04:20",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "tenshi"
@@ -1442,7 +1506,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "meme",
           "comic",
@@ -1476,14 +1542,16 @@ window.FUMO_DATA = {
       "favs": 125,
       "comments": 4,
       "views": 53974,
-      "date": "2026-09-30 00:34",
-      "source": "local://Downloads",
+      "date": "2026-08-09 04:36",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "two_plushies",
           "indoors",
@@ -1522,8 +1590,8 @@ window.FUMO_DATA = {
       "favs": 38,
       "comments": 0,
       "views": 58185,
-      "date": "2026-09-30 00:35",
-      "source": "local://Downloads",
+      "date": "2026-08-09 05:18",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -1531,7 +1599,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -1567,14 +1637,16 @@ window.FUMO_DATA = {
       "favs": 91,
       "comments": 1,
       "views": 62396,
-      "date": "2026-09-30 00:36",
+      "date": "2026-08-09 06:18",
       "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "meme",
           "text",
@@ -1610,14 +1682,16 @@ window.FUMO_DATA = {
       "favs": 4,
       "comments": 2,
       "views": 66607,
-      "date": "2026-09-30 00:37",
-      "source": "local://Downloads",
+      "date": "2026-08-09 12:07",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "close_up",
           "plush",
@@ -1652,14 +1726,16 @@ window.FUMO_DATA = {
       "favs": 57,
       "comments": 3,
       "views": 70818,
-      "date": "2026-09-30 00:38",
-      "source": "local://Downloads",
+      "date": "2026-08-09 14:11",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "indoors",
@@ -1694,8 +1770,8 @@ window.FUMO_DATA = {
       "favs": 110,
       "comments": 4,
       "views": 75029,
-      "date": "2026-09-30 00:39",
-      "source": "local://Downloads",
+      "date": "2026-08-09 14:30",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1703,7 +1779,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -1737,14 +1815,16 @@ window.FUMO_DATA = {
       "favs": 23,
       "comments": 0,
       "views": 79240,
-      "date": "2026-09-30 00:40",
-      "source": "local://Downloads",
+      "date": "2026-08-09 15:29",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -1782,8 +1862,8 @@ window.FUMO_DATA = {
       "favs": 76,
       "comments": 1,
       "views": 83451,
-      "date": "2026-09-30 00:41",
-      "source": "local://Downloads",
+      "date": "2026-08-09 17:15",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "hong_meiling"
@@ -1791,7 +1871,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -1827,14 +1909,16 @@ window.FUMO_DATA = {
       "favs": 129,
       "comments": 2,
       "views": 87662,
-      "date": "2026-09-30 00:42",
-      "source": "local://Downloads",
+      "date": "2026-08-09 17:42",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -1872,8 +1956,8 @@ window.FUMO_DATA = {
       "favs": 42,
       "comments": 3,
       "views": 1873,
-      "date": "2026-09-30 00:43",
-      "source": "local://Downloads",
+      "date": "2026-08-09 17:49",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -1881,7 +1965,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "plant",
@@ -1915,14 +2001,16 @@ window.FUMO_DATA = {
       "favs": 95,
       "comments": 4,
       "views": 6084,
-      "date": "2026-09-30 00:44",
-      "source": "local://Downloads",
+      "date": "2026-08-09 17:53",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "food",
@@ -1961,8 +2049,8 @@ window.FUMO_DATA = {
       "favs": 8,
       "comments": 0,
       "views": 10295,
-      "date": "2026-09-30 00:45",
-      "source": "local://Downloads",
+      "date": "2026-08-09 18:09",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "mokou_fujiwara"
@@ -1970,7 +2058,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -2004,14 +2094,16 @@ window.FUMO_DATA = {
       "favs": 61,
       "comments": 1,
       "views": 14506,
-      "date": "2026-09-30 00:46",
-      "source": "local://Downloads",
+      "date": "2026-08-09 18:27",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "meme",
@@ -2047,14 +2139,16 @@ window.FUMO_DATA = {
       "favs": 114,
       "comments": 2,
       "views": 18717,
-      "date": "2026-09-30 00:47",
-      "source": "local://Downloads",
+      "date": "2026-08-09 20:48",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "close_up",
           "plush",
@@ -2089,8 +2183,8 @@ window.FUMO_DATA = {
       "favs": 27,
       "comments": 3,
       "views": 22928,
-      "date": "2026-09-30 00:48",
-      "source": "local://Downloads",
+      "date": "2026-08-09 22:53",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -2098,7 +2192,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -2134,8 +2230,8 @@ window.FUMO_DATA = {
       "favs": 80,
       "comments": 4,
       "views": 27139,
-      "date": "2026-09-30 00:49",
-      "source": "local://Downloads",
+      "date": "2026-08-10 01:35",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2143,7 +2239,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "screenshot",
           "animation",
@@ -2181,14 +2279,16 @@ window.FUMO_DATA = {
       "favs": 133,
       "comments": 0,
       "views": 31350,
-      "date": "2026-09-30 00:50",
-      "source": "local://Downloads",
+      "date": "2026-08-10 02:22",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "meme",
           "text",
@@ -2225,8 +2325,8 @@ window.FUMO_DATA = {
       "favs": 46,
       "comments": 1,
       "views": 35561,
-      "date": "2026-09-30 00:51",
-      "source": "local://Downloads",
+      "date": "2026-08-10 02:23",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2234,7 +2334,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "two_plushies",
           "plush",
@@ -2272,8 +2374,8 @@ window.FUMO_DATA = {
       "favs": 99,
       "comments": 2,
       "views": 39772,
-      "date": "2026-09-30 00:52",
-      "source": "local://Downloads",
+      "date": "2026-08-10 02:54",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -2281,7 +2383,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "silver_hair",
@@ -2316,7 +2420,7 @@ window.FUMO_DATA = {
       "favs": 12,
       "comments": 3,
       "views": 43983,
-      "date": "2026-09-30 00:53",
+      "date": "2026-08-10 05:24",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -2325,7 +2429,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "brown_hair",
@@ -2363,14 +2469,16 @@ window.FUMO_DATA = {
       "favs": 65,
       "comments": 4,
       "views": 48194,
-      "date": "2026-09-30 00:54",
-      "source": "local://Downloads",
+      "date": "2026-08-10 07:16",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "green_hair",
@@ -2405,8 +2513,8 @@ window.FUMO_DATA = {
       "favs": 118,
       "comments": 0,
       "views": 52405,
-      "date": "2026-09-30 00:55",
-      "source": "local://Downloads",
+      "date": "2026-08-10 07:44",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2414,7 +2522,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "black_hair",
@@ -2448,14 +2558,16 @@ window.FUMO_DATA = {
       "favs": 31,
       "comments": 1,
       "views": 56616,
-      "date": "2026-09-30 00:56",
-      "source": "local://Downloads",
+      "date": "2026-08-10 10:04",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "white_hair",
@@ -2492,8 +2604,8 @@ window.FUMO_DATA = {
       "favs": 84,
       "comments": 2,
       "views": 60827,
-      "date": "2026-09-30 00:57",
-      "source": "local://Downloads",
+      "date": "2026-08-10 11:56",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2501,7 +2613,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "brown_hair",
@@ -2537,8 +2651,8 @@ window.FUMO_DATA = {
       "favs": 137,
       "comments": 3,
       "views": 65038,
-      "date": "2026-09-30 00:58",
-      "source": "local://Downloads",
+      "date": "2026-08-10 14:07",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2546,7 +2660,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "brown_hair",
@@ -2582,8 +2698,8 @@ window.FUMO_DATA = {
       "favs": 50,
       "comments": 4,
       "views": 69249,
-      "date": "2026-09-30 00:59",
-      "source": "local://Downloads",
+      "date": "2026-08-10 16:27",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2591,7 +2707,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "brown_hair",
@@ -2627,8 +2745,8 @@ window.FUMO_DATA = {
       "favs": 103,
       "comments": 0,
       "views": 73460,
-      "date": "2026-09-30 00:00",
-      "source": "local://Downloads",
+      "date": "2026-08-10 16:37",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -2636,7 +2754,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "blue_hair",
@@ -2674,8 +2794,8 @@ window.FUMO_DATA = {
       "favs": 16,
       "comments": 1,
       "views": 77671,
-      "date": "2026-09-30 00:01",
-      "source": "local://Downloads",
+      "date": "2026-08-11 01:02",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2683,7 +2803,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "black_hair",
@@ -2720,8 +2842,8 @@ window.FUMO_DATA = {
       "favs": 69,
       "comments": 2,
       "views": 81882,
-      "date": "2026-09-30 00:02",
-      "source": "local://Downloads",
+      "date": "2026-08-11 01:15",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2729,7 +2851,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "black_hair",
@@ -2763,8 +2887,8 @@ window.FUMO_DATA = {
       "favs": 122,
       "comments": 3,
       "views": 86093,
-      "date": "2026-09-30 00:03",
-      "source": "local://Downloads",
+      "date": "2026-08-11 01:51",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2772,7 +2896,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "black_hair",
@@ -2809,14 +2935,16 @@ window.FUMO_DATA = {
       "favs": 35,
       "comments": 4,
       "views": 90304,
-      "date": "2026-09-30 00:04",
-      "source": "local://Downloads",
+      "date": "2026-08-11 02:33",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "pink_hair",
@@ -2856,14 +2984,16 @@ window.FUMO_DATA = {
       "favs": 88,
       "comments": 0,
       "views": 4515,
-      "date": "2026-09-30 00:05",
-      "source": "local://Downloads",
+      "date": "2026-08-11 04:00",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -2900,8 +3030,8 @@ window.FUMO_DATA = {
       "favs": 141,
       "comments": 1,
       "views": 8726,
-      "date": "2026-09-30 00:06",
-      "source": "local://Downloads",
+      "date": "2026-08-11 04:10",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -2909,7 +3039,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -2941,8 +3073,8 @@ window.FUMO_DATA = {
       "favs": 54,
       "comments": 2,
       "views": 12937,
-      "date": "2026-09-30 00:07",
-      "source": "local://Downloads",
+      "date": "2026-08-11 06:19",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -2950,7 +3082,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "big_bow",
@@ -2986,14 +3120,16 @@ window.FUMO_DATA = {
       "favs": 107,
       "comments": 3,
       "views": 17148,
-      "date": "2026-09-30 00:08",
-      "source": "local://Downloads",
+      "date": "2026-08-11 07:43",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "mob_cap",
@@ -3029,14 +3165,16 @@ window.FUMO_DATA = {
       "favs": 20,
       "comments": 4,
       "views": 21359,
-      "date": "2026-09-30 00:09",
-      "source": "local://Downloads",
+      "date": "2026-08-11 09:08",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "hat",
@@ -3074,14 +3212,16 @@ window.FUMO_DATA = {
       "favs": 73,
       "comments": 0,
       "views": 25570,
-      "date": "2026-09-30 00:10",
-      "source": "local://Downloads",
+      "date": "2026-08-11 10:14",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -3117,14 +3257,16 @@ window.FUMO_DATA = {
       "favs": 126,
       "comments": 1,
       "views": 29781,
-      "date": "2026-09-30 00:11",
-      "source": "local://Downloads",
+      "date": "2026-08-11 10:34",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "meme",
           "text",
@@ -3160,8 +3302,8 @@ window.FUMO_DATA = {
       "favs": 39,
       "comments": 2,
       "views": 33992,
-      "date": "2026-09-30 00:12",
-      "source": "local://Downloads",
+      "date": "2026-08-11 12:31",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3169,7 +3311,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "text",
@@ -3203,8 +3347,8 @@ window.FUMO_DATA = {
       "favs": 92,
       "comments": 3,
       "views": 38203,
-      "date": "2026-09-30 00:13",
-      "source": "local://Downloads",
+      "date": "2026-08-11 13:18",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3212,7 +3356,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -3247,8 +3393,8 @@ window.FUMO_DATA = {
       "favs": 5,
       "comments": 4,
       "views": 42414,
-      "date": "2026-09-30 00:14",
-      "source": "local://Downloads",
+      "date": "2026-08-11 13:57",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3256,7 +3402,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "bed",
@@ -3292,8 +3440,8 @@ window.FUMO_DATA = {
       "favs": 58,
       "comments": 0,
       "views": 46625,
-      "date": "2026-09-30 00:15",
-      "source": "local://Downloads",
+      "date": "2026-08-11 14:43",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3301,7 +3449,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -3336,14 +3486,16 @@ window.FUMO_DATA = {
       "favs": 111,
       "comments": 1,
       "views": 50836,
-      "date": "2026-09-30 00:16",
-      "source": "local://Downloads",
+      "date": "2026-08-11 15:19",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "table",
@@ -3381,8 +3533,8 @@ window.FUMO_DATA = {
       "favs": 24,
       "comments": 2,
       "views": 55047,
-      "date": "2026-09-30 00:17",
-      "source": "local://Downloads",
+      "date": "2026-08-11 17:50",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3390,7 +3542,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -3426,14 +3580,16 @@ window.FUMO_DATA = {
       "favs": 77,
       "comments": 3,
       "views": 59258,
-      "date": "2026-09-30 00:18",
-      "source": "local://Downloads",
+      "date": "2026-08-11 18:04",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "many_plushies",
@@ -3468,14 +3624,16 @@ window.FUMO_DATA = {
       "favs": 130,
       "comments": 4,
       "views": 63469,
-      "date": "2026-09-30 00:19",
-      "source": "local://Downloads",
+      "date": "2026-08-11 18:28",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "white_hair",
@@ -3514,8 +3672,8 @@ window.FUMO_DATA = {
       "favs": 43,
       "comments": 0,
       "views": 67680,
-      "date": "2026-09-30 00:20",
-      "source": "local://Downloads",
+      "date": "2026-08-11 19:07",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3523,7 +3681,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "bed",
@@ -3557,8 +3717,8 @@ window.FUMO_DATA = {
       "favs": 96,
       "comments": 1,
       "views": 71891,
-      "date": "2026-09-30 00:21",
-      "source": "local://Downloads",
+      "date": "2026-08-11 19:28",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3566,7 +3726,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -3603,8 +3765,8 @@ window.FUMO_DATA = {
       "favs": 9,
       "comments": 2,
       "views": 76102,
-      "date": "2026-09-30 00:22",
-      "source": "local://Downloads",
+      "date": "2026-08-11 20:17",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -3612,7 +3774,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -3646,8 +3810,8 @@ window.FUMO_DATA = {
       "favs": 62,
       "comments": 3,
       "views": 80313,
-      "date": "2026-09-30 00:23",
-      "source": "local://Downloads",
+      "date": "2026-08-11 22:58",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -3656,7 +3820,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "three_plushies",
@@ -3691,14 +3857,16 @@ window.FUMO_DATA = {
       "favs": 115,
       "comments": 4,
       "views": 84524,
-      "date": "2026-09-30 00:24",
+      "date": "2026-08-11 23:25",
       "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "phone_screen",
           "screenshot",
@@ -3734,8 +3902,8 @@ window.FUMO_DATA = {
       "favs": 28,
       "comments": 0,
       "views": 88735,
-      "date": "2026-09-30 00:25",
-      "source": "local://Downloads",
+      "date": "2026-08-12 01:36",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3743,7 +3911,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -3778,14 +3948,16 @@ window.FUMO_DATA = {
       "favs": 81,
       "comments": 1,
       "views": 2946,
-      "date": "2026-09-30 00:26",
-      "source": "local://Downloads",
+      "date": "2026-08-12 05:45",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -3821,8 +3993,8 @@ window.FUMO_DATA = {
       "favs": 134,
       "comments": 2,
       "views": 7157,
-      "date": "2026-09-30 00:27",
-      "source": "local://Downloads",
+      "date": "2026-08-12 06:41",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -3830,7 +4002,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -3864,7 +4038,7 @@ window.FUMO_DATA = {
       "favs": 47,
       "comments": 3,
       "views": 11368,
-      "date": "2026-09-30 00:28",
+      "date": "2026-08-12 07:50",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -3874,7 +4048,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -3910,8 +4086,8 @@ window.FUMO_DATA = {
       "favs": 100,
       "comments": 4,
       "views": 15579,
-      "date": "2026-09-30 00:29",
-      "source": "local://Downloads",
+      "date": "2026-08-12 08:10",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3919,7 +4095,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -3956,8 +4134,8 @@ window.FUMO_DATA = {
       "favs": 13,
       "comments": 0,
       "views": 19790,
-      "date": "2026-09-30 00:30",
-      "source": "local://Downloads",
+      "date": "2026-08-12 10:46",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -3965,7 +4143,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -3999,8 +4179,8 @@ window.FUMO_DATA = {
       "favs": 66,
       "comments": 1,
       "views": 24001,
-      "date": "2026-09-30 00:31",
-      "source": "local://Downloads",
+      "date": "2026-08-12 11:02",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4008,7 +4188,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "money",
@@ -4045,8 +4227,8 @@ window.FUMO_DATA = {
       "favs": 119,
       "comments": 2,
       "views": 28212,
-      "date": "2026-09-30 00:32",
-      "source": "local://Downloads",
+      "date": "2026-08-12 11:45",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4054,7 +4236,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -4091,8 +4275,8 @@ window.FUMO_DATA = {
       "favs": 32,
       "comments": 3,
       "views": 32423,
-      "date": "2026-09-30 00:33",
-      "source": "local://Downloads",
+      "date": "2026-08-12 12:58",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4100,7 +4284,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4136,8 +4322,8 @@ window.FUMO_DATA = {
       "favs": 85,
       "comments": 4,
       "views": 36634,
-      "date": "2026-09-30 00:34",
-      "source": "local://Downloads",
+      "date": "2026-08-12 13:15",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4145,7 +4331,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -4181,8 +4369,8 @@ window.FUMO_DATA = {
       "favs": 138,
       "comments": 0,
       "views": 40845,
-      "date": "2026-09-30 00:35",
-      "source": "local://Downloads",
+      "date": "2026-08-12 14:44",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4190,7 +4378,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4226,8 +4416,8 @@ window.FUMO_DATA = {
       "favs": 51,
       "comments": 1,
       "views": 45056,
-      "date": "2026-09-30 00:36",
-      "source": "local://Downloads",
+      "date": "2026-08-12 15:33",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4235,7 +4425,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4273,8 +4465,8 @@ window.FUMO_DATA = {
       "favs": 104,
       "comments": 2,
       "views": 49267,
-      "date": "2026-09-30 00:37",
-      "source": "local://Downloads",
+      "date": "2026-08-12 20:29",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "keine_kamishirasawa"
@@ -4282,7 +4474,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4316,14 +4510,16 @@ window.FUMO_DATA = {
       "favs": 17,
       "comments": 3,
       "views": 53478,
-      "date": "2026-09-30 00:38",
+      "date": "2026-08-12 22:14",
       "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4357,8 +4553,8 @@ window.FUMO_DATA = {
       "favs": 70,
       "comments": 4,
       "views": 57689,
-      "date": "2026-09-30 00:39",
-      "source": "local://Downloads",
+      "date": "2026-08-13 00:47",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4366,7 +4562,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4398,8 +4596,8 @@ window.FUMO_DATA = {
       "favs": 123,
       "comments": 0,
       "views": 61900,
-      "date": "2026-09-30 00:40",
-      "source": "local://Downloads",
+      "date": "2026-08-13 03:28",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4407,7 +4605,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "big_bow",
@@ -4441,8 +4641,8 @@ window.FUMO_DATA = {
       "favs": 36,
       "comments": 1,
       "views": 66111,
-      "date": "2026-09-30 00:41",
-      "source": "local://Downloads",
+      "date": "2026-08-13 06:08",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4450,7 +4650,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -4483,8 +4685,8 @@ window.FUMO_DATA = {
       "favs": 89,
       "comments": 2,
       "views": 70322,
-      "date": "2026-09-30 00:42",
-      "source": "local://Downloads",
+      "date": "2026-08-13 08:40",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4492,7 +4694,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4526,8 +4730,8 @@ window.FUMO_DATA = {
       "favs": 142,
       "comments": 3,
       "views": 74533,
-      "date": "2026-09-30 00:43",
-      "source": "local://Downloads",
+      "date": "2026-08-13 10:33",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4535,7 +4739,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "lying_down",
@@ -4569,14 +4775,16 @@ window.FUMO_DATA = {
       "favs": 55,
       "comments": 4,
       "views": 78744,
-      "date": "2026-09-30 00:44",
-      "source": "local://Downloads",
+      "date": "2026-08-13 13:35",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "close_up",
           "white_hair",
@@ -4611,8 +4819,8 @@ window.FUMO_DATA = {
       "favs": 108,
       "comments": 0,
       "views": 82955,
-      "date": "2026-09-30 00:45",
-      "source": "local://Downloads",
+      "date": "2026-08-13 14:59",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -4620,7 +4828,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4652,8 +4862,8 @@ window.FUMO_DATA = {
       "favs": 21,
       "comments": 1,
       "views": 87166,
-      "date": "2026-09-30 00:46",
-      "source": "local://Downloads",
+      "date": "2026-08-13 19:04",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "mokou_fujiwara"
@@ -4661,7 +4871,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -4695,8 +4907,8 @@ window.FUMO_DATA = {
       "favs": 74,
       "comments": 2,
       "views": 1377,
-      "date": "2026-09-30 00:47",
-      "source": "local://Downloads",
+      "date": "2026-08-14 02:07",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "keine_kamishirasawa"
@@ -4704,7 +4916,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4740,14 +4954,16 @@ window.FUMO_DATA = {
       "favs": 127,
       "comments": 3,
       "views": 5588,
-      "date": "2026-09-30 00:48",
-      "source": "local://Downloads",
+      "date": "2026-08-14 03:24",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "purple_hair",
@@ -4782,14 +4998,16 @@ window.FUMO_DATA = {
       "favs": 40,
       "comments": 4,
       "views": 9799,
-      "date": "2026-09-30 00:49",
-      "source": "local://Downloads",
+      "date": "2026-08-14 04:14",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -4827,8 +5045,8 @@ window.FUMO_DATA = {
       "favs": 93,
       "comments": 0,
       "views": 14010,
-      "date": "2026-09-30 00:50",
-      "source": "local://Downloads",
+      "date": "2026-08-14 04:38",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -4836,7 +5054,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -4870,7 +5090,7 @@ window.FUMO_DATA = {
       "favs": 6,
       "comments": 1,
       "views": 18221,
-      "date": "2026-09-30 00:51",
+      "date": "2026-08-14 05:25",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -4879,7 +5099,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -4912,14 +5134,16 @@ window.FUMO_DATA = {
       "favs": 59,
       "comments": 2,
       "views": 22432,
-      "date": "2026-09-30 00:52",
-      "source": "local://Downloads",
+      "date": "2026-08-14 05:37",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -4955,8 +5179,8 @@ window.FUMO_DATA = {
       "favs": 112,
       "comments": 3,
       "views": 26643,
-      "date": "2026-09-30 00:53",
-      "source": "local://Downloads",
+      "date": "2026-08-14 06:44",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -4964,7 +5188,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "meme",
@@ -4998,14 +5224,16 @@ window.FUMO_DATA = {
       "favs": 25,
       "comments": 4,
       "views": 30854,
-      "date": "2026-09-30 00:54",
-      "source": "local://Downloads",
+      "date": "2026-08-14 07:30",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "bath_tub",
@@ -5039,14 +5267,16 @@ window.FUMO_DATA = {
       "favs": 78,
       "comments": 0,
       "views": 35065,
-      "date": "2026-09-30 00:55",
-      "source": "local://Downloads",
+      "date": "2026-08-14 08:40",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -5079,8 +5309,8 @@ window.FUMO_DATA = {
       "favs": 131,
       "comments": 1,
       "views": 39276,
-      "date": "2026-09-30 00:56",
-      "source": "local://Downloads",
+      "date": "2026-08-14 10:28",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -5089,7 +5319,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "two_plushies",
           "drawer",
@@ -5122,7 +5354,7 @@ window.FUMO_DATA = {
       "favs": 44,
       "comments": 2,
       "views": 43487,
-      "date": "2026-09-30 00:57",
+      "date": "2026-08-14 11:40",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -5131,7 +5363,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "multiple_plushies",
           "bed",
@@ -5165,8 +5399,8 @@ window.FUMO_DATA = {
       "favs": 97,
       "comments": 3,
       "views": 47698,
-      "date": "2026-09-30 00:58",
-      "source": "local://Downloads",
+      "date": "2026-08-14 11:41",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -5175,7 +5409,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "three_plushies",
           "bed",
@@ -5209,8 +5445,8 @@ window.FUMO_DATA = {
       "favs": 10,
       "comments": 4,
       "views": 51909,
-      "date": "2026-09-30 00:59",
-      "source": "local://Downloads",
+      "date": "2026-08-14 11:56",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -5218,7 +5454,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "two_plushies",
           "bed",
@@ -5252,8 +5490,8 @@ window.FUMO_DATA = {
       "favs": 63,
       "comments": 0,
       "views": 56120,
-      "date": "2026-09-30 00:00",
-      "source": "local://Downloads",
+      "date": "2026-08-14 13:24",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -5262,7 +5500,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "two_plushies",
           "cup",
@@ -5296,8 +5536,8 @@ window.FUMO_DATA = {
       "favs": 116,
       "comments": 1,
       "views": 60331,
-      "date": "2026-09-30 00:01",
-      "source": "local://Downloads",
+      "date": "2026-08-14 14:08",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -5305,7 +5545,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "hand",
@@ -5339,14 +5581,16 @@ window.FUMO_DATA = {
       "favs": 29,
       "comments": 2,
       "views": 64542,
-      "date": "2026-09-30 00:02",
-      "source": "local://Downloads",
+      "date": "2026-08-14 17:08",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "person",
@@ -5383,14 +5627,16 @@ window.FUMO_DATA = {
       "favs": 82,
       "comments": 3,
       "views": 68753,
-      "date": "2026-09-30 00:03",
-      "source": "local://Downloads",
+      "date": "2026-08-14 17:19",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "mob_cap",
@@ -5427,8 +5673,8 @@ window.FUMO_DATA = {
       "favs": 135,
       "comments": 4,
       "views": 72964,
-      "date": "2026-09-30 00:04",
-      "source": "local://Downloads",
+      "date": "2026-08-14 17:55",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -5436,7 +5682,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "meme",
@@ -5470,7 +5718,7 @@ window.FUMO_DATA = {
       "favs": 48,
       "comments": 0,
       "views": 77175,
-      "date": "2026-09-30 00:05",
+      "date": "2026-08-14 21:48",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -5479,7 +5727,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -5514,14 +5764,16 @@ window.FUMO_DATA = {
       "favs": 101,
       "comments": 1,
       "views": 81386,
-      "date": "2026-09-30 00:06",
-      "source": "local://Downloads",
+      "date": "2026-08-14 22:33",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "blonde_hair",
@@ -5559,14 +5811,16 @@ window.FUMO_DATA = {
       "favs": 14,
       "comments": 2,
       "views": 85597,
-      "date": "2026-09-30 00:07",
-      "source": "local://Downloads",
+      "date": "2026-08-15 01:51",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "white_hair",
@@ -5601,14 +5855,16 @@ window.FUMO_DATA = {
       "favs": 67,
       "comments": 3,
       "views": 89808,
-      "date": "2026-09-30 00:08",
-      "source": "local://Downloads",
+      "date": "2026-08-15 05:09",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "cat_ears",
@@ -5644,8 +5900,8 @@ window.FUMO_DATA = {
       "favs": 120,
       "comments": 4,
       "views": 4019,
-      "date": "2026-09-30 00:09",
-      "source": "local://Downloads",
+      "date": "2026-08-15 06:16",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "honeybee_hakutaku"
@@ -5653,7 +5909,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -5689,8 +5947,8 @@ window.FUMO_DATA = {
       "favs": 33,
       "comments": 0,
       "views": 8230,
-      "date": "2026-09-30 00:10",
-      "source": "local://Downloads",
+      "date": "2026-08-15 06:55",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -5698,7 +5956,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -5734,8 +5994,8 @@ window.FUMO_DATA = {
       "favs": 86,
       "comments": 1,
       "views": 12441,
-      "date": "2026-09-30 00:11",
-      "source": "local://Downloads",
+      "date": "2026-08-15 08:30",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "yuugi_hoshiguma"
@@ -5743,7 +6003,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -5778,14 +6040,16 @@ window.FUMO_DATA = {
       "favs": 139,
       "comments": 2,
       "views": 16652,
-      "date": "2026-09-30 00:12",
-      "source": "local://Downloads",
+      "date": "2026-08-15 09:25",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "close_up",
@@ -5820,8 +6084,8 @@ window.FUMO_DATA = {
       "favs": 52,
       "comments": 3,
       "views": 20863,
-      "date": "2026-09-30 00:13",
-      "source": "local://Downloads",
+      "date": "2026-08-15 13:53",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "komachi_onsozuka"
@@ -5829,7 +6093,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -5863,8 +6129,8 @@ window.FUMO_DATA = {
       "favs": 105,
       "comments": 4,
       "views": 25074,
-      "date": "2026-09-30 00:14",
-      "source": "local://Downloads",
+      "date": "2026-08-15 14:13",
+      "source": "local://pinterest_fumo",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -5872,7 +6138,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -5908,14 +6176,16 @@ window.FUMO_DATA = {
       "favs": 18,
       "comments": 0,
       "views": 29285,
-      "date": "2026-09-30 00:15",
-      "source": "local://Downloads",
+      "date": "2026-08-15 16:07",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sitting",
@@ -5951,8 +6221,8 @@ window.FUMO_DATA = {
       "favs": 71,
       "comments": 1,
       "views": 33496,
-      "date": "2026-09-30 00:16",
-      "source": "local://Downloads",
+      "date": "2026-08-15 17:11",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "yukari_yakumo",
@@ -5961,7 +6231,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -5994,8 +6266,8 @@ window.FUMO_DATA = {
       "favs": 124,
       "comments": 2,
       "views": 37707,
-      "date": "2026-09-30 00:17",
-      "source": "local://Downloads",
+      "date": "2026-08-15 18:44",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -6003,7 +6275,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "hand",
@@ -6037,8 +6311,8 @@ window.FUMO_DATA = {
       "favs": 37,
       "comments": 3,
       "views": 41918,
-      "date": "2026-09-30 00:18",
-      "source": "local://Downloads",
+      "date": "2026-08-15 21:33",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -6046,7 +6320,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -6079,8 +6355,8 @@ window.FUMO_DATA = {
       "favs": 90,
       "comments": 4,
       "views": 46129,
-      "date": "2026-09-30 00:19",
-      "source": "local://Downloads",
+      "date": "2026-08-15 22:53",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "yukari_yakumo"
@@ -6088,7 +6364,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -6121,8 +6399,8 @@ window.FUMO_DATA = {
       "favs": 3,
       "comments": 0,
       "views": 50340,
-      "date": "2026-09-30 00:20",
-      "source": "local://Downloads",
+      "date": "2026-08-16 00:16",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "remilia_scarlet",
@@ -6131,7 +6409,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -6164,8 +6444,8 @@ window.FUMO_DATA = {
       "favs": 56,
       "comments": 1,
       "views": 54551,
-      "date": "2026-09-30 00:21",
-      "source": "local://Downloads",
+      "date": "2026-08-16 00:59",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "keine_kamishirasawa",
@@ -6174,7 +6454,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "two_plushies",
@@ -6207,8 +6489,8 @@ window.FUMO_DATA = {
       "favs": 109,
       "comments": 2,
       "views": 58762,
-      "date": "2026-09-30 00:22",
-      "source": "local://Downloads",
+      "date": "2026-08-16 01:17",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -6217,7 +6499,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "snow",
@@ -6251,14 +6535,16 @@ window.FUMO_DATA = {
       "favs": 22,
       "comments": 3,
       "views": 62973,
-      "date": "2026-09-30 00:23",
-      "source": "local://Downloads",
+      "date": "2026-08-16 01:59",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plushes",
           "many_plushies",
@@ -6295,14 +6581,16 @@ window.FUMO_DATA = {
       "favs": 75,
       "comments": 4,
       "views": 67184,
-      "date": "2026-09-30 00:24",
-      "source": "local://Downloads",
+      "date": "2026-08-16 03:33",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "meme",
           "text",
@@ -6337,14 +6625,16 @@ window.FUMO_DATA = {
       "favs": 128,
       "comments": 0,
       "views": 71395,
-      "date": "2026-09-30 00:25",
-      "source": "local://Downloads",
+      "date": "2026-08-16 04:01",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -6381,8 +6671,8 @@ window.FUMO_DATA = {
       "favs": 41,
       "comments": 1,
       "views": 75606,
-      "date": "2026-09-30 00:26",
-      "source": "local://Downloads",
+      "date": "2026-08-16 05:45",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -6390,7 +6680,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "figure",
           "blonde_hair",
@@ -6430,14 +6722,16 @@ window.FUMO_DATA = {
       "favs": 94,
       "comments": 2,
       "views": 79817,
-      "date": "2026-09-30 00:27",
-      "source": "local://Downloads",
+      "date": "2026-08-16 10:07",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "bed",
@@ -6474,14 +6768,16 @@ window.FUMO_DATA = {
       "favs": 7,
       "comments": 3,
       "views": 84028,
-      "date": "2026-09-30 00:28",
-      "source": "local://Downloads",
+      "date": "2026-08-16 12:08",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "close_up",
           "screen",
@@ -6515,14 +6811,16 @@ window.FUMO_DATA = {
       "favs": 60,
       "comments": 4,
       "views": 88239,
-      "date": "2026-09-30 00:29",
-      "source": "local://Downloads",
+      "date": "2026-08-16 12:21",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "floor",
@@ -6558,8 +6856,8 @@ window.FUMO_DATA = {
       "favs": 113,
       "comments": 0,
       "views": 2450,
-      "date": "2026-09-30 00:30",
-      "source": "local://Downloads",
+      "date": "2026-08-16 13:30",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -6567,7 +6865,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "fan",
@@ -6601,14 +6901,16 @@ window.FUMO_DATA = {
       "favs": 26,
       "comments": 1,
       "views": 6661,
-      "date": "2026-09-30 00:31",
-      "source": "local://Downloads",
+      "date": "2026-08-16 15:41",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "cat_ears",
           "blonde_hair",
@@ -6643,7 +6945,7 @@ window.FUMO_DATA = {
       "favs": 79,
       "comments": 2,
       "views": 10872,
-      "date": "2026-09-30 00:32",
+      "date": "2026-08-17 00:29",
       "source": "local://Downloads",
       "tags": {
         "character": [
@@ -6652,7 +6954,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "big_bow",
@@ -6686,14 +6990,16 @@ window.FUMO_DATA = {
       "favs": 132,
       "comments": 3,
       "views": 15083,
-      "date": "2026-09-30 00:33",
-      "source": "local://Downloads",
+      "date": "2026-08-17 04:56",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "meme",
@@ -6728,14 +7034,16 @@ window.FUMO_DATA = {
       "favs": 45,
       "comments": 4,
       "views": 19294,
-      "date": "2026-09-30 00:34",
-      "source": "local://Downloads",
+      "date": "2026-08-17 06:38",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "white_hair",
@@ -6771,14 +7079,16 @@ window.FUMO_DATA = {
       "favs": 98,
       "comments": 0,
       "views": 23505,
-      "date": "2026-09-30 00:35",
-      "source": "local://Downloads",
+      "date": "2026-08-17 06:47",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "blue_hair",
@@ -6812,14 +7122,16 @@ window.FUMO_DATA = {
       "favs": 11,
       "comments": 1,
       "views": 27716,
-      "date": "2026-09-30 00:36",
-      "source": "local://Downloads",
+      "date": "2026-08-17 09:55",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "meme",
@@ -6854,14 +7166,16 @@ window.FUMO_DATA = {
       "favs": 64,
       "comments": 2,
       "views": 31927,
-      "date": "2026-09-30 00:37",
-      "source": "local://Downloads",
+      "date": "2026-08-17 10:56",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "green_hair",
           "sunflower",
@@ -6896,14 +7210,16 @@ window.FUMO_DATA = {
       "favs": 117,
       "comments": 3,
       "views": 36138,
-      "date": "2026-09-30 00:38",
-      "source": "local://Downloads",
+      "date": "2026-08-17 10:59",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "white_hair",
@@ -6931,8 +7247,8 @@ window.FUMO_DATA = {
       "src": "fumos/159-pinterest_100275529195225395.jpg",
       "width": 540,
       "height": 720,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-17 16:08",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -6940,7 +7256,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -6975,8 +7293,8 @@ window.FUMO_DATA = {
       "src": "fumos/160-pinterest_101471797848361187.jpg",
       "width": 360,
       "height": 450,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-17 17:23",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -6984,7 +7302,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7018,8 +7338,8 @@ window.FUMO_DATA = {
       "src": "fumos/161-pinterest_101894010311267938.jpg",
       "width": 887,
       "height": 1080,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-17 20:42",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -7027,7 +7347,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7064,14 +7386,16 @@ window.FUMO_DATA = {
       "src": "fumos/162-pinterest_102034747803550349.jpg",
       "width": 1280,
       "height": 1191,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-17 23:03",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7109,14 +7433,16 @@ window.FUMO_DATA = {
       "src": "fumos/163-pinterest_102034747804450645.jpg",
       "width": 850,
       "height": 1170,
-      "date": "2026-09-30 13:21",
+      "date": "2026-08-17 23:44",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -7151,8 +7477,8 @@ window.FUMO_DATA = {
       "src": "fumos/164-pinterest_10273905395736561.jpg",
       "width": 714,
       "height": 697,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 00:27",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -7160,7 +7486,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7195,14 +7523,16 @@ window.FUMO_DATA = {
       "src": "fumos/165-pinterest_10273905395736563.jpg",
       "width": 1152,
       "height": 2048,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 01:14",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7238,14 +7568,16 @@ window.FUMO_DATA = {
       "src": "fumos/166-pinterest_104216178870393256.jpg",
       "width": 452,
       "height": 454,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 03:14",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7281,8 +7613,8 @@ window.FUMO_DATA = {
       "src": "fumos/167-pinterest_104216178870393975.jpg",
       "width": 512,
       "height": 341,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 04:12",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -7290,7 +7622,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7327,8 +7661,8 @@ window.FUMO_DATA = {
       "src": "fumos/168-pinterest_104216178870393978.jpg",
       "width": 546,
       "height": 412,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 06:38",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -7336,7 +7670,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7373,14 +7709,16 @@ window.FUMO_DATA = {
       "src": "fumos/169-pinterest_104216178870393980.jpg",
       "width": 1080,
       "height": 1359,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 10:33",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7419,14 +7757,16 @@ window.FUMO_DATA = {
       "src": "fumos/170-pinterest_104216178870707844.jpg",
       "width": 1080,
       "height": 619,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 12:25",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7461,8 +7801,8 @@ window.FUMO_DATA = {
       "src": "fumos/171-pinterest_104216178870726138.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 12:40",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -7470,7 +7810,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7508,8 +7850,8 @@ window.FUMO_DATA = {
       "src": "fumos/172-pinterest_104216178870727844.jpg",
       "width": 1080,
       "height": 1185,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 16:41",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "youmu_konpaku"
@@ -7517,7 +7859,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7553,14 +7897,16 @@ window.FUMO_DATA = {
       "src": "fumos/173-pinterest_104216178870938119.jpg",
       "width": 327,
       "height": 603,
-      "date": "2026-09-30 13:26",
+      "date": "2026-08-18 17:02",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7594,14 +7940,16 @@ window.FUMO_DATA = {
       "src": "fumos/174-pinterest_104216178871029505.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 20:28",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7637,14 +7985,16 @@ window.FUMO_DATA = {
       "src": "fumos/175-pinterest_104216178871067027.png",
       "width": 680,
       "height": 529,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 20:30",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7685,8 +8035,8 @@ window.FUMO_DATA = {
       "src": "fumos/176-pinterest_104216178871535420_3985520779.jpg",
       "width": 1483,
       "height": 1398,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 20:37",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -7694,7 +8044,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7732,14 +8084,16 @@ window.FUMO_DATA = {
       "src": "fumos/177-pinterest_104216178871535421.jpg",
       "width": 1080,
       "height": 1098,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 21:18",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screen",
@@ -7775,14 +8129,16 @@ window.FUMO_DATA = {
       "src": "fumos/178-pinterest_104216178871535423.jpg",
       "width": 549,
       "height": 412,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-18 22:31",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7816,14 +8172,16 @@ window.FUMO_DATA = {
       "src": "fumos/179-pinterest_104216178871536097.jpg",
       "width": 512,
       "height": 510,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-19 04:28",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "sticker",
@@ -7853,14 +8211,16 @@ window.FUMO_DATA = {
       "src": "fumos/180-pinterest_104216178871548021.jpg",
       "width": 480,
       "height": 640,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-19 06:10",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7893,14 +8253,16 @@ window.FUMO_DATA = {
       "src": "fumos/181-pinterest_104216178871579527_3069901518.jpg",
       "width": 1584,
       "height": 2048,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-19 17:56",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7941,8 +8303,8 @@ window.FUMO_DATA = {
       "src": "fumos/182-pinterest_104216178871605376.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-19 22:41",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -7950,7 +8312,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -7985,8 +8349,8 @@ window.FUMO_DATA = {
       "src": "fumos/183-pinterest_104216178871721730.jpg",
       "width": 480,
       "height": 630,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-19 23:26",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -7994,7 +8358,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8031,8 +8397,8 @@ window.FUMO_DATA = {
       "src": "fumos/184-pinterest_104216178871772823.jpg",
       "width": 2048,
       "height": 1152,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 00:06",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -8040,7 +8406,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8076,14 +8444,16 @@ window.FUMO_DATA = {
       "src": "fumos/185-pinterest_104356916360478098.jpg",
       "width": 1240,
       "height": 1536,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 02:40",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -8121,14 +8491,16 @@ window.FUMO_DATA = {
       "src": "fumos/186-pinterest_104356916360478101.jpg",
       "width": 1280,
       "height": 720,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 04:22",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8166,14 +8538,16 @@ window.FUMO_DATA = {
       "src": "fumos/187-pinterest_104356916360536132_4081542414.jpg",
       "width": 1397,
       "height": 1484,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 04:27",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -8210,14 +8584,16 @@ window.FUMO_DATA = {
       "src": "fumos/188-pinterest_104356916360719149_5393803022316909243.mp4",
       "width": 360,
       "height": 360,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 05:13",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8252,14 +8628,16 @@ window.FUMO_DATA = {
       "src": "fumos/189-pinterest_1045327763518073810_3269008990.jpg",
       "width": 1080,
       "height": 915,
-      "date": "2026-09-30 12:58",
+      "date": "2026-08-20 05:35",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8301,14 +8679,16 @@ window.FUMO_DATA = {
       "src": "fumos/190-pinterest_104849497567377688.jpg",
       "width": 510,
       "height": 510,
-      "date": "2026-09-30 12:51",
+      "date": "2026-08-20 07:50",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8346,14 +8726,16 @@ window.FUMO_DATA = {
       "src": "fumos/191-pinterest_10485011639954971.jpg",
       "width": 750,
       "height": 561,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 09:29",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -8387,14 +8769,16 @@ window.FUMO_DATA = {
       "src": "fumos/192-pinterest_108086459802035454.jpg",
       "width": 820,
       "height": 512,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 09:35",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -8426,12 +8810,14 @@ window.FUMO_DATA = {
       "src": "fumos/193-pinterest_108508672269311902.jpg",
       "width": 1168,
       "height": 1404,
-      "date": "2026-09-30 13:18",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 10:00",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -8466,8 +8852,8 @@ window.FUMO_DATA = {
       "src": "fumos/194-pinterest_108579041012686231_593931794.jpg",
       "width": 1280,
       "height": 1280,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 12:49",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "remilia_scarlet",
@@ -8476,7 +8862,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8516,14 +8904,16 @@ window.FUMO_DATA = {
       "src": "fumos/195-pinterest_108790147240503711.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 15:57",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8560,14 +8950,16 @@ window.FUMO_DATA = {
       "src": "fumos/196-pinterest_1096767315540091092.jpg",
       "width": 1280,
       "height": 999,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 17:20",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8603,14 +8995,16 @@ window.FUMO_DATA = {
       "src": "fumos/197-pinterest_1113022495449952252.jpg",
       "width": 900,
       "height": 900,
-      "date": "2026-09-30 13:13",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 20:15",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8647,14 +9041,16 @@ window.FUMO_DATA = {
       "src": "fumos/198-pinterest_111604897013114620_1719827981.jpg",
       "width": 481,
       "height": 641,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-20 22:05",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8690,8 +9086,8 @@ window.FUMO_DATA = {
       "src": "fumos/199-pinterest_111675265754098785.jpg",
       "width": 600,
       "height": 598,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 00:21",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -8699,7 +9095,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8738,12 +9136,14 @@ window.FUMO_DATA = {
       "src": "fumos/200-pinterest_1132092425107302573_3144058152.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 01:17",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8776,8 +9176,8 @@ window.FUMO_DATA = {
       "src": "fumos/201-pinterest_1141662574321374487_2780002532.jpg",
       "width": 3024,
       "height": 4032,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 01:52",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -8785,7 +9185,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8827,14 +9229,16 @@ window.FUMO_DATA = {
       "src": "fumos/202-pinterest_116178865378276828.jpg",
       "width": 1080,
       "height": 914,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 02:15",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8871,14 +9275,16 @@ window.FUMO_DATA = {
       "src": "fumos/203-pinterest_117656609010833653_896693217.jpg",
       "width": 800,
       "height": 800,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 03:31",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -8911,7 +9317,7 @@ window.FUMO_DATA = {
       "src": "fumos/204-pinterest_119134352640133558.jpg",
       "width": 850,
       "height": 478,
-      "date": "2026-09-30 13:26",
+      "date": "2026-08-21 06:23",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -8920,7 +9326,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -8954,8 +9362,8 @@ window.FUMO_DATA = {
       "src": "fumos/205-pinterest_120330621289116660.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 06:29",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -8963,7 +9371,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9002,14 +9412,16 @@ window.FUMO_DATA = {
       "src": "fumos/206-pinterest_120330621289185841.jpg",
       "width": 394,
       "height": 675,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 07:28",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9044,14 +9456,16 @@ window.FUMO_DATA = {
       "src": "fumos/207-pinterest_120330621289763790.mp4",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 09:27",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9088,14 +9502,16 @@ window.FUMO_DATA = {
       "src": "fumos/208-pinterest_12033123996415895.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 11:18",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9131,8 +9547,8 @@ window.FUMO_DATA = {
       "src": "fumos/209-pinterest_121245414961890160.jpg",
       "width": 526,
       "height": 521,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 13:46",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -9140,7 +9556,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9177,14 +9595,16 @@ window.FUMO_DATA = {
       "src": "fumos/210-pinterest_121245414961892882.jpg",
       "width": 320,
       "height": 320,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 16:33",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -9219,8 +9639,8 @@ window.FUMO_DATA = {
       "src": "fumos/211-pinterest_121245414961892884.jpg",
       "width": 540,
       "height": 540,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 16:57",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -9228,7 +9648,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9264,14 +9686,16 @@ window.FUMO_DATA = {
       "src": "fumos/212-pinterest_121245414962290445.jpg",
       "width": 350,
       "height": 349,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 19:27",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9305,14 +9729,16 @@ window.FUMO_DATA = {
       "src": "fumos/213-pinterest_122160208639332912_1856393948.jpg",
       "width": 1200,
       "height": 675,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 19:36",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -9351,8 +9777,8 @@ window.FUMO_DATA = {
       "src": "fumos/214-pinterest_124693483423869589.jpg",
       "width": 660,
       "height": 823,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-21 21:05",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -9360,7 +9786,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9401,7 +9829,7 @@ window.FUMO_DATA = {
       "src": "fumos/215-pinterest_124693483423869595.jpg",
       "width": 413,
       "height": 340,
-      "date": "2026-09-30 12:57",
+      "date": "2026-08-21 23:09",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -9411,7 +9839,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9453,7 +9883,7 @@ window.FUMO_DATA = {
       "src": "fumos/216-pinterest_124693483423869600.jpg",
       "width": 806,
       "height": 1024,
-      "date": "2026-09-30 12:52",
+      "date": "2026-08-21 23:39",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -9462,7 +9892,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9502,12 +9934,14 @@ window.FUMO_DATA = {
       "src": "fumos/217-pinterest_126452702032276937.jpg",
       "width": 720,
       "height": 1124,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-22 06:58",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -9541,7 +9975,7 @@ window.FUMO_DATA = {
       "src": "fumos/218-pinterest_126452702032678369_118190033.png",
       "width": 1080,
       "height": 1080,
-      "date": "2026-09-30 13:27",
+      "date": "2026-08-22 12:56",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -9550,7 +9984,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -9589,8 +10025,8 @@ window.FUMO_DATA = {
       "src": "fumos/219-pinterest_126452702033202064_144209433.png",
       "width": 736,
       "height": 1308,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-22 15:12",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -9598,7 +10034,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -9636,14 +10074,16 @@ window.FUMO_DATA = {
       "src": "fumos/220-pinterest_126452702033507647_253571808.jpg",
       "width": 678,
       "height": 610,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-22 22:57",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9676,14 +10116,16 @@ window.FUMO_DATA = {
       "src": "fumos/221-pinterest_126452702033890716_5361449989696437349.mp4",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-22 23:09",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -9722,14 +10164,16 @@ window.FUMO_DATA = {
       "src": "fumos/222-pinterest_132856257752172608_3573263853.png",
       "width": 1080,
       "height": 1072,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 00:20",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -9766,8 +10210,8 @@ window.FUMO_DATA = {
       "src": "fumos/223-pinterest_137359857381713055_306784322.png",
       "width": 708,
       "height": 479,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 02:51",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -9775,7 +10219,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9817,14 +10263,16 @@ window.FUMO_DATA = {
       "src": "fumos/224-pinterest_145663369206047830.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 12:57",
+      "date": "2026-08-23 04:54",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9862,14 +10310,16 @@ window.FUMO_DATA = {
       "src": "fumos/225-pinterest_146718900354132710.jpg",
       "width": 620,
       "height": 484,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 05:48",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9905,14 +10355,16 @@ window.FUMO_DATA = {
       "src": "fumos/226-pinterest_146718900355742865_2161439362.jpg",
       "width": 736,
       "height": 920,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 08:09",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9950,14 +10402,16 @@ window.FUMO_DATA = {
       "src": "fumos/227-pinterest_1477812372212324.jpg",
       "width": 460,
       "height": 598,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 08:53",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -9993,14 +10447,16 @@ window.FUMO_DATA = {
       "src": "fumos/228-pinterest_148548487704449049_1219271684.jpg",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 09:10",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -10032,14 +10488,16 @@ window.FUMO_DATA = {
       "src": "fumos/229-pinterest_150237337565761514.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 09:30",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -10074,14 +10532,16 @@ window.FUMO_DATA = {
       "src": "fumos/230-pinterest_158681586865438938_4097114345.jpg",
       "width": 3000,
       "height": 4000,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 10:22",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10120,12 +10580,14 @@ window.FUMO_DATA = {
       "src": "fumos/231-pinterest_166562886213757381_5355080125379560854.mp4",
       "width": 696,
       "height": 984,
-      "date": "2026-09-30 13:13",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 18:01",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10160,14 +10622,16 @@ window.FUMO_DATA = {
       "src": "fumos/232-pinterest_166562886214166207_3419123486.jpg",
       "width": 583,
       "height": 576,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 19:31",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10200,14 +10664,16 @@ window.FUMO_DATA = {
       "src": "fumos/233-pinterest_166773992443177508.jpg",
       "width": 720,
       "height": 899,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 21:27",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -10243,12 +10709,14 @@ window.FUMO_DATA = {
       "src": "fumos/234-pinterest_16747829862601989_1764070006.jpg",
       "width": 1080,
       "height": 1190,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-23 22:34",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10284,8 +10752,8 @@ window.FUMO_DATA = {
       "src": "fumos/235-pinterest_168673948537532164.jpg",
       "width": 1170,
       "height": 1165,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 00:07",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -10294,7 +10762,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10335,14 +10805,16 @@ window.FUMO_DATA = {
       "src": "fumos/236-pinterest_168885054771899082_5342973389950730669.mp4",
       "width": 696,
       "height": 744,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 01:19",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10377,8 +10849,8 @@ window.FUMO_DATA = {
       "src": "fumos/237-pinterest_168885054771913895.mp4",
       "width": 640,
       "height": 680,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 04:22",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -10386,7 +10858,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -10420,8 +10894,8 @@ window.FUMO_DATA = {
       "src": "fumos/238-pinterest_170714642119483925_209654320.jpg",
       "width": 622,
       "height": 622,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 04:50",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -10429,7 +10903,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10463,8 +10939,8 @@ window.FUMO_DATA = {
       "src": "fumos/239-pinterest_171840542023760490.jpg",
       "width": 800,
       "height": 799,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 08:29",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -10472,7 +10948,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10509,14 +10987,16 @@ window.FUMO_DATA = {
       "src": "fumos/240-pinterest_174162710583961293.jpg",
       "width": 526,
       "height": 526,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 09:48",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10548,14 +11028,16 @@ window.FUMO_DATA = {
       "src": "fumos/241-pinterest_17873729766762868.mp4",
       "width": 720,
       "height": 1280,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 16:53",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10587,7 +11069,7 @@ window.FUMO_DATA = {
       "src": "fumos/242-pinterest_179792210118990963.jpg",
       "width": 632,
       "height": 449,
-      "date": "2026-09-30 13:02",
+      "date": "2026-08-24 19:07",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -10597,7 +11079,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10634,8 +11118,8 @@ window.FUMO_DATA = {
       "src": "fumos/243-pinterest_179792210118990977.jpg",
       "width": 736,
       "height": 736,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 19:59",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -10643,7 +11127,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10679,14 +11165,16 @@ window.FUMO_DATA = {
       "src": "fumos/244-pinterest_181551428722005630.jpg",
       "width": 720,
       "height": 1054,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 20:29",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10722,14 +11210,16 @@ window.FUMO_DATA = {
       "src": "fumos/245-pinterest_1829656093351076.jpg",
       "width": 824,
       "height": 824,
-      "date": "2026-09-30 13:25",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 21:26",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -10761,8 +11251,8 @@ window.FUMO_DATA = {
       "src": "fumos/246-pinterest_187603140724070453.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 22:22",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -10770,7 +11260,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10806,8 +11298,8 @@ window.FUMO_DATA = {
       "src": "fumos/247-pinterest_187603140725119510_2894217544.jpg",
       "width": 1632,
       "height": 1224,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-24 23:28",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -10815,7 +11307,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10851,14 +11345,16 @@ window.FUMO_DATA = {
       "src": "fumos/248-pinterest_187603140725136487_806827816.jpg",
       "width": 1376,
       "height": 1507,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 02:21",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10894,14 +11390,16 @@ window.FUMO_DATA = {
       "src": "fumos/249-pinterest_188306828166037267_58148100.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 02:53",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10937,14 +11435,16 @@ window.FUMO_DATA = {
       "src": "fumos/250-pinterest_18929260934922019.mp4",
       "width": 750,
       "height": 544,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 04:07",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -10978,8 +11478,8 @@ window.FUMO_DATA = {
       "src": "fumos/251-pinterest_190277153004784841_5424787004971866716.mp4",
       "width": 640,
       "height": 360,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 05:34",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "mokou_fujiwara"
@@ -10987,7 +11487,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11022,14 +11524,16 @@ window.FUMO_DATA = {
       "src": "fumos/252-pinterest_190277153004784848_5406423395590004420.mp4",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:07",
+      "date": "2026-08-25 06:23",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11064,14 +11568,16 @@ window.FUMO_DATA = {
       "src": "fumos/253-pinterest_190277153004842194.jpg",
       "width": 843,
       "height": 1124,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 09:24",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11104,8 +11610,8 @@ window.FUMO_DATA = {
       "src": "fumos/254-pinterest_190277153004849757.jpg",
       "width": 843,
       "height": 1124,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 15:19",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "youmu_konpaku"
@@ -11113,7 +11619,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11150,8 +11658,8 @@ window.FUMO_DATA = {
       "src": "fumos/255-pinterest_190277153004849775_2437339882.jpg",
       "width": 3000,
       "height": 4000,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 19:10",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reisen_udongein_inaba"
@@ -11159,7 +11667,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11197,14 +11707,16 @@ window.FUMO_DATA = {
       "src": "fumos/256-pinterest_190277153005004648_3033084488.jpg",
       "width": 3072,
       "height": 3106,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 21:44",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11239,14 +11751,16 @@ window.FUMO_DATA = {
       "src": "fumos/257-pinterest_193373377742752951.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-25 22:28",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11280,14 +11794,16 @@ window.FUMO_DATA = {
       "src": "fumos/258-pinterest_200339883417652799.jpg",
       "width": 488,
       "height": 484,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 02:31",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11320,14 +11836,16 @@ window.FUMO_DATA = {
       "src": "fumos/259-pinterest_200339883417929874.jpg",
       "width": 622,
       "height": 642,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 02:40",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11363,14 +11881,16 @@ window.FUMO_DATA = {
       "src": "fumos/260-pinterest_20055160839633634.jpg",
       "width": 1116,
       "height": 698,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 02:57",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11403,14 +11923,16 @@ window.FUMO_DATA = {
       "src": "fumos/261-pinterest_20055160839639775.png",
       "width": 725,
       "height": 444,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 03:50",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11448,8 +11970,8 @@ window.FUMO_DATA = {
       "src": "fumos/262-pinterest_20055160839653156.jpg",
       "width": 526,
       "height": 527,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 05:06",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -11457,7 +11979,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11495,14 +12019,16 @@ window.FUMO_DATA = {
       "src": "fumos/263-pinterest_204702745557522105.jpg",
       "width": 714,
       "height": 697,
-      "date": "2026-09-30 13:04",
+      "date": "2026-08-26 08:48",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11537,8 +12063,8 @@ window.FUMO_DATA = {
       "src": "fumos/264-pinterest_208643395228148231.jpg",
       "width": 504,
       "height": 380,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 10:57",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -11546,7 +12072,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11582,14 +12110,16 @@ window.FUMO_DATA = {
       "src": "fumos/265-pinterest_210332245094370811_5486043473631055661.mp4",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 14:08",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -11623,14 +12153,16 @@ window.FUMO_DATA = {
       "src": "fumos/266-pinterest_213498838581178252.mp4",
       "width": 400,
       "height": 368,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 18:03",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -11665,8 +12197,8 @@ window.FUMO_DATA = {
       "src": "fumos/267-pinterest_217439488253953957.jpg",
       "width": 736,
       "height": 813,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 18:36",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -11674,7 +12206,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11712,14 +12246,16 @@ window.FUMO_DATA = {
       "src": "fumos/268-pinterest_217439488255738019.jpg",
       "width": 412,
       "height": 412,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-26 19:27",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -11752,14 +12288,16 @@ window.FUMO_DATA = {
       "src": "fumos/269-pinterest_220043131791590536.jpg",
       "width": 525,
       "height": 600,
-      "date": "2026-09-30 13:10",
+      "date": "2026-08-26 19:35",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11794,14 +12332,16 @@ window.FUMO_DATA = {
       "src": "fumos/270-pinterest_220043131791847161_2972386691.jpg",
       "width": 431,
       "height": 767,
-      "date": "2026-09-30 12:50",
+      "date": "2026-08-26 21:52",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11834,8 +12374,8 @@ window.FUMO_DATA = {
       "src": "fumos/271-pinterest_220183869278845455_1656105204.png",
       "width": 731,
       "height": 981,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 00:42",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -11844,7 +12384,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11885,14 +12427,16 @@ window.FUMO_DATA = {
       "src": "fumos/272-pinterest_224828206393696146_3896440128.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 04:36",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11928,14 +12472,16 @@ window.FUMO_DATA = {
       "src": "fumos/273-pinterest_226094843787487497.mp4",
       "width": 426,
       "height": 426,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 07:46",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -11971,8 +12517,8 @@ window.FUMO_DATA = {
       "src": "fumos/274-pinterest_22729173111865272.jpg",
       "width": 476,
       "height": 755,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 07:59",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -11980,7 +12526,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12016,8 +12564,8 @@ window.FUMO_DATA = {
       "src": "fumos/275-pinterest_22729173111945780.jpg",
       "width": 512,
       "height": 509,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 11:03",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -12025,7 +12573,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12061,14 +12611,16 @@ window.FUMO_DATA = {
       "src": "fumos/276-pinterest_22869910604686909_1545953099.webp",
       "width": 3240,
       "height": 3240,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 11:29",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12107,7 +12659,7 @@ window.FUMO_DATA = {
       "src": "fumos/277-pinterest_232709505739898656.jpg",
       "width": 768,
       "height": 1023,
-      "date": "2026-09-30 13:09",
+      "date": "2026-08-27 12:07",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -12116,7 +12668,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12157,8 +12711,8 @@ window.FUMO_DATA = {
       "src": "fumos/278-pinterest_237283474112494895_4848969561259359535.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 13:42",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -12166,7 +12720,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12205,14 +12761,16 @@ window.FUMO_DATA = {
       "src": "fumos/279-pinterest_237283474112494895_4848969629978836271.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 15:25",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12249,8 +12807,8 @@ window.FUMO_DATA = {
       "src": "fumos/280-pinterest_237283474112494895_4848969767417789743.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 16:28",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -12258,7 +12816,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12300,8 +12860,8 @@ window.FUMO_DATA = {
       "src": "fumos/281-pinterest_237283474112494895_4848969904856743215.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 17:57",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -12309,7 +12869,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12351,14 +12913,16 @@ window.FUMO_DATA = {
       "src": "fumos/282-pinterest_24488391720170189.jpg",
       "width": 585,
       "height": 960,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 19:42",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12395,14 +12959,16 @@ window.FUMO_DATA = {
       "src": "fumos/283-pinterest_24840235437507537.jpg",
       "width": 800,
       "height": 749,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-27 22:44",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -12432,14 +12998,16 @@ window.FUMO_DATA = {
       "src": "fumos/284-pinterest_251427591690583787.jpg",
       "width": 720,
       "height": 527,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 03:50",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12471,14 +13039,16 @@ window.FUMO_DATA = {
       "src": "fumos/285-pinterest_251427591690720686.jpg",
       "width": 1024,
       "height": 768,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 05:45",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12516,8 +13086,8 @@ window.FUMO_DATA = {
       "src": "fumos/286-pinterest_252834966573732627.jpg",
       "width": 1208,
       "height": 885,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 06:30",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -12525,7 +13095,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12563,14 +13135,16 @@ window.FUMO_DATA = {
       "src": "fumos/287-pinterest_252834966573762068.jpg",
       "width": 285,
       "height": 402,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 11:00",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12603,7 +13177,7 @@ window.FUMO_DATA = {
       "src": "fumos/288-pinterest_252905335321212727.jpg",
       "width": 591,
       "height": 593,
-      "date": "2026-09-30 12:52",
+      "date": "2026-08-28 12:53",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -12612,7 +13186,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12649,8 +13225,8 @@ window.FUMO_DATA = {
       "src": "fumos/289-pinterest_256494141273025019.jpg",
       "width": 1080,
       "height": 1439,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 14:46",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -12658,7 +13234,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12697,14 +13275,16 @@ window.FUMO_DATA = {
       "src": "fumos/290-pinterest_258042253641371238.jpg",
       "width": 540,
       "height": 509,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 15:46",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12741,8 +13321,8 @@ window.FUMO_DATA = {
       "src": "fumos/291-pinterest_258042253642747534.jpg",
       "width": 735,
       "height": 638,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 18:45",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "cirno"
@@ -12750,7 +13330,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12788,8 +13370,8 @@ window.FUMO_DATA = {
       "src": "fumos/292-pinterest_258042253643141881.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 18:56",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -12797,7 +13379,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -12835,8 +13419,8 @@ window.FUMO_DATA = {
       "src": "fumos/293-pinterest_258042253643519152.jpg",
       "width": 1440,
       "height": 1439,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-28 21:12",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -12844,7 +13428,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12881,14 +13467,16 @@ window.FUMO_DATA = {
       "src": "fumos/294-pinterest_258042253644113663.jpg",
       "width": 526,
       "height": 526,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 02:07",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12922,8 +13510,8 @@ window.FUMO_DATA = {
       "src": "fumos/295-pinterest_258042253644840173_1646733224.jpg",
       "width": 1080,
       "height": 1080,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 03:02",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -12931,7 +13519,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -12967,14 +13557,16 @@ window.FUMO_DATA = {
       "src": "fumos/296-pinterest_258042253644861317_1330669570.jpg",
       "width": 1080,
       "height": 810,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 03:56",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13008,7 +13600,7 @@ window.FUMO_DATA = {
       "src": "fumos/297-pinterest_258042253645085071.jpg",
       "width": 1219,
       "height": 840,
-      "date": "2026-09-30 13:27",
+      "date": "2026-08-29 08:00",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -13017,7 +13609,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13058,8 +13652,8 @@ window.FUMO_DATA = {
       "src": "fumos/298-pinterest_258042253645370611_2889498587.jpg",
       "width": 1536,
       "height": 2048,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 08:18",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -13067,7 +13661,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13107,8 +13703,8 @@ window.FUMO_DATA = {
       "src": "fumos/299-pinterest_258042253645370633.jpg",
       "width": 799,
       "height": 1065,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 08:23",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -13116,7 +13712,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13154,12 +13752,14 @@ window.FUMO_DATA = {
       "src": "fumos/300-pinterest_258042253645733401_3083334818.png",
       "width": 1071,
       "height": 1065,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 09:34",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13195,14 +13795,16 @@ window.FUMO_DATA = {
       "src": "fumos/301-pinterest_25966135343984116.jpg",
       "width": 480,
       "height": 478,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 12:38",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13235,14 +13837,16 @@ window.FUMO_DATA = {
       "src": "fumos/302-pinterest_262334747037287822.jpg",
       "width": 340,
       "height": 755,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 14:48",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13277,14 +13881,16 @@ window.FUMO_DATA = {
       "src": "fumos/303-pinterest_264375440619933807.jpg",
       "width": 554,
       "height": 554,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 16:45",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13318,14 +13924,16 @@ window.FUMO_DATA = {
       "src": "fumos/304-pinterest_264375440619933812_1881752186.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 13:05",
+      "date": "2026-08-29 17:41",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13358,14 +13966,16 @@ window.FUMO_DATA = {
       "src": "fumos/305-pinterest_264375440619933837.jpg",
       "width": 800,
       "height": 600,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 18:37",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13400,14 +14010,16 @@ window.FUMO_DATA = {
       "src": "fumos/306-pinterest_265501340528802392.mp4",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 23:09",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13443,14 +14055,16 @@ window.FUMO_DATA = {
       "src": "fumos/307-pinterest_270919733827641012_1079128893.jpg",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 23:26",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13484,14 +14098,16 @@ window.FUMO_DATA = {
       "src": "fumos/308-pinterest_270919733827647711.jpg",
       "width": 800,
       "height": 1067,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-29 23:55",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13527,8 +14143,8 @@ window.FUMO_DATA = {
       "src": "fumos/309-pinterest_270919733827651747.jpg",
       "width": 500,
       "height": 500,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 00:42",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -13536,7 +14152,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13569,8 +14187,8 @@ window.FUMO_DATA = {
       "src": "fumos/310-pinterest_270919733828789275.jpg",
       "width": 510,
       "height": 639,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 00:57",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -13578,7 +14196,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13614,7 +14234,7 @@ window.FUMO_DATA = {
       "src": "fumos/311-pinterest_271693790013963918.jpg",
       "width": 1920,
       "height": 1080,
-      "date": "2026-09-30 13:28",
+      "date": "2026-08-30 04:08",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -13623,7 +14243,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -13660,14 +14282,16 @@ window.FUMO_DATA = {
       "src": "fumos/312-pinterest_273945589828799400_2738934878.png",
       "width": 1080,
       "height": 1003,
-      "date": "2026-09-30 13:20",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 06:47",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13702,14 +14326,16 @@ window.FUMO_DATA = {
       "src": "fumos/313-pinterest_276338127131782837_2758305620.jpg",
       "width": 1080,
       "height": 1303,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 09:11",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13741,8 +14367,8 @@ window.FUMO_DATA = {
       "src": "fumos/314-pinterest_27725353952681633_918103382.jpg",
       "width": 1681,
       "height": 1234,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 09:22",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -13750,7 +14376,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -13789,14 +14417,16 @@ window.FUMO_DATA = {
       "src": "fumos/315-pinterest_277886239502588067.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 09:45",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13830,8 +14460,8 @@ window.FUMO_DATA = {
       "src": "fumos/316-pinterest_277886239502620810.jpg",
       "width": 736,
       "height": 1030,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 11:27",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -13839,7 +14469,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13877,8 +14509,8 @@ window.FUMO_DATA = {
       "src": "fumos/317-pinterest_277886239502620811.jpg",
       "width": 745,
       "height": 960,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 12:54",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -13886,7 +14518,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13923,14 +14557,16 @@ window.FUMO_DATA = {
       "src": "fumos/318-pinterest_281967626665751059_3225729151.jpg",
       "width": 1632,
       "height": 1224,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 14:54",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -13969,14 +14605,16 @@ window.FUMO_DATA = {
       "src": "fumos/319-pinterest_281967626665867195.jpg",
       "width": 720,
       "height": 710,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 16:24",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -14010,8 +14648,8 @@ window.FUMO_DATA = {
       "src": "fumos/320-pinterest_285978645080073753.mp4",
       "width": 576,
       "height": 576,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 18:11",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -14019,7 +14657,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14053,8 +14693,8 @@ window.FUMO_DATA = {
       "src": "fumos/321-pinterest_285978645081410882.jpg",
       "width": 540,
       "height": 405,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 18:31",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -14062,7 +14702,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14097,14 +14739,16 @@ window.FUMO_DATA = {
       "src": "fumos/322-pinterest_285978645081410890.jpg",
       "width": 720,
       "height": 900,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 19:26",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14139,8 +14783,8 @@ window.FUMO_DATA = {
       "src": "fumos/323-pinterest_285978645081410892.jpg",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 20:24",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -14148,7 +14792,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14186,14 +14832,16 @@ window.FUMO_DATA = {
       "src": "fumos/324-pinterest_285978645081411149.jpg",
       "width": 698,
       "height": 1245,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 21:25",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14228,14 +14876,16 @@ window.FUMO_DATA = {
       "src": "fumos/325-pinterest_285978645081413700.jpg",
       "width": 1600,
       "height": 900,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 21:36",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14268,14 +14918,16 @@ window.FUMO_DATA = {
       "src": "fumos/326-pinterest_285978645081418117.jpg",
       "width": 320,
       "height": 399,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-30 22:00",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14307,8 +14959,8 @@ window.FUMO_DATA = {
       "src": "fumos/327-pinterest_285978645083746260.jpg",
       "width": 845,
       "height": 845,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 09:20",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "cirno"
@@ -14316,7 +14968,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14349,8 +15003,8 @@ window.FUMO_DATA = {
       "src": "fumos/328-pinterest_28710516368051659.jpg",
       "width": 1080,
       "height": 1162,
-      "date": "2026-09-30 13:21",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 13:08",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -14358,7 +15012,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -14399,14 +15055,16 @@ window.FUMO_DATA = {
       "src": "fumos/329-pinterest_291045194694327909_1191451283.jpg",
       "width": 2448,
       "height": 2448,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 13:47",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14442,14 +15100,16 @@ window.FUMO_DATA = {
       "src": "fumos/330-pinterest_293719206970349819_3541903142.jpg",
       "width": 736,
       "height": 736,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 14:01",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14484,8 +15144,8 @@ window.FUMO_DATA = {
       "src": "fumos/331-pinterest_296463587983844962.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 14:27",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -14493,7 +15153,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14531,14 +15193,16 @@ window.FUMO_DATA = {
       "src": "fumos/332-pinterest_298222806590908680.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 13:23",
+      "date": "2026-08-31 17:34",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14577,8 +15241,8 @@ window.FUMO_DATA = {
       "src": "fumos/333-pinterest_298363544085877443.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 20:41",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -14586,7 +15250,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14626,8 +15292,8 @@ window.FUMO_DATA = {
       "src": "fumos/334-pinterest_298504281575224991_3119865336.jpg",
       "width": 1301,
       "height": 1593,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-08-31 20:51",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -14635,7 +15301,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -14672,14 +15340,16 @@ window.FUMO_DATA = {
       "src": "fumos/335-pinterest_300826450142637202_5506354481257848727.mp4",
       "width": 720,
       "height": 1280,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 00:08",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -14714,14 +15384,16 @@ window.FUMO_DATA = {
       "src": "fumos/336-pinterest_301881981300421979.jpg",
       "width": 290,
       "height": 408,
-      "date": "2026-09-30 13:21",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 08:16",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14753,14 +15425,16 @@ window.FUMO_DATA = {
       "src": "fumos/337-pinterest_3025924741904752.jpg",
       "width": 1231,
       "height": 1230,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 12:18",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14797,8 +15471,8 @@ window.FUMO_DATA = {
       "src": "fumos/338-pinterest_30610472458367953.mp4",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 13:17",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "cirno",
@@ -14807,7 +15481,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14846,8 +15522,8 @@ window.FUMO_DATA = {
       "src": "fumos/339-pinterest_308215168264398669.jpg",
       "width": 1050,
       "height": 1050,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 13:26",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "cirno"
@@ -14855,7 +15531,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14891,14 +15569,16 @@ window.FUMO_DATA = {
       "src": "fumos/340-pinterest_308215168264398685.jpg",
       "width": 236,
       "height": 236,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 14:06",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -14932,8 +15612,8 @@ window.FUMO_DATA = {
       "src": "fumos/341-pinterest_308215168264398718.jpg",
       "width": 720,
       "height": 726,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 14:40",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -14941,7 +15621,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -14978,14 +15660,16 @@ window.FUMO_DATA = {
       "src": "fumos/342-pinterest_308355905750177470.jpg",
       "width": 286,
       "height": 392,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 14:56",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15019,8 +15703,8 @@ window.FUMO_DATA = {
       "src": "fumos/343-pinterest_308355905750247017.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 17:50",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15028,7 +15712,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15067,14 +15753,16 @@ window.FUMO_DATA = {
       "src": "fumos/344-pinterest_308355905750248965.jpg",
       "width": 2048,
       "height": 1436,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 18:56",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15119,8 +15807,8 @@ window.FUMO_DATA = {
       "src": "fumos/345-pinterest_308355905753056844.jpg",
       "width": 512,
       "height": 341,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-01 19:55",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15128,7 +15816,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15167,14 +15857,16 @@ window.FUMO_DATA = {
       "src": "fumos/346-pinterest_309341068179026493.jpg",
       "width": 360,
       "height": 360,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 01:40",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -15207,8 +15899,8 @@ window.FUMO_DATA = {
       "src": "fumos/347-pinterest_318066792457453199.jpg",
       "width": 228,
       "height": 219,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 07:23",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "cirno"
@@ -15216,7 +15908,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15249,8 +15943,8 @@ window.FUMO_DATA = {
       "src": "fumos/348-pinterest_318418636164598560.jpg",
       "width": 501,
       "height": 510,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 07:39",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15258,7 +15952,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15297,8 +15993,8 @@ window.FUMO_DATA = {
       "src": "fumos/349-pinterest_318418636164770499.jpg",
       "width": 478,
       "height": 755,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 13:05",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15306,7 +16002,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15346,14 +16044,16 @@ window.FUMO_DATA = {
       "src": "fumos/350-pinterest_318418636179231433.jpg",
       "width": 520,
       "height": 818,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 13:30",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15388,14 +16088,16 @@ window.FUMO_DATA = {
       "src": "fumos/351-pinterest_319192692405364286_2245574092.jpg",
       "width": 4000,
       "height": 3000,
-      "date": "2026-09-30 12:52",
+      "date": "2026-09-02 14:58",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15434,7 +16136,7 @@ window.FUMO_DATA = {
       "src": "fumos/352-pinterest_32580797301305236.jpg",
       "width": 1080,
       "height": 1074,
-      "date": "2026-09-30 12:57",
+      "date": "2026-09-02 17:41",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -15443,7 +16145,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15483,14 +16187,16 @@ window.FUMO_DATA = {
       "src": "fumos/353-pinterest_32580797301305239.jpg",
       "width": 750,
       "height": 802,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 18:18",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15525,14 +16231,16 @@ window.FUMO_DATA = {
       "src": "fumos/354-pinterest_32580797301305240.jpg",
       "width": 1080,
       "height": 1207,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 19:28",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -15569,8 +16277,8 @@ window.FUMO_DATA = {
       "src": "fumos/355-pinterest_32580797301305242.jpg",
       "width": 800,
       "height": 594,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-02 22:52",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15578,7 +16286,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15614,14 +16324,16 @@ window.FUMO_DATA = {
       "src": "fumos/356-pinterest_32580797301305526.jpg",
       "width": 923,
       "height": 923,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 06:28",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -15658,14 +16370,16 @@ window.FUMO_DATA = {
       "src": "fumos/357-pinterest_32580797302792763.jpg",
       "width": 1080,
       "height": 1078,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 08:06",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15702,8 +16416,8 @@ window.FUMO_DATA = {
       "src": "fumos/358-pinterest_32580797302795547.jpg",
       "width": 437,
       "height": 487,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 09:08",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15711,7 +16425,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15749,8 +16465,8 @@ window.FUMO_DATA = {
       "src": "fumos/359-pinterest_32580797302795557.jpg",
       "width": 900,
       "height": 1146,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 11:26",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "cirno"
@@ -15758,7 +16474,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15797,8 +16515,8 @@ window.FUMO_DATA = {
       "src": "fumos/360-pinterest_32580797302795562.jpg",
       "width": 320,
       "height": 256,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 12:28",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15806,7 +16524,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15843,8 +16563,8 @@ window.FUMO_DATA = {
       "src": "fumos/361-pinterest_32580797302795563.jpg",
       "width": 1328,
       "height": 1079,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 13:47",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -15852,7 +16572,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -15890,8 +16612,8 @@ window.FUMO_DATA = {
       "src": "fumos/362-pinterest_32580797302795565.jpg",
       "width": 1080,
       "height": 966,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 14:30",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -15899,7 +16621,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15939,14 +16663,16 @@ window.FUMO_DATA = {
       "src": "fumos/363-pinterest_32580797302795568.jpg",
       "width": 320,
       "height": 300,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 16:13",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -15982,8 +16708,8 @@ window.FUMO_DATA = {
       "src": "fumos/364-pinterest_32580797302795595.jpg",
       "width": 540,
       "height": 538,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 16:14",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "cirno"
@@ -15991,7 +16717,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16028,7 +16756,7 @@ window.FUMO_DATA = {
       "src": "fumos/365-pinterest_32580797302795600.jpg",
       "width": 288,
       "height": 512,
-      "date": "2026-09-30 12:51",
+      "date": "2026-09-03 16:41",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -16037,7 +16765,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16076,8 +16806,8 @@ window.FUMO_DATA = {
       "src": "fumos/366-pinterest_32580797302795601.jpg",
       "width": 750,
       "height": 745,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 16:47",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -16085,7 +16815,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16122,14 +16854,16 @@ window.FUMO_DATA = {
       "src": "fumos/367-pinterest_32721534788702602_1713430970.jpg",
       "width": 976,
       "height": 1200,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 21:22",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -16165,8 +16899,8 @@ window.FUMO_DATA = {
       "src": "fumos/368-pinterest_329255422782019221_2915606569.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-03 23:25",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "cirno"
@@ -16174,7 +16908,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16210,14 +16946,16 @@ window.FUMO_DATA = {
       "src": "fumos/369-pinterest_329255422782097491.jpg",
       "width": 640,
       "height": 1385,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 00:55",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16250,14 +16988,16 @@ window.FUMO_DATA = {
       "src": "fumos/370-pinterest_329677635238844456.jpg",
       "width": 540,
       "height": 720,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 01:16",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16294,14 +17034,16 @@ window.FUMO_DATA = {
       "src": "fumos/371-pinterest_329677635238884007.jpg",
       "width": 338,
       "height": 640,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 02:11",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16335,14 +17077,16 @@ window.FUMO_DATA = {
       "src": "fumos/372-pinterest_330803535147397709_3004929458.jpg",
       "width": 1200,
       "height": 1674,
-      "date": "2026-09-30 13:20",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 02:57",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -16377,8 +17121,8 @@ window.FUMO_DATA = {
       "src": "fumos/373-pinterest_331085010117572702.jpg",
       "width": 466,
       "height": 466,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 03:03",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -16386,7 +17130,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16423,14 +17169,16 @@ window.FUMO_DATA = {
       "src": "fumos/374-pinterest_331647960082711947.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 08:21",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16465,8 +17213,8 @@ window.FUMO_DATA = {
       "src": "fumos/375-pinterest_331647960082711951_2453781197.jpg",
       "width": 3000,
       "height": 4000,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 13:20",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -16474,7 +17222,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16515,8 +17265,8 @@ window.FUMO_DATA = {
       "src": "fumos/376-pinterest_331647960082712016.jpg",
       "width": 800,
       "height": 450,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 13:57",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -16524,7 +17274,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16560,14 +17312,16 @@ window.FUMO_DATA = {
       "src": "fumos/377-pinterest_331647960082712043_3366527699.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 16:05",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16601,8 +17355,8 @@ window.FUMO_DATA = {
       "src": "fumos/378-pinterest_33425222228872519.jpg",
       "width": 1080,
       "height": 1365,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 18:09",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -16610,7 +17364,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16649,8 +17405,8 @@ window.FUMO_DATA = {
       "src": "fumos/379-pinterest_335025659799026805.jpg",
       "width": 728,
       "height": 830,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-04 23:54",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -16658,7 +17414,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16695,14 +17453,16 @@ window.FUMO_DATA = {
       "src": "fumos/380-pinterest_338051515791581245.jpg",
       "width": 480,
       "height": 445,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 00:33",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -16735,8 +17495,8 @@ window.FUMO_DATA = {
       "src": "fumos/381-pinterest_338192253292885674_4087747397.jpg",
       "width": 852,
       "height": 1200,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 01:05",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -16744,7 +17504,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -16777,8 +17539,8 @@ window.FUMO_DATA = {
       "src": "fumos/382-pinterest_339318153204732713_1780763336.webp",
       "width": 640,
       "height": 754,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 01:39",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -16786,7 +17548,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16824,8 +17588,8 @@ window.FUMO_DATA = {
       "src": "fumos/383-pinterest_34199278414892901.jpg",
       "width": 507,
       "height": 510,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 02:37",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -16833,7 +17597,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16871,14 +17637,16 @@ window.FUMO_DATA = {
       "src": "fumos/384-pinterest_34199278415521447.jpg",
       "width": 649,
       "height": 533,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 14:01",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "meme",
@@ -16910,8 +17678,8 @@ window.FUMO_DATA = {
       "src": "fumos/385-pinterest_343892121556271033.jpg",
       "width": 510,
       "height": 642,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 14:28",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -16919,7 +17687,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -16954,8 +17724,8 @@ window.FUMO_DATA = {
       "src": "fumos/386-pinterest_344666177750589427.jpg",
       "width": 526,
       "height": 1170,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 16:47",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "cirno",
@@ -16964,7 +17734,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17001,14 +17773,16 @@ window.FUMO_DATA = {
       "src": "fumos/387-pinterest_346073552628836210.jpg",
       "width": 780,
       "height": 1040,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 18:20",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17043,14 +17817,16 @@ window.FUMO_DATA = {
       "src": "fumos/388-pinterest_347692033750979911.jpg",
       "width": 480,
       "height": 480,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-05 18:42",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17084,14 +17860,16 @@ window.FUMO_DATA = {
       "src": "fumos/389-pinterest_34832597116880905_1995935287.jpg",
       "width": 4284,
       "height": 4284,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 04:11",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17129,8 +17907,8 @@ window.FUMO_DATA = {
       "src": "fumos/390-pinterest_350577152260673833.jpg",
       "width": 736,
       "height": 974,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 07:14",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -17138,7 +17916,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17172,8 +17952,8 @@ window.FUMO_DATA = {
       "src": "fumos/391-pinterest_350577152261047457.jpg",
       "width": 735,
       "height": 396,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 08:20",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -17181,7 +17961,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17220,8 +18002,8 @@ window.FUMO_DATA = {
       "src": "fumos/392-pinterest_352899320823743091.jpg",
       "width": 605,
       "height": 1000,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 08:52",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -17229,7 +18011,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17267,14 +18051,16 @@ window.FUMO_DATA = {
       "src": "fumos/393-pinterest_356277020530867285.jpg",
       "width": 800,
       "height": 801,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 09:36",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17307,14 +18093,16 @@ window.FUMO_DATA = {
       "src": "fumos/394-pinterest_356277020547647151.jpg",
       "width": 1024,
       "height": 1024,
-      "date": "2026-09-30 13:06",
+      "date": "2026-09-06 10:42",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17350,14 +18138,16 @@ window.FUMO_DATA = {
       "src": "fumos/395-pinterest_35677022045663985_2026345586.jpg",
       "width": 413,
       "height": 411,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 15:00",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17391,14 +18181,16 @@ window.FUMO_DATA = {
       "src": "fumos/396-pinterest_358247345378409674.jpg",
       "width": 736,
       "height": 607,
-      "date": "2026-09-30 12:52",
+      "date": "2026-09-06 17:46",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17433,14 +18225,16 @@ window.FUMO_DATA = {
       "src": "fumos/397-pinterest_358247345381179890.jpg",
       "width": 1438,
       "height": 1080,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 17:52",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17475,8 +18269,8 @@ window.FUMO_DATA = {
       "src": "fumos/398-pinterest_359232507799533754.mp4",
       "width": 720,
       "height": 702,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-06 21:26",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -17484,7 +18278,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -17520,14 +18316,16 @@ window.FUMO_DATA = {
       "src": "fumos/399-pinterest_363876844916840721.jpg",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 01:48",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17560,14 +18358,16 @@ window.FUMO_DATA = {
       "src": "fumos/400-pinterest_365143482312907674_2641272140.jpg",
       "width": 600,
       "height": 600,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 01:52",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17599,14 +18399,16 @@ window.FUMO_DATA = {
       "src": "fumos/401-pinterest_366128644731302185_4977814731878166825.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:07",
+      "date": "2026-09-07 02:57",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17645,14 +18447,16 @@ window.FUMO_DATA = {
       "src": "fumos/402-pinterest_366128644731302185_4977814800597643561.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 03:06",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17690,14 +18494,16 @@ window.FUMO_DATA = {
       "src": "fumos/403-pinterest_366691594680996961.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 04:03",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17737,8 +18543,8 @@ window.FUMO_DATA = {
       "src": "fumos/404-pinterest_366691594681068550_5383520549343377388.mp4",
       "width": 360,
       "height": 640,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 08:06",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -17746,7 +18552,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17781,14 +18589,16 @@ window.FUMO_DATA = {
       "src": "fumos/405-pinterest_366691594681078034.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 08:07",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17825,14 +18635,16 @@ window.FUMO_DATA = {
       "src": "fumos/406-pinterest_366691594681078846.jpg",
       "width": 600,
       "height": 800,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 12:03",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17868,8 +18680,8 @@ window.FUMO_DATA = {
       "src": "fumos/407-pinterest_366691594681587412_1014869945.png",
       "width": 375,
       "height": 375,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 12:46",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -17877,7 +18689,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17916,14 +18730,16 @@ window.FUMO_DATA = {
       "src": "fumos/408-pinterest_366691594681587473.jpg",
       "width": 1200,
       "height": 900,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 13:48",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -17962,14 +18778,16 @@ window.FUMO_DATA = {
       "src": "fumos/409-pinterest_366691594681587478.jpg",
       "width": 1200,
       "height": 900,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 14:22",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18008,14 +18826,16 @@ window.FUMO_DATA = {
       "src": "fumos/410-pinterest_366691594681587581_885518852.png",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 15:22",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18056,8 +18876,8 @@ window.FUMO_DATA = {
       "src": "fumos/411-pinterest_366691594681587583.jpg",
       "width": 502,
       "height": 540,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 15:56",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -18065,7 +18885,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18102,14 +18924,16 @@ window.FUMO_DATA = {
       "src": "fumos/412-pinterest_366691594681587587_888729347.jpg",
       "width": 4000,
       "height": 3000,
-      "date": "2026-09-30 13:12",
+      "date": "2026-09-07 16:23",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18146,8 +18970,8 @@ window.FUMO_DATA = {
       "src": "fumos/413-pinterest_366691594681592471.jpg",
       "width": 720,
       "height": 540,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 21:18",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -18155,7 +18979,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18192,14 +19018,16 @@ window.FUMO_DATA = {
       "src": "fumos/414-pinterest_366691594681592529.jpg",
       "width": 1008,
       "height": 756,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 22:40",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18237,14 +19065,16 @@ window.FUMO_DATA = {
       "src": "fumos/415-pinterest_366691594681592531.jpg",
       "width": 1351,
       "height": 2048,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-07 23:24",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18280,8 +19110,8 @@ window.FUMO_DATA = {
       "src": "fumos/416-pinterest_366691594681592561.jpg",
       "width": 719,
       "height": 540,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 00:52",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -18289,7 +19119,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18324,8 +19156,8 @@ window.FUMO_DATA = {
       "src": "fumos/417-pinterest_366691594681592567.jpg",
       "width": 800,
       "height": 969,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 01:14",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -18333,7 +19165,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18372,14 +19206,16 @@ window.FUMO_DATA = {
       "src": "fumos/418-pinterest_366691594681592569.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 04:07",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18411,14 +19247,16 @@ window.FUMO_DATA = {
       "src": "fumos/419-pinterest_366691594681592583_2378830742.jpg",
       "width": 1200,
       "height": 2133,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 06:49",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18455,14 +19293,16 @@ window.FUMO_DATA = {
       "src": "fumos/420-pinterest_366691594681592668.jpg",
       "width": 1512,
       "height": 2016,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 14:10",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18501,14 +19341,16 @@ window.FUMO_DATA = {
       "src": "fumos/421-pinterest_366691594681592738.jpg",
       "width": 720,
       "height": 714,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 16:19",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18542,8 +19384,8 @@ window.FUMO_DATA = {
       "src": "fumos/422-pinterest_366691594681593199.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 13:29",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 18:15",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "cirno"
@@ -18551,7 +19393,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18590,8 +19434,8 @@ window.FUMO_DATA = {
       "src": "fumos/423-pinterest_366691594681593226.jpg",
       "width": 1080,
       "height": 985,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 19:26",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "cirno"
@@ -18599,7 +19443,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18637,14 +19483,16 @@ window.FUMO_DATA = {
       "src": "fumos/424-pinterest_366691594681593231.jpg",
       "width": 540,
       "height": 540,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 20:34",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18681,8 +19529,8 @@ window.FUMO_DATA = {
       "src": "fumos/425-pinterest_366691594681593238.jpg",
       "width": 1080,
       "height": 1093,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 21:29",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "cirno"
@@ -18690,7 +19538,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18727,14 +19577,16 @@ window.FUMO_DATA = {
       "src": "fumos/426-pinterest_366691594681593253.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 22:10",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18768,14 +19620,16 @@ window.FUMO_DATA = {
       "src": "fumos/427-pinterest_366691594681593275.jpg",
       "width": 720,
       "height": 742,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-08 23:22",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18811,14 +19665,16 @@ window.FUMO_DATA = {
       "src": "fumos/428-pinterest_366691594681600381.jpg",
       "width": 1536,
       "height": 2048,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 04:38",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18857,14 +19713,16 @@ window.FUMO_DATA = {
       "src": "fumos/429-pinterest_366691594681609349.jpg",
       "width": 736,
       "height": 920,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 05:01",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18902,14 +19760,16 @@ window.FUMO_DATA = {
       "src": "fumos/430-pinterest_366691594681624604.jpg",
       "width": 1080,
       "height": 1080,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 09:20",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18948,14 +19808,16 @@ window.FUMO_DATA = {
       "src": "fumos/431-pinterest_366691594681629047.jpg",
       "width": 710,
       "height": 518,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 10:10",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -18990,14 +19852,16 @@ window.FUMO_DATA = {
       "src": "fumos/432-pinterest_367817494589758154.gif",
       "width": 532,
       "height": 640,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 11:32",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19033,8 +19897,8 @@ window.FUMO_DATA = {
       "src": "fumos/433-pinterest_367958232079560806_3088564989.jpg",
       "width": 850,
       "height": 805,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 12:03",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -19042,7 +19906,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -19077,8 +19943,8 @@ window.FUMO_DATA = {
       "src": "fumos/434-pinterest_369154500719550010.jpg",
       "width": 813,
       "height": 610,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 15:53",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -19086,7 +19952,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19122,14 +19990,16 @@ window.FUMO_DATA = {
       "src": "fumos/435-pinterest_373517362864356506_4065530958.jpg",
       "width": 1826,
       "height": 1135,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 16:23",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19164,14 +20034,16 @@ window.FUMO_DATA = {
       "src": "fumos/436-pinterest_373869206588633536.jpg",
       "width": 756,
       "height": 1008,
-      "date": "2026-09-30 13:09",
+      "date": "2026-09-09 17:13",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19205,14 +20077,16 @@ window.FUMO_DATA = {
       "src": "fumos/437-pinterest_374432156543545445_1586763232.jpg",
       "width": 734,
       "height": 420,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 17:16",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19247,14 +20121,16 @@ window.FUMO_DATA = {
       "src": "fumos/438-pinterest_377035800073589759_3949059577.jpg",
       "width": 564,
       "height": 555,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 18:56",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19288,8 +20164,8 @@ window.FUMO_DATA = {
       "src": "fumos/439-pinterest_377035800073810422.jpg",
       "width": 859,
       "height": 1200,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 19:18",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -19297,7 +20173,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -19334,14 +20212,16 @@ window.FUMO_DATA = {
       "src": "fumos/440-pinterest_378020962473086876.jpg",
       "width": 800,
       "height": 800,
-      "date": "2026-09-30 13:17",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-09 21:38",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -19376,14 +20256,16 @@ window.FUMO_DATA = {
       "src": "fumos/441-pinterest_382665299607482482.jpg",
       "width": 413,
       "height": 413,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 05:25",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19416,8 +20298,8 @@ window.FUMO_DATA = {
       "src": "fumos/442-pinterest_38421403065533984.mp4",
       "width": 480,
       "height": 360,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 08:04",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -19425,7 +20307,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19462,14 +20346,16 @@ window.FUMO_DATA = {
       "src": "fumos/443-pinterest_386817055510466886.jpg",
       "width": 1152,
       "height": 2048,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 10:11",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19505,14 +20391,16 @@ window.FUMO_DATA = {
       "src": "fumos/444-pinterest_386817055511199302.jpg",
       "width": 1080,
       "height": 1440,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 10:58",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19548,14 +20436,16 @@ window.FUMO_DATA = {
       "src": "fumos/445-pinterest_386817055511199376.jpg",
       "width": 720,
       "height": 405,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 11:06",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19589,14 +20479,16 @@ window.FUMO_DATA = {
       "src": "fumos/446-pinterest_386817055511228260.jpg",
       "width": 232,
       "height": 412,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 11:42",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19631,8 +20523,8 @@ window.FUMO_DATA = {
       "src": "fumos/447-pinterest_386817055511228271.jpg",
       "width": 508,
       "height": 638,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 15:30",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -19640,7 +20532,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19675,8 +20569,8 @@ window.FUMO_DATA = {
       "src": "fumos/448-pinterest_386817055511228289.jpg",
       "width": 1044,
       "height": 2063,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 15:49",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -19684,7 +20578,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19720,7 +20616,7 @@ window.FUMO_DATA = {
       "src": "fumos/449-pinterest_386957793002528199.gif",
       "width": 360,
       "height": 640,
-      "date": "2026-09-30 13:08",
+      "date": "2026-09-10 17:33",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -19729,7 +20625,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19766,8 +20664,8 @@ window.FUMO_DATA = {
       "src": "fumos/450-pinterest_386957793003425740.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-10 22:29",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -19775,7 +20673,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19809,7 +20709,7 @@ window.FUMO_DATA = {
       "src": "fumos/451-pinterest_3870349675166048_1084660919.jpg",
       "width": 2048,
       "height": 1940,
-      "date": "2026-09-30 13:01",
+      "date": "2026-09-10 23:41",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -19818,7 +20718,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -19854,8 +20756,8 @@ window.FUMO_DATA = {
       "src": "fumos/452-pinterest_391250286404144870_1504935635.jpg",
       "width": 1383,
       "height": 1499,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 02:18",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -19863,7 +20765,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -19900,14 +20804,16 @@ window.FUMO_DATA = {
       "src": "fumos/453-pinterest_392094711326308401.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 13:28",
+      "date": "2026-09-11 06:16",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19940,8 +20846,8 @@ window.FUMO_DATA = {
       "src": "fumos/454-pinterest_394839092351635414_230108457.jpg",
       "width": 600,
       "height": 600,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 08:28",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -19949,7 +20855,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -19987,8 +20895,8 @@ window.FUMO_DATA = {
       "src": "fumos/455-pinterest_394839092351638370_2490357985.jpg",
       "width": 736,
       "height": 1041,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 10:37",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -19996,7 +20904,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20034,14 +20944,16 @@ window.FUMO_DATA = {
       "src": "fumos/456-pinterest_395331673562409519.jpg",
       "width": 480,
       "height": 480,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 11:17",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "animation",
@@ -20071,14 +20983,16 @@ window.FUMO_DATA = {
       "src": "fumos/457-pinterest_400398223136410062.jpg",
       "width": 480,
       "height": 478,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 12:04",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20112,8 +21026,8 @@ window.FUMO_DATA = {
       "src": "fumos/458-pinterest_400398223136410091.jpg",
       "width": 800,
       "height": 800,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 13:56",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -20121,7 +21035,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20156,14 +21072,16 @@ window.FUMO_DATA = {
       "src": "fumos/459-pinterest_400398223136737454.jpg",
       "width": 466,
       "height": 464,
-      "date": "2026-09-30 12:56",
+      "date": "2026-09-11 14:17",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20199,14 +21117,16 @@ window.FUMO_DATA = {
       "src": "fumos/460-pinterest_401946335504941567.jpg",
       "width": 750,
       "height": 1000,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 15:32",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20241,14 +21161,16 @@ window.FUMO_DATA = {
       "src": "fumos/461-pinterest_401946335505267604.jpg",
       "width": 800,
       "height": 1280,
-      "date": "2026-09-30 13:14",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 16:50",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20285,14 +21207,16 @@ window.FUMO_DATA = {
       "src": "fumos/462-pinterest_401946335505991217.jpg",
       "width": 1024,
       "height": 1024,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 17:27",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20330,14 +21254,16 @@ window.FUMO_DATA = {
       "src": "fumos/463-pinterest_405394403983828784.jpg",
       "width": 744,
       "height": 588,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 20:08",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20373,14 +21299,16 @@ window.FUMO_DATA = {
       "src": "fumos/464-pinterest_407294360069131205.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 20:54",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20417,8 +21345,8 @@ window.FUMO_DATA = {
       "src": "fumos/465-pinterest_407294360073881772_3825345723.jpg",
       "width": 1600,
       "height": 1280,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 21:21",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -20426,7 +21354,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -20462,14 +21392,16 @@ window.FUMO_DATA = {
       "src": "fumos/466-pinterest_407294360075700344_1824685085.jpg",
       "width": 3120,
       "height": 4160,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 21:30",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20507,14 +21439,16 @@ window.FUMO_DATA = {
       "src": "fumos/467-pinterest_414401603238686943.jpg",
       "width": 792,
       "height": 792,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-11 22:14",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20548,14 +21482,16 @@ window.FUMO_DATA = {
       "src": "fumos/468-pinterest_414401603238751935_3804232874.jpg",
       "width": 735,
       "height": 788,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 02:38",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20587,14 +21523,16 @@ window.FUMO_DATA = {
       "src": "fumos/469-pinterest_414401603238959709_768132165.png",
       "width": 1000,
       "height": 1000,
-      "date": "2026-09-30 13:29",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 02:47",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -20629,8 +21567,8 @@ window.FUMO_DATA = {
       "src": "fumos/470-pinterest_41658365297304716.jpg",
       "width": 640,
       "height": 1386,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 04:13",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -20638,7 +21576,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -20673,14 +21613,16 @@ window.FUMO_DATA = {
       "src": "fumos/471-pinterest_422142165082627699.jpg",
       "width": 540,
       "height": 720,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 04:40",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20714,14 +21656,16 @@ window.FUMO_DATA = {
       "src": "fumos/472-pinterest_423690277464786343_4092222628.jpg",
       "width": 1632,
       "height": 1224,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 06:17",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20758,8 +21702,8 @@ window.FUMO_DATA = {
       "src": "fumos/473-pinterest_42502790225394483.jpg",
       "width": 540,
       "height": 720,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 06:30",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -20767,7 +21711,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20802,14 +21748,16 @@ window.FUMO_DATA = {
       "src": "fumos/474-pinterest_42502790226837117.png",
       "width": 500,
       "height": 526,
-      "date": "2026-09-30 12:53",
+      "date": "2026-09-12 09:10",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20847,8 +21795,8 @@ window.FUMO_DATA = {
       "src": "fumos/475-pinterest_425660602298035900.jpg",
       "width": 556,
       "height": 1175,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 09:17",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -20856,7 +21804,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20892,8 +21842,8 @@ window.FUMO_DATA = {
       "src": "fumos/476-pinterest_425660602298101403.jpg",
       "width": 720,
       "height": 800,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 09:20",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -20901,7 +21851,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20936,14 +21888,16 @@ window.FUMO_DATA = {
       "src": "fumos/477-pinterest_425660602298454618.jpg",
       "width": 1280,
       "height": 720,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 09:28",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -20978,14 +21932,16 @@ window.FUMO_DATA = {
       "src": "fumos/478-pinterest_425660602298711331.jpg",
       "width": 780,
       "height": 1040,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 10:57",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21020,8 +21976,8 @@ window.FUMO_DATA = {
       "src": "fumos/479-pinterest_430938258108225141.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 13:31",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "mokou_fujiwara"
@@ -21029,7 +21985,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21064,14 +22022,16 @@ window.FUMO_DATA = {
       "src": "fumos/480-pinterest_43136108926351977.jpg",
       "width": 736,
       "height": 736,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 13:41",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21108,8 +22068,8 @@ window.FUMO_DATA = {
       "src": "fumos/481-pinterest_437623288812287592.jpg",
       "width": 498,
       "height": 498,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 14:53",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -21117,7 +22077,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21152,14 +22114,16 @@ window.FUMO_DATA = {
       "src": "fumos/482-pinterest_439030663694501240.jpg",
       "width": 1250,
       "height": 1780,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 15:47",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21199,14 +22163,16 @@ window.FUMO_DATA = {
       "src": "fumos/483-pinterest_440860251049398063.jpg",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 15:54",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21240,8 +22206,8 @@ window.FUMO_DATA = {
       "src": "fumos/484-pinterest_440860251049398067.png",
       "width": 1088,
       "height": 1178,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 16:07",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -21249,7 +22215,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21287,14 +22255,16 @@ window.FUMO_DATA = {
       "src": "fumos/485-pinterest_440860251049398071.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 17:12",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21330,8 +22300,8 @@ window.FUMO_DATA = {
       "src": "fumos/486-pinterest_440860251049398109_2449525928.jpg",
       "width": 447,
       "height": 447,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 17:37",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -21339,7 +22309,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21379,8 +22351,8 @@ window.FUMO_DATA = {
       "src": "fumos/487-pinterest_440860251049398179.jpg",
       "width": 540,
       "height": 720,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 19:02",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -21388,7 +22360,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21423,14 +22397,16 @@ window.FUMO_DATA = {
       "src": "fumos/488-pinterest_440860251049398183.jpg",
       "width": 540,
       "height": 522,
-      "date": "2026-09-30 13:07",
+      "date": "2026-09-12 21:04",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21466,14 +22442,16 @@ window.FUMO_DATA = {
       "src": "fumos/489-pinterest_440860251049398265.jpg",
       "width": 780,
       "height": 1040,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-12 21:51",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -21505,8 +22483,8 @@ window.FUMO_DATA = {
       "src": "fumos/490-pinterest_440860251049398296.jpg",
       "width": 1280,
       "height": 720,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 00:23",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -21514,7 +22492,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -21550,14 +22530,16 @@ window.FUMO_DATA = {
       "src": "fumos/491-pinterest_440860251049398338_3781552853.jpg",
       "width": 1920,
       "height": 1080,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 01:16",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21594,8 +22576,8 @@ window.FUMO_DATA = {
       "src": "fumos/492-pinterest_440860251049398357.jpg",
       "width": 750,
       "height": 1000,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 01:21",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -21603,7 +22585,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21639,14 +22623,16 @@ window.FUMO_DATA = {
       "src": "fumos/493-pinterest_440860251049947952_370463800.jpg",
       "width": 1280,
       "height": 1920,
-      "date": "2026-09-30 13:30",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 03:58",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -21681,14 +22667,16 @@ window.FUMO_DATA = {
       "src": "fumos/494-pinterest_441212094774233574.jpg",
       "width": 800,
       "height": 800,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 04:59",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21724,12 +22712,14 @@ window.FUMO_DATA = {
       "src": "fumos/495-pinterest_45176802504217805.mp4",
       "width": 736,
       "height": 414,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 05:16",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21764,14 +22754,16 @@ window.FUMO_DATA = {
       "src": "fumos/496-pinterest_45247171252333046.jpg",
       "width": 720,
       "height": 579,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 07:53",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21806,7 +22798,7 @@ window.FUMO_DATA = {
       "src": "fumos/497-pinterest_4592334690367150976.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:00",
+      "date": "2026-09-13 08:06",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -21815,7 +22807,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21854,14 +22848,16 @@ window.FUMO_DATA = {
       "src": "fumos/498-pinterest_4601271560343959616.webp",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 08:42",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21898,14 +22894,16 @@ window.FUMO_DATA = {
       "src": "fumos/499-pinterest_4601271566240770112.webp",
       "width": 801,
       "height": 801,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 10:18",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21941,14 +22939,16 @@ window.FUMO_DATA = {
       "src": "fumos/500-pinterest_4603523380526870592.jpg",
       "width": 800,
       "height": 800,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 11:45",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -21983,12 +22983,14 @@ window.FUMO_DATA = {
       "src": "fumos/501-pinterest_4611545403750757696.jpg",
       "width": 334,
       "height": 432,
-      "date": "2026-09-30 13:21",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 12:07",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -22018,14 +23020,16 @@ window.FUMO_DATA = {
       "src": "fumos/502-pinterest_465981892718819379.jpg",
       "width": 488,
       "height": 484,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 16:23",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22058,8 +23062,8 @@ window.FUMO_DATA = {
       "src": "fumos/503-pinterest_470626229835114844_5500264644073301457.mp4",
       "width": 480,
       "height": 480,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 17:32",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -22067,7 +23071,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22101,14 +23107,16 @@ window.FUMO_DATA = {
       "src": "fumos/504-pinterest_48695239715917871_2971883247.jpg",
       "width": 1447,
       "height": 1433,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 17:34",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22145,8 +23153,8 @@ window.FUMO_DATA = {
       "src": "fumos/505-pinterest_487373990937730299.jpg",
       "width": 519,
       "height": 679,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-13 19:50",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -22154,7 +23162,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22189,14 +23199,16 @@ window.FUMO_DATA = {
       "src": "fumos/506-pinterest_487373990937890292.jpg",
       "width": 2000,
       "height": 900,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 05:16",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22233,14 +23245,16 @@ window.FUMO_DATA = {
       "src": "fumos/507-pinterest_490751690672133166_1200407563.jpg",
       "width": 1440,
       "height": 1920,
-      "date": "2026-09-30 13:13",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 05:46",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22277,8 +23291,8 @@ window.FUMO_DATA = {
       "src": "fumos/508-pinterest_496381190194598313.jpg",
       "width": 500,
       "height": 500,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 08:12",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -22286,7 +23300,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22322,14 +23338,16 @@ window.FUMO_DATA = {
       "src": "fumos/509-pinterest_496592296435218659.jpg",
       "width": 1152,
       "height": 2048,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 10:07",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22364,14 +23382,16 @@ window.FUMO_DATA = {
       "src": "fumos/510-pinterest_496592296435336812.jpg",
       "width": 750,
       "height": 824,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 14:45",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22406,8 +23426,8 @@ window.FUMO_DATA = {
       "src": "fumos/511-pinterest_496592296435659376.jpg",
       "width": 526,
       "height": 701,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 18:15",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -22415,7 +23435,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22450,14 +23472,16 @@ window.FUMO_DATA = {
       "src": "fumos/512-pinterest_496592296435660516.jpg",
       "width": 868,
       "height": 1156,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 21:29",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22490,14 +23514,16 @@ window.FUMO_DATA = {
       "src": "fumos/513-pinterest_496592296437237542.jpg",
       "width": 476,
       "height": 480,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 23:11",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22532,8 +23558,8 @@ window.FUMO_DATA = {
       "src": "fumos/514-pinterest_496592296438323199_2990294628.png",
       "width": 1024,
       "height": 1024,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-14 23:19",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -22542,7 +23568,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -22581,8 +23609,8 @@ window.FUMO_DATA = {
       "src": "fumos/515-pinterest_50243352085035948.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 01:00",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -22590,7 +23618,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22626,14 +23656,16 @@ window.FUMO_DATA = {
       "src": "fumos/516-pinterest_50876670782609630.jpg",
       "width": 750,
       "height": 742,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 03:01",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22666,8 +23698,8 @@ window.FUMO_DATA = {
       "src": "fumos/517-pinterest_510454939039470104.jpg",
       "width": 850,
       "height": 1165,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 04:08",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -22675,7 +23707,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -22709,14 +23743,16 @@ window.FUMO_DATA = {
       "src": "fumos/518-pinterest_515380751132313105.jpg",
       "width": 720,
       "height": 728,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 09:38",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22751,14 +23787,16 @@ window.FUMO_DATA = {
       "src": "fumos/519-pinterest_51650726968985312.mp4",
       "width": 310,
       "height": 330,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 10:56",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22790,8 +23828,8 @@ window.FUMO_DATA = {
       "src": "fumos/520-pinterest_516717757272006451_3809979737.png",
       "width": 1240,
       "height": 1634,
-      "date": "2026-09-30 13:13",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 11:24",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "cirno"
@@ -22799,7 +23837,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22837,14 +23877,16 @@ window.FUMO_DATA = {
       "src": "fumos/521-pinterest_516717757272407293.jpg",
       "width": 720,
       "height": 716,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 14:49",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -22879,14 +23921,16 @@ window.FUMO_DATA = {
       "src": "fumos/522-pinterest_5207355811301682.jpg",
       "width": 745,
       "height": 590,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 18:48",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -22919,14 +23963,16 @@ window.FUMO_DATA = {
       "src": "fumos/523-pinterest_5207355812335935.jpg",
       "width": 736,
       "height": 1378,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 19:35",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "print",
@@ -22958,14 +24004,16 @@ window.FUMO_DATA = {
       "src": "fumos/524-pinterest_5207355814467988.png",
       "width": 850,
       "height": 837,
-      "date": "2026-09-30 13:21",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 22:17",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23001,14 +24049,16 @@ window.FUMO_DATA = {
       "src": "fumos/525-pinterest_52495151901262649.jpg",
       "width": 1000,
       "height": 1000,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 22:53",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -23043,8 +24093,8 @@ window.FUMO_DATA = {
       "src": "fumos/526-pinterest_527695281369220111_871148086.jpg",
       "width": 4160,
       "height": 3120,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-15 23:38",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -23052,7 +24102,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23090,14 +24142,16 @@ window.FUMO_DATA = {
       "src": "fumos/527-pinterest_5277724559083696.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 04:33",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23132,8 +24186,8 @@ window.FUMO_DATA = {
       "src": "fumos/528-pinterest_5277724559083697.jpg",
       "width": 1080,
       "height": 869,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 05:56",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -23141,7 +24195,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23179,8 +24235,8 @@ window.FUMO_DATA = {
       "src": "fumos/529-pinterest_5277724559083699.jpg",
       "width": 445,
       "height": 412,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 08:37",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -23188,7 +24244,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23222,14 +24280,16 @@ window.FUMO_DATA = {
       "src": "fumos/530-pinterest_5277724560695036_3637169282.jpg",
       "width": 511,
       "height": 539,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 11:18",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23261,8 +24321,8 @@ window.FUMO_DATA = {
       "src": "fumos/531-pinterest_5348093303504236.mp4",
       "width": 486,
       "height": 864,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 11:36",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "cirno"
@@ -23270,7 +24330,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -23306,14 +24368,16 @@ window.FUMO_DATA = {
       "src": "fumos/532-pinterest_5348093303504238_2313081199.png",
       "width": 320,
       "height": 314,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 12:55",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23346,8 +24410,8 @@ window.FUMO_DATA = {
       "src": "fumos/533-pinterest_5348093303504420.jpg",
       "width": 956,
       "height": 1278,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 16:28",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -23355,7 +24419,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23392,8 +24458,8 @@ window.FUMO_DATA = {
       "src": "fumos/534-pinterest_5348093303568827.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 18:42",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -23401,7 +24467,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23437,14 +24505,16 @@ window.FUMO_DATA = {
       "src": "fumos/535-pinterest_543176405080407821_2741295557.jpg",
       "width": 1280,
       "height": 927,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-16 21:33",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -23480,14 +24550,16 @@ window.FUMO_DATA = {
       "src": "fumos/536-pinterest_543176405081109771_3273566079.jpg",
       "width": 1142,
       "height": 1815,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 00:22",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23524,14 +24596,16 @@ window.FUMO_DATA = {
       "src": "fumos/537-pinterest_543176405082962878_3669882393.png",
       "width": 740,
       "height": 737,
-      "date": "2026-09-30 13:05",
+      "date": "2026-09-17 00:50",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23568,14 +24642,16 @@ window.FUMO_DATA = {
       "src": "fumos/538-pinterest_545991154844673318.jpg",
       "width": 1080,
       "height": 1309,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 01:32",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23612,14 +24688,16 @@ window.FUMO_DATA = {
       "src": "fumos/539-pinterest_54606214229601870_1132369080.jpg",
       "width": 1080,
       "height": 1478,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 05:52",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23656,14 +24734,16 @@ window.FUMO_DATA = {
       "src": "fumos/540-pinterest_549720698279010969.jpg",
       "width": 540,
       "height": 304,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 08:35",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23696,14 +24776,16 @@ window.FUMO_DATA = {
       "src": "fumos/541-pinterest_550283648232774023.jpg",
       "width": 720,
       "height": 967,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 09:15",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23738,14 +24820,16 @@ window.FUMO_DATA = {
       "src": "fumos/542-pinterest_550283648233982136.gif",
       "width": 220,
       "height": 337,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 13:25",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23782,14 +24866,16 @@ window.FUMO_DATA = {
       "src": "fumos/543-pinterest_550283648235713298.jpg",
       "width": 772,
       "height": 1024,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 14:54",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23826,14 +24912,16 @@ window.FUMO_DATA = {
       "src": "fumos/544-pinterest_550283648236508260_53294472.jpg",
       "width": 300,
       "height": 400,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 15:38",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23867,14 +24955,16 @@ window.FUMO_DATA = {
       "src": "fumos/545-pinterest_550283648236980819.jpg",
       "width": 340,
       "height": 384,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 17:27",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23908,14 +24998,16 @@ window.FUMO_DATA = {
       "src": "fumos/546-pinterest_550283648240927083_3634824062.jpg",
       "width": 800,
       "height": 801,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-17 23:17",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23949,8 +25041,8 @@ window.FUMO_DATA = {
       "src": "fumos/547-pinterest_550283648241056806_1509831025.jpg",
       "width": 2407,
       "height": 4000,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 02:46",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -23958,7 +25050,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -23997,8 +25091,8 @@ window.FUMO_DATA = {
       "src": "fumos/548-pinterest_550283648241070262_2240145398.jpg",
       "width": 1600,
       "height": 900,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 02:49",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -24006,7 +25100,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24045,14 +25141,16 @@ window.FUMO_DATA = {
       "src": "fumos/549-pinterest_550283648241301216_3358165997.jpg",
       "width": 3000,
       "height": 4000,
-      "date": "2026-09-30 13:24",
+      "date": "2026-09-18 09:50",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24089,14 +25187,16 @@ window.FUMO_DATA = {
       "src": "fumos/550-pinterest_552394710560764607.gif",
       "width": 280,
       "height": 498,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 13:02",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24134,14 +25234,16 @@ window.FUMO_DATA = {
       "src": "fumos/551-pinterest_554224297912947119_1317193718.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 14:00",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "figure",
@@ -24176,8 +25278,8 @@ window.FUMO_DATA = {
       "src": "fumos/552-pinterest_556335360243112224_1610639874.jpg",
       "width": 720,
       "height": 891,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 14:06",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -24185,7 +25287,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24222,14 +25326,16 @@ window.FUMO_DATA = {
       "src": "fumos/553-pinterest_561753753536921592.jpg",
       "width": 1200,
       "height": 911,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 14:58",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24269,14 +25375,16 @@ window.FUMO_DATA = {
       "src": "fumos/554-pinterest_567946203018963299.jpg",
       "width": 540,
       "height": 405,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 15:30",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24313,14 +25421,16 @@ window.FUMO_DATA = {
       "src": "fumos/555-pinterest_570057265354325228.jpg",
       "width": 933,
       "height": 1219,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 20:01",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24358,14 +25468,16 @@ window.FUMO_DATA = {
       "src": "fumos/556-pinterest_574420127446746488.gif",
       "width": 240,
       "height": 320,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-18 22:12",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -24401,14 +25513,16 @@ window.FUMO_DATA = {
       "src": "fumos/557-pinterest_577023771055605654_1548599012.png",
       "width": 1280,
       "height": 1280,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 01:50",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -24445,14 +25559,16 @@ window.FUMO_DATA = {
       "src": "fumos/558-pinterest_577305246013485404.jpg",
       "width": 868,
       "height": 1156,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 02:21",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24487,14 +25603,16 @@ window.FUMO_DATA = {
       "src": "fumos/559-pinterest_578290408419031227.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 03:54",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24526,14 +25644,16 @@ window.FUMO_DATA = {
       "src": "fumos/560-pinterest_578290408438449845.jpg",
       "width": 749,
       "height": 960,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 04:29",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24565,14 +25685,16 @@ window.FUMO_DATA = {
       "src": "fumos/561-pinterest_578571883433215031_218917459.png",
       "width": 2048,
       "height": 2048,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 09:54",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24607,14 +25729,16 @@ window.FUMO_DATA = {
       "src": "fumos/562-pinterest_57913545204295541_5349946879731883170.mp4",
       "width": 580,
       "height": 760,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 11:04",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -24648,14 +25772,16 @@ window.FUMO_DATA = {
       "src": "fumos/563-pinterest_57913545204352052.jpg",
       "width": 319,
       "height": 445,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 12:46",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24689,8 +25815,8 @@ window.FUMO_DATA = {
       "src": "fumos/564-pinterest_579908889551092268.jpg",
       "width": 736,
       "height": 1030,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 12:55",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -24698,7 +25824,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24734,14 +25862,16 @@ window.FUMO_DATA = {
       "src": "fumos/565-pinterest_579908889551268014.jpg",
       "width": 960,
       "height": 960,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 13:11",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24779,8 +25909,8 @@ window.FUMO_DATA = {
       "src": "fumos/566-pinterest_580401470770961321.jpg",
       "width": 554,
       "height": 554,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 17:22",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -24788,7 +25918,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24824,14 +25956,16 @@ window.FUMO_DATA = {
       "src": "fumos/567-pinterest_580894051952505797.jpg",
       "width": 540,
       "height": 391,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 19:57",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24866,8 +26000,8 @@ window.FUMO_DATA = {
       "src": "fumos/568-pinterest_580894051953559459.jpg",
       "width": 526,
       "height": 699,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 19:58",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -24875,7 +26009,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24912,8 +26048,8 @@ window.FUMO_DATA = {
       "src": "fumos/569-pinterest_580894051957528933.jpg",
       "width": 843,
       "height": 1054,
-      "date": "2026-09-30 13:29",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 20:05",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -24921,7 +26057,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24957,14 +26095,16 @@ window.FUMO_DATA = {
       "src": "fumos/570-pinterest_580894051959865275.gif",
       "width": 220,
       "height": 303,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 20:54",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -24999,14 +26139,16 @@ window.FUMO_DATA = {
       "src": "fumos/571-pinterest_580894051961066133_2708266032.jpg",
       "width": 1264,
       "height": 1640,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 22:41",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25046,8 +26188,8 @@ window.FUMO_DATA = {
       "src": "fumos/572-pinterest_581034789441755300.jpg",
       "width": 1200,
       "height": 900,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 23:01",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -25055,7 +26197,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25096,14 +26240,16 @@ window.FUMO_DATA = {
       "src": "fumos/573-pinterest_581245895695284540.gif",
       "width": 498,
       "height": 498,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-19 23:32",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25139,14 +26285,16 @@ window.FUMO_DATA = {
       "src": "fumos/574-pinterest_581316264459052988.jpg",
       "width": 1536,
       "height": 2048,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 00:31",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25182,14 +26330,16 @@ window.FUMO_DATA = {
       "src": "fumos/575-pinterest_581527370677115395_3365772661.jpg",
       "width": 1080,
       "height": 989,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 02:29",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25226,8 +26376,8 @@ window.FUMO_DATA = {
       "src": "fumos/576-pinterest_582301426882007293_2092826253.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 03:02",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -25235,7 +26385,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25270,14 +26422,16 @@ window.FUMO_DATA = {
       "src": "fumos/577-pinterest_582442164353618754_657064651.jpg",
       "width": 3000,
       "height": 4000,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 03:54",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25314,8 +26468,8 @@ window.FUMO_DATA = {
       "src": "fumos/578-pinterest_582442164353668662.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 04:09",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -25323,7 +26477,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25359,14 +26515,16 @@ window.FUMO_DATA = {
       "src": "fumos/579-pinterest_583145851773693088.jpg",
       "width": 512,
       "height": 288,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 06:01",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25401,14 +26559,16 @@ window.FUMO_DATA = {
       "src": "fumos/580-pinterest_583145851791564507_4024008529.jpg",
       "width": 736,
       "height": 701,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 06:08",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25440,12 +26600,14 @@ window.FUMO_DATA = {
       "src": "fumos/581-pinterest_583145851801514621.jpg",
       "width": 577,
       "height": 577,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 09:40",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -25480,14 +26642,16 @@ window.FUMO_DATA = {
       "src": "fumos/582-pinterest_583427326773204966_2336413394.jpg",
       "width": 963,
       "height": 1218,
-      "date": "2026-09-30 13:20",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 09:46",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -25521,14 +26685,16 @@ window.FUMO_DATA = {
       "src": "fumos/583-pinterest_583708801722028487.jpg",
       "width": 540,
       "height": 530,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 10:23",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25563,8 +26729,8 @@ window.FUMO_DATA = {
       "src": "fumos/584-pinterest_583708801731430532.jpg",
       "width": 1024,
       "height": 1024,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 10:47",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -25572,7 +26738,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25609,14 +26777,16 @@ window.FUMO_DATA = {
       "src": "fumos/585-pinterest_583708801731799343.jpg",
       "width": 800,
       "height": 598,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 11:26",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25649,14 +26819,16 @@ window.FUMO_DATA = {
       "src": "fumos/586-pinterest_583708801732227128.jpg",
       "width": 736,
       "height": 1309,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 14:13",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -25691,14 +26863,16 @@ window.FUMO_DATA = {
       "src": "fumos/587-pinterest_583708801733671164.jpg",
       "width": 600,
       "height": 450,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 14:35",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25735,14 +26909,16 @@ window.FUMO_DATA = {
       "src": "fumos/588-pinterest_583990276698042004.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:59",
+      "date": "2026-09-20 15:24",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25776,8 +26952,8 @@ window.FUMO_DATA = {
       "src": "fumos/589-pinterest_584060645473226834_5480541088548720954.mp4",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 15:43",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -25785,7 +26961,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -25822,14 +27000,16 @@ window.FUMO_DATA = {
       "src": "fumos/590-pinterest_587649451424932714_790076113.png",
       "width": 1920,
       "height": 1840,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 17:34",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25865,8 +27045,8 @@ window.FUMO_DATA = {
       "src": "fumos/591-pinterest_588212401385536612.jpg",
       "width": 736,
       "height": 414,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 20:31",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -25874,7 +27054,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25913,14 +27095,16 @@ window.FUMO_DATA = {
       "src": "fumos/592-pinterest_588212401385539724.jpg",
       "width": 510,
       "height": 386,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 21:40",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25955,14 +27139,16 @@ window.FUMO_DATA = {
       "src": "fumos/593-pinterest_58828338878348358.jpg",
       "width": 1024,
       "height": 741,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 22:20",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -25998,14 +27184,16 @@ window.FUMO_DATA = {
       "src": "fumos/594-pinterest_588423507596595211.jpg",
       "width": 480,
       "height": 478,
-      "date": "2026-09-30 13:22",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 22:42",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26039,8 +27227,8 @@ window.FUMO_DATA = {
       "src": "fumos/595-pinterest_588634613810763327.jpg",
       "width": 960,
       "height": 540,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-20 23:11",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "cirno"
@@ -26048,7 +27236,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26084,14 +27274,16 @@ window.FUMO_DATA = {
       "src": "fumos/596-pinterest_588634613811781319.jpg",
       "width": 735,
       "height": 490,
-      "date": "2026-09-30 13:26",
+      "date": "2026-09-20 23:56",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26124,8 +27316,8 @@ window.FUMO_DATA = {
       "src": "fumos/597-pinterest_589197563795983176_2127124952.jpg",
       "width": 3072,
       "height": 4096,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 02:39",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -26133,7 +27325,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26172,8 +27366,8 @@ window.FUMO_DATA = {
       "src": "fumos/598-pinterest_589408670005415583.jpg",
       "width": 1152,
       "height": 2048,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 03:19",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -26181,7 +27375,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26217,12 +27413,14 @@ window.FUMO_DATA = {
       "src": "fumos/599-pinterest_589479038749352512.mp4",
       "width": 720,
       "height": 486,
-      "date": "2026-09-30 13:25",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 03:34",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26255,14 +27453,16 @@ window.FUMO_DATA = {
       "src": "fumos/600-pinterest_589479038768063454_340488469.png",
       "width": 736,
       "height": 727,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 03:42",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26299,14 +27499,16 @@ window.FUMO_DATA = {
       "src": "fumos/601-pinterest_589479038768729796_4274612958.jpg",
       "width": 736,
       "height": 579,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 03:49",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26342,8 +27544,8 @@ window.FUMO_DATA = {
       "src": "fumos/602-pinterest_589971619962548759.jpg",
       "width": 765,
       "height": 1020,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 05:13",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -26351,7 +27553,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26387,14 +27591,16 @@ window.FUMO_DATA = {
       "src": "fumos/603-pinterest_590816044914335133.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 05:46",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26433,14 +27639,16 @@ window.FUMO_DATA = {
       "src": "fumos/604-pinterest_591801207325925379_5373567851948990538.mp4",
       "width": 720,
       "height": 1280,
-      "date": "2026-09-30 13:07",
+      "date": "2026-09-21 07:05",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26476,8 +27684,8 @@ window.FUMO_DATA = {
       "src": "fumos/605-pinterest_591801207329183774_5203487294476048414.jpg",
       "width": 1440,
       "height": 1800,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 15:10",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "yuyuko_saigyouji"
@@ -26485,7 +27693,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26524,8 +27734,8 @@ window.FUMO_DATA = {
       "src": "fumos/606-pinterest_591801207329183774_5203487431915001886.jpg",
       "width": 1440,
       "height": 1800,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 15:19",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -26533,7 +27743,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26570,8 +27782,8 @@ window.FUMO_DATA = {
       "src": "fumos/607-pinterest_591801207329183774_5203487500634478622.jpg",
       "width": 1440,
       "height": 1800,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 17:31",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "yuyuko_saigyouji"
@@ -26579,7 +27791,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26619,14 +27833,16 @@ window.FUMO_DATA = {
       "src": "fumos/608-pinterest_592082682302707519.jpg",
       "width": 1300,
       "height": 2312,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 17:49",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26663,14 +27879,16 @@ window.FUMO_DATA = {
       "src": "fumos/609-pinterest_592082682308270476.jpg",
       "width": 675,
       "height": 900,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 19:43",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26704,14 +27922,16 @@ window.FUMO_DATA = {
       "src": "fumos/610-pinterest_593771532143099255.jpg",
       "width": 720,
       "height": 960,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 19:46",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26749,14 +27969,16 @@ window.FUMO_DATA = {
       "src": "fumos/611-pinterest_595812225752172810_778298154.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 21:59",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26790,14 +28012,16 @@ window.FUMO_DATA = {
       "src": "fumos/612-pinterest_595882594469031490.jpg",
       "width": 1156,
       "height": 868,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-21 22:22",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26832,14 +28056,16 @@ window.FUMO_DATA = {
       "src": "fumos/613-pinterest_595882594469139384.gif",
       "width": 280,
       "height": 498,
-      "date": "2026-09-30 13:10",
+      "date": "2026-09-22 00:17",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26876,12 +28102,14 @@ window.FUMO_DATA = {
       "src": "fumos/614-pinterest_59883870039125369.png",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 04:58",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26917,12 +28145,14 @@ window.FUMO_DATA = {
       "src": "fumos/615-pinterest_59954238823508869.gif",
       "width": 576,
       "height": 618,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 05:10",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26956,14 +28186,16 @@ window.FUMO_DATA = {
       "src": "fumos/616-pinterest_599612137938221204.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 11:28",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -26999,14 +28231,16 @@ window.FUMO_DATA = {
       "src": "fumos/617-pinterest_600104719117924780.jpg",
       "width": 500,
       "height": 665,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 12:59",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27041,14 +28275,16 @@ window.FUMO_DATA = {
       "src": "fumos/618-pinterest_604467581286870921_5216153668433735561.jpg",
       "width": 3072,
       "height": 3072,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 15:32",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27086,14 +28322,16 @@ window.FUMO_DATA = {
       "src": "fumos/619-pinterest_604467581286870921_5216153737153212297.jpg",
       "width": 3072,
       "height": 3072,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 15:36",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27131,14 +28369,16 @@ window.FUMO_DATA = {
       "src": "fumos/620-pinterest_604467581287131870.jpg",
       "width": 846,
       "height": 846,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 17:31",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27173,8 +28413,8 @@ window.FUMO_DATA = {
       "src": "fumos/621-pinterest_613615518023990753.jpg",
       "width": 484,
       "height": 528,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 17:53",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -27182,7 +28422,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27216,14 +28458,16 @@ window.FUMO_DATA = {
       "src": "fumos/622-pinterest_616289530301103734.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 18:08",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27255,14 +28499,16 @@ window.FUMO_DATA = {
       "src": "fumos/623-pinterest_616289530301873101_3192992921.jpg",
       "width": 1754,
       "height": 1182,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 19:01",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27296,7 +28542,7 @@ window.FUMO_DATA = {
       "src": "fumos/624-pinterest_618682067610176546_3650153698.jpg",
       "width": 3072,
       "height": 4096,
-      "date": "2026-09-30 12:58",
+      "date": "2026-09-22 19:44",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -27305,7 +28551,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27341,14 +28589,16 @@ window.FUMO_DATA = {
       "src": "fumos/625-pinterest_618682067610308424_433822151.jpg",
       "width": 1074,
       "height": 760,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-22 23:56",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27380,14 +28630,16 @@ window.FUMO_DATA = {
       "src": "fumos/626-pinterest_620159811233484235.jpg",
       "width": 4000,
       "height": 4000,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 01:24",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27424,8 +28676,8 @@ window.FUMO_DATA = {
       "src": "fumos/627-pinterest_620863498669759935.jpg",
       "width": 637,
       "height": 424,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 01:37",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -27433,7 +28685,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27465,14 +28719,16 @@ window.FUMO_DATA = {
       "src": "fumos/628-pinterest_621074604903433558_1377450886.jpg",
       "width": 2604,
       "height": 3687,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 01:45",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27508,14 +28764,16 @@ window.FUMO_DATA = {
       "src": "fumos/629-pinterest_623185667234710228.jpg",
       "width": 780,
       "height": 1040,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 02:12",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27550,14 +28808,16 @@ window.FUMO_DATA = {
       "src": "fumos/630-pinterest_625507835778115627.jpg",
       "width": 922,
       "height": 2048,
-      "date": "2026-09-30 13:24",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 02:21",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27589,14 +28849,16 @@ window.FUMO_DATA = {
       "src": "fumos/631-pinterest_628111479355992255.jpg",
       "width": 960,
       "height": 540,
-      "date": "2026-09-30 13:25",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 02:38",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27632,14 +28894,16 @@ window.FUMO_DATA = {
       "src": "fumos/632-pinterest_632615078949339599.jpg",
       "width": 736,
       "height": 920,
-      "date": "2026-09-30 13:28",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 07:05",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27672,8 +28936,8 @@ window.FUMO_DATA = {
       "src": "fumos/633-pinterest_634303928815225175_984481042.jpg",
       "width": 736,
       "height": 736,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 07:08",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "cirno"
@@ -27681,7 +28945,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27717,14 +28983,16 @@ window.FUMO_DATA = {
       "src": "fumos/634-pinterest_639018634675879613_264223637.jpg",
       "width": 4080,
       "height": 3072,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 07:12",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27761,8 +29029,8 @@ window.FUMO_DATA = {
       "src": "fumos/635-pinterest_64176363430566205.jpg",
       "width": 540,
       "height": 540,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 11:04",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "remilia_scarlet"
@@ -27770,7 +29038,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27807,14 +29077,16 @@ window.FUMO_DATA = {
       "src": "fumos/636-pinterest_64176363430566328.jpg",
       "width": 736,
       "height": 699,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 16:51",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27849,14 +29121,16 @@ window.FUMO_DATA = {
       "src": "fumos/637-pinterest_64176363430571583.jpg",
       "width": 700,
       "height": 700,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 18:22",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27887,8 +29161,8 @@ window.FUMO_DATA = {
       "src": "fumos/638-pinterest_643029653083965128.jpg",
       "width": 3072,
       "height": 4064,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-23 23:27",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -27896,7 +29170,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27933,14 +29209,16 @@ window.FUMO_DATA = {
       "src": "fumos/639-pinterest_647322146483418672_1321570899.png",
       "width": 736,
       "height": 736,
-      "date": "2026-09-30 13:08",
+      "date": "2026-09-24 00:47",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -27975,14 +29253,16 @@ window.FUMO_DATA = {
       "src": "fumos/640-pinterest_64880050874631302.jpg",
       "width": 928,
       "height": 924,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 03:49",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28019,14 +29299,16 @@ window.FUMO_DATA = {
       "src": "fumos/641-pinterest_649925790025641559.jpg",
       "width": 736,
       "height": 735,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 05:32",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28058,14 +29340,16 @@ window.FUMO_DATA = {
       "src": "fumos/642-pinterest_663999538839814369_2195451558.jpg",
       "width": 400,
       "height": 400,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 05:50",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28100,8 +29384,8 @@ window.FUMO_DATA = {
       "src": "fumos/643-pinterest_667588344798023724.jpg",
       "width": 2048,
       "height": 922,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 06:17",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -28109,7 +29393,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28147,14 +29433,16 @@ window.FUMO_DATA = {
       "src": "fumos/644-pinterest_682576887320746494_5294263180626041342.jpg",
       "width": 736,
       "height": 736,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 06:30",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28187,8 +29475,8 @@ window.FUMO_DATA = {
       "src": "fumos/645-pinterest_683913893457503205_2307743962.png",
       "width": 1000,
       "height": 1000,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 06:45",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -28196,7 +29484,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28232,14 +29522,16 @@ window.FUMO_DATA = {
       "src": "fumos/646-pinterest_692217405271541945.webp",
       "width": 750,
       "height": 1000,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 06:56",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28271,14 +29563,16 @@ window.FUMO_DATA = {
       "src": "fumos/647-pinterest_692217405271541984.jpg",
       "width": 580,
       "height": 580,
-      "date": "2026-09-30 13:00",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 08:03",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28313,14 +29607,16 @@ window.FUMO_DATA = {
       "src": "fumos/648-pinterest_70016969204644869_1754767617.jpg",
       "width": 720,
       "height": 731,
-      "date": "2026-09-30 13:29",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 10:37",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -28351,14 +29647,16 @@ window.FUMO_DATA = {
       "src": "fumos/649-pinterest_703756189409360.jpg",
       "width": 640,
       "height": 852,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 14:05",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28389,14 +29687,16 @@ window.FUMO_DATA = {
       "src": "fumos/650-pinterest_707205947788683006_779446285.jpg",
       "width": 1632,
       "height": 1224,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 17:37",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28433,14 +29733,16 @@ window.FUMO_DATA = {
       "src": "fumos/651-pinterest_712624341086654673_3646977624.png",
       "width": 941,
       "height": 1672,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 22:00",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28474,14 +29776,16 @@ window.FUMO_DATA = {
       "src": "fumos/652-pinterest_71353975343108847_426318317.jpg",
       "width": 1080,
       "height": 1440,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-24 23:08",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28516,14 +29820,16 @@ window.FUMO_DATA = {
       "src": "fumos/653-pinterest_71353975343471986_44314999.jpg",
       "width": 1152,
       "height": 1228,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 01:43",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28563,14 +29869,16 @@ window.FUMO_DATA = {
       "src": "fumos/654-pinterest_71353975343624885.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 02:26",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28611,14 +29919,16 @@ window.FUMO_DATA = {
       "src": "fumos/655-pinterest_71353975343628131_2833582528.jpg",
       "width": 900,
       "height": 1200,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 07:00",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28654,8 +29964,8 @@ window.FUMO_DATA = {
       "src": "fumos/656-pinterest_71353975343751999.jpg",
       "width": 512,
       "height": 512,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 07:53",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -28663,7 +29973,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28696,14 +30008,16 @@ window.FUMO_DATA = {
       "src": "fumos/657-pinterest_71353975343753363_2483923125.jpg",
       "width": 1080,
       "height": 1440,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 09:44",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28735,8 +30049,8 @@ window.FUMO_DATA = {
       "src": "fumos/658-pinterest_71776187806790222.jpg",
       "width": 1110,
       "height": 1200,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 10:54",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "youmu_konpaku"
@@ -28744,7 +30058,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28781,14 +30097,16 @@ window.FUMO_DATA = {
       "src": "fumos/659-pinterest_71776187806790226.jpg",
       "width": 526,
       "height": 701,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 16:02",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28823,8 +30141,8 @@ window.FUMO_DATA = {
       "src": "fumos/660-pinterest_71776187806790231.jpg",
       "width": 750,
       "height": 1000,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 16:26",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "patchouli_knowledge"
@@ -28832,7 +30150,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28867,8 +30187,8 @@ window.FUMO_DATA = {
       "src": "fumos/661-pinterest_71776187806796240.jpg",
       "width": 526,
       "height": 701,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 18:36",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "youmu_konpaku"
@@ -28876,7 +30196,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28910,8 +30232,8 @@ window.FUMO_DATA = {
       "src": "fumos/662-pinterest_71776187806799878.jpg",
       "width": 540,
       "height": 303,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 19:23",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -28919,7 +30241,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28955,14 +30279,16 @@ window.FUMO_DATA = {
       "src": "fumos/663-pinterest_71776187806799883.jpg",
       "width": 1536,
       "height": 2048,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 19:29",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -28999,14 +30325,16 @@ window.FUMO_DATA = {
       "src": "fumos/664-pinterest_71776187806799957.jpg",
       "width": 526,
       "height": 701,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 20:53",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29043,14 +30371,16 @@ window.FUMO_DATA = {
       "src": "fumos/665-pinterest_71776187806808071.jpg",
       "width": 800,
       "height": 600,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 21:40",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29086,14 +30416,16 @@ window.FUMO_DATA = {
       "src": "fumos/666-pinterest_71776187806808107.jpg",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-25 22:03",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29130,14 +30462,16 @@ window.FUMO_DATA = {
       "src": "fumos/667-pinterest_71776187806808160_708032804.png",
       "width": 707,
       "height": 489,
-      "date": "2026-09-30 13:26",
+      "date": "2026-09-25 23:21",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29171,8 +30505,8 @@ window.FUMO_DATA = {
       "src": "fumos/668-pinterest_723390758917065612.jpg",
       "width": 720,
       "height": 402,
-      "date": "2026-09-30 13:29",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 00:00",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -29180,7 +30514,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29216,14 +30552,16 @@ window.FUMO_DATA = {
       "src": "fumos/669-pinterest_72339137758371337_2194118563.jpg",
       "width": 474,
       "height": 632,
-      "date": "2026-09-30 13:13",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 02:29",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29257,14 +30595,16 @@ window.FUMO_DATA = {
       "src": "fumos/670-pinterest_724446290103157046.jpg",
       "width": 240,
       "height": 320,
-      "date": "2026-09-30 13:13",
+      "date": "2026-09-26 03:13",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29297,14 +30637,16 @@ window.FUMO_DATA = {
       "src": "fumos/671-pinterest_74309462597041568_39716803.jpg",
       "width": 720,
       "height": 684,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 06:31",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -29338,8 +30680,8 @@ window.FUMO_DATA = {
       "src": "fumos/672-pinterest_74309462597043980_5370715104228732136.mp4",
       "width": 702,
       "height": 522,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 07:30",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "cirno"
@@ -29347,7 +30689,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -29379,14 +30723,16 @@ window.FUMO_DATA = {
       "src": "fumos/673-pinterest_74309462597495118_122789618.jpg",
       "width": 1617,
       "height": 1283,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 07:51",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -29420,14 +30766,16 @@ window.FUMO_DATA = {
       "src": "fumos/674-pinterest_74309462597496353.jpg",
       "width": 960,
       "height": 720,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 08:10",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29460,14 +30808,16 @@ window.FUMO_DATA = {
       "src": "fumos/675-pinterest_74309462597764755_5504589581114221426.mp4",
       "width": 608,
       "height": 816,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 08:23",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29501,8 +30851,8 @@ window.FUMO_DATA = {
       "src": "fumos/676-pinterest_744501382169318894_5264104281922918759.mp4",
       "width": 720,
       "height": 1280,
-      "date": "2026-09-30 13:06",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 11:32",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "cirno"
@@ -29510,7 +30860,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29544,8 +30896,8 @@ window.FUMO_DATA = {
       "src": "fumos/677-pinterest_751749362848130840_4078932872.jpg",
       "width": 770,
       "height": 752,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 12:48",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -29553,7 +30905,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -29592,14 +30946,16 @@ window.FUMO_DATA = {
       "src": "fumos/678-pinterest_76842737384567714.jpg",
       "width": 540,
       "height": 676,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 13:48",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29634,8 +30990,8 @@ window.FUMO_DATA = {
       "src": "fumos/679-pinterest_76842737384567717.jpg",
       "width": 526,
       "height": 703,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 13:59",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "sakuya_izayoi"
@@ -29643,7 +30999,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29682,8 +31040,8 @@ window.FUMO_DATA = {
       "src": "fumos/680-pinterest_76842737384567721.jpg",
       "width": 540,
       "height": 630,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 15:09",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "cirno"
@@ -29691,7 +31049,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29727,8 +31087,8 @@ window.FUMO_DATA = {
       "src": "fumos/681-pinterest_76842737384577941.jpg",
       "width": 753,
       "height": 677,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 17:21",
+      "source": "local://plushies",
       "tags": {
         "character": [
           "youmu_konpaku"
@@ -29736,7 +31096,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29770,14 +31132,16 @@ window.FUMO_DATA = {
       "src": "fumos/682-pinterest_76842737384578180.jpg",
       "width": 273,
       "height": 285,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 20:17",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29808,14 +31172,16 @@ window.FUMO_DATA = {
       "src": "fumos/683-pinterest_76842737384578188.jpg",
       "width": 480,
       "height": 360,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 21:44",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29849,8 +31215,8 @@ window.FUMO_DATA = {
       "src": "fumos/684-pinterest_76842737384578685.jpg",
       "width": 640,
       "height": 853,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 22:21",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -29858,7 +31224,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29894,14 +31262,16 @@ window.FUMO_DATA = {
       "src": "fumos/685-pinterest_76842737385098434.jpg",
       "width": 720,
       "height": 540,
-      "date": "2026-09-30 13:12",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-26 22:34",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -29935,8 +31305,8 @@ window.FUMO_DATA = {
       "src": "fumos/686-pinterest_77898268550191820_3875361911.jpg",
       "width": 715,
       "height": 686,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 01:30",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -29944,7 +31314,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -29978,14 +31350,16 @@ window.FUMO_DATA = {
       "src": "fumos/687-pinterest_80079699617114928.jpg",
       "width": 768,
       "height": 1024,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 04:37",
+      "source": "local://flickr_export",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30019,8 +31393,8 @@ window.FUMO_DATA = {
       "src": "fumos/688-pinterest_80079699617622703.jpg",
       "width": 412,
       "height": 515,
-      "date": "2026-09-30 13:23",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 07:23",
+      "source": "local://Downloads",
       "tags": {
         "character": [
           "cirno"
@@ -30028,7 +31402,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30062,14 +31438,16 @@ window.FUMO_DATA = {
       "src": "fumos/689-pinterest_804033339751654207.jpg",
       "width": 1164,
       "height": 982,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 07:25",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -30103,8 +31481,8 @@ window.FUMO_DATA = {
       "src": "fumos/690-pinterest_804033339751654920.jpg",
       "width": 918,
       "height": 1200,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 09:07",
+      "source": "local://flickr_export",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -30112,7 +31490,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -30148,8 +31528,8 @@ window.FUMO_DATA = {
       "src": "fumos/691-pinterest_80783387062347116_1653724915.jpg",
       "width": 1440,
       "height": 1440,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 09:21",
+      "source": "local://gift_haul",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -30157,7 +31537,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -30191,8 +31573,8 @@ window.FUMO_DATA = {
       "src": "fumos/692-pinterest_809240626828217002.gif",
       "width": 220,
       "height": 256,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 10:33",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -30200,7 +31582,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30234,14 +31618,16 @@ window.FUMO_DATA = {
       "src": "fumos/693-pinterest_819092251020968667_621587230.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 10:34",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30279,7 +31665,7 @@ window.FUMO_DATA = {
       "src": "fumos/694-pinterest_828240187770161597_2730155329.jpg",
       "width": 1200,
       "height": 1600,
-      "date": "2026-09-30 13:25",
+      "date": "2026-09-27 12:16",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [
@@ -30288,7 +31674,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30321,14 +31709,16 @@ window.FUMO_DATA = {
       "src": "fumos/695-pinterest_844493676602267_2537262567.png",
       "width": 1080,
       "height": 1444,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 13:26",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30364,14 +31754,16 @@ window.FUMO_DATA = {
       "src": "fumos/696-pinterest_844493677040378_1543095824.jpg",
       "width": 720,
       "height": 705,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 14:30",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30403,14 +31795,16 @@ window.FUMO_DATA = {
       "src": "fumos/697-pinterest_861524603768616219_1212494981.gif",
       "width": 498,
       "height": 445,
-      "date": "2026-09-30 13:08",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 15:33",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -30444,14 +31838,16 @@ window.FUMO_DATA = {
       "src": "fumos/698-pinterest_874261346435209100_247809285.jpg",
       "width": 540,
       "height": 540,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 16:28",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30483,14 +31879,16 @@ window.FUMO_DATA = {
       "src": "fumos/699-pinterest_877850152390321843.jpg",
       "width": 491,
       "height": 491,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 17:30",
+      "source": "local://camera_roll",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30526,8 +31924,8 @@ window.FUMO_DATA = {
       "src": "fumos/700-pinterest_8796161764725098.jpg",
       "width": 671,
       "height": 722,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 17:51",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -30535,7 +31933,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30569,14 +31969,16 @@ window.FUMO_DATA = {
       "src": "fumos/701-pinterest_8796161766495114.jpg",
       "width": 388,
       "height": 406,
-      "date": "2026-09-30 12:55",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 19:25",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30611,8 +32013,8 @@ window.FUMO_DATA = {
       "src": "fumos/702-pinterest_8796161766804246.png",
       "width": 660,
       "height": 750,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-27 22:57",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "cirno"
@@ -30620,7 +32022,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30656,14 +32060,16 @@ window.FUMO_DATA = {
       "src": "fumos/703-pinterest_8796161767350057.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:11",
+      "date": "2026-09-27 23:04",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -30698,14 +32104,16 @@ window.FUMO_DATA = {
       "src": "fumos/704-pinterest_8796161767676283.jpg",
       "width": 780,
       "height": 1040,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 00:28",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30741,8 +32149,8 @@ window.FUMO_DATA = {
       "src": "fumos/705-pinterest_8796161767676291.jpg",
       "width": 800,
       "height": 800,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 00:31",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -30750,7 +32158,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30785,14 +32195,16 @@ window.FUMO_DATA = {
       "src": "fumos/706-pinterest_89157267623310497.jpg",
       "width": 600,
       "height": 558,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 01:41",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -30826,8 +32238,8 @@ window.FUMO_DATA = {
       "src": "fumos/707-pinterest_89579480082225594.jpg",
       "width": 611,
       "height": 800,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 03:58",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -30835,7 +32247,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30869,14 +32283,16 @@ window.FUMO_DATA = {
       "src": "fumos/708-pinterest_89579480082571437.jpg",
       "width": 563,
       "height": 543,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 05:54",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30909,14 +32325,16 @@ window.FUMO_DATA = {
       "src": "fumos/709-pinterest_89579480082584694.jpg",
       "width": 654,
       "height": 960,
-      "date": "2026-09-30 13:21",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 08:18",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -30951,8 +32369,8 @@ window.FUMO_DATA = {
       "src": "fumos/710-pinterest_89579480084560929.jpg",
       "width": 526,
       "height": 527,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 10:02",
+      "source": "local://danbooru",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -30960,7 +32378,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -30998,14 +32418,16 @@ window.FUMO_DATA = {
       "src": "fumos/711-pinterest_89579480084566061_5332199310385794939.mp4",
       "width": 722,
       "height": 798,
-      "date": "2026-09-30 13:11",
+      "date": "2026-09-28 11:25",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -31041,12 +32463,14 @@ window.FUMO_DATA = {
       "src": "fumos/712-pinterest_901916262895688256_5318147754707437867.mp4",
       "width": 720,
       "height": 720,
-      "date": "2026-09-30 12:58",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 12:50",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "night",
@@ -31078,14 +32502,16 @@ window.FUMO_DATA = {
       "src": "fumos/713-pinterest_906419862485715660_5312887743544609074.mp4",
       "width": 720,
       "height": 540,
-      "date": "2026-09-30 12:57",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 19:35",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31119,14 +32545,16 @@ window.FUMO_DATA = {
       "src": "fumos/714-pinterest_909445718536050491_2031113063.jpg",
       "width": 1200,
       "height": 675,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 22:21",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31162,14 +32590,16 @@ window.FUMO_DATA = {
       "src": "fumos/715-pinterest_91338698686708076.jpg",
       "width": 631,
       "height": 639,
-      "date": "2026-09-30 13:05",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-28 23:41",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31205,14 +32635,16 @@ window.FUMO_DATA = {
       "src": "fumos/716-pinterest_914582636843410864_1875628773.jpg",
       "width": 736,
       "height": 542,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 00:00",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31243,14 +32675,16 @@ window.FUMO_DATA = {
       "src": "fumos/717-pinterest_916693699174487605.jpg",
       "width": 1167,
       "height": 1167,
-      "date": "2026-09-30 13:03",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 00:17",
+      "source": "local://Desktop",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31284,14 +32718,16 @@ window.FUMO_DATA = {
       "src": "fumos/718-pinterest_937804322423748505.jpg",
       "width": 314,
       "height": 311,
-      "date": "2026-09-30 13:27",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 05:41",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31323,8 +32759,8 @@ window.FUMO_DATA = {
       "src": "fumos/719-pinterest_938085797405471075.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:02",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 06:44",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "cirno"
@@ -31332,7 +32768,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31369,14 +32807,16 @@ window.FUMO_DATA = {
       "src": "fumos/720-pinterest_948430002802048328.jpg",
       "width": 3072,
       "height": 3072,
-      "date": "2026-09-30 13:11",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 06:51",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31413,8 +32853,8 @@ window.FUMO_DATA = {
       "src": "fumos/721-pinterest_95349717107346770.jpg",
       "width": 4096,
       "height": 2780,
-      "date": "2026-09-30 13:26",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 07:05",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "marisa_kirisame",
@@ -31423,7 +32863,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31460,14 +32902,16 @@ window.FUMO_DATA = {
       "src": "fumos/722-pinterest_95631192080199867.jpg",
       "width": 800,
       "height": 600,
-      "date": "2026-09-30 13:10",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 09:47",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31502,14 +32946,16 @@ window.FUMO_DATA = {
       "src": "fumos/723-pinterest_95631192080222086.jpg",
       "width": 798,
       "height": 1064,
-      "date": "2026-09-30 13:07",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 10:16",
+      "source": "local://archive_dump",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31545,14 +32991,16 @@ window.FUMO_DATA = {
       "src": "fumos/724-pinterest_95631192080245091.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:50",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 17:09",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31586,14 +33034,16 @@ window.FUMO_DATA = {
       "src": "fumos/725-pinterest_95631192080245092.jpg",
       "width": 526,
       "height": 935,
-      "date": "2026-09-30 13:09",
+      "date": "2026-09-29 17:51",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31628,8 +33078,8 @@ window.FUMO_DATA = {
       "src": "fumos/726-pinterest_95631192080245095.jpg",
       "width": 736,
       "height": 981,
-      "date": "2026-09-30 12:54",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 18:31",
+      "source": "local://archive_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -31637,7 +33087,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31673,14 +33125,16 @@ window.FUMO_DATA = {
       "src": "fumos/727-pinterest_95631192080246811.jpg",
       "width": 800,
       "height": 1064,
-      "date": "2026-09-30 13:24",
+      "date": "2026-09-29 19:08",
       "source": "local://pinterest_fumo",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31713,14 +33167,16 @@ window.FUMO_DATA = {
       "src": "fumos/728-pinterest_95631192080465418.mp4",
       "width": 424,
       "height": 318,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 21:19",
+      "source": "local://Downloads",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31756,14 +33212,16 @@ window.FUMO_DATA = {
       "src": "fumos/729-pinterest_95631192080992421.jpg",
       "width": 640,
       "height": 640,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-29 21:40",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31799,14 +33257,16 @@ window.FUMO_DATA = {
       "src": "fumos/730-pinterest_95631192081662187.jpg",
       "width": 574,
       "height": 574,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 03:26",
+      "source": "local://hoard_box",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31838,14 +33298,16 @@ window.FUMO_DATA = {
       "src": "fumos/731-pinterest_95631192081909952_73384171.jpg",
       "width": 800,
       "height": 799,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 03:37",
+      "source": "local://danbooru",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31878,14 +33340,16 @@ window.FUMO_DATA = {
       "src": "fumos/732-pinterest_96123773289598263.mp4",
       "width": 480,
       "height": 480,
-      "date": "2026-09-30 13:09",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 04:13",
+      "source": "local://plushies",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -31920,8 +33384,8 @@ window.FUMO_DATA = {
       "src": "fumos/733-pinterest_98023729384495281.jpg",
       "width": 735,
       "height": 726,
-      "date": "2026-09-30 12:56",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 04:52",
+      "source": "local://hoard_box",
       "tags": {
         "character": [
           "reimu_hakurei",
@@ -31930,7 +33394,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "screenshot",
@@ -31967,8 +33433,8 @@ window.FUMO_DATA = {
       "src": "fumos/734-pinterest_98023729384499184.jpg",
       "width": 526,
       "height": 702,
-      "date": "2026-09-30 12:53",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 05:12",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "cirno"
@@ -31976,7 +33442,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -32011,8 +33479,8 @@ window.FUMO_DATA = {
       "src": "fumos/735-pinterest_98023729385303056_2035399547.png",
       "width": 719,
       "height": 479,
-      "date": "2026-09-30 12:51",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 06:49",
+      "source": "local://camera_roll",
       "tags": {
         "character": [
           "marisa_kirisame",
@@ -32021,7 +33489,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -32058,8 +33528,8 @@ window.FUMO_DATA = {
       "src": "fumos/736-pinterest_98023729385386900_5363084873072423327.mp4",
       "width": 256,
       "height": 272,
-      "date": "2026-09-30 13:01",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 09:17",
+      "source": "local://crawl_dump",
       "tags": {
         "character": [
           "reimu_hakurei"
@@ -32067,7 +33537,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "anime",
@@ -32100,8 +33572,8 @@ window.FUMO_DATA = {
       "src": "fumos/737-pinterest_98023729386152991_3587057849.jpg",
       "width": 1080,
       "height": 1340,
-      "date": "2026-09-30 12:52",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 09:37",
+      "source": "local://Desktop",
       "tags": {
         "character": [
           "cirno"
@@ -32109,7 +33581,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -32145,8 +33619,8 @@ window.FUMO_DATA = {
       "src": "fumos/738-pinterest_990158668185110650.jpg",
       "width": 1200,
       "height": 1200,
-      "date": "2026-09-30 13:04",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 11:28",
+      "source": "local://thrift_finds",
       "tags": {
         "character": [
           "marisa_kirisame"
@@ -32154,7 +33628,9 @@ window.FUMO_DATA = {
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
@@ -32191,14 +33667,16 @@ window.FUMO_DATA = {
       "src": "fumos/739-pinterest_9922061675720334_3261740037.jpg",
       "width": 1224,
       "height": 1632,
-      "date": "2026-09-30 12:59",
-      "source": "local://pinterest_fumo",
+      "date": "2026-09-30 11:35",
+      "source": "local://gift_haul",
       "tags": {
         "character": [],
         "copyright": [
           "touhou"
         ],
-        "artist": [],
+        "artist": [
+          "unknown"
+        ],
         "general": [
           "plush",
           "photo",
