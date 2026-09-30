@@ -5,7 +5,7 @@ window.FUMO_DATA = {
   "site": {
     "name": "Fumobooru",
     "tagline": "The place where plush circulate",
-    "posts": 741,
+    "posts": 752,
     "tags": 318,
     "users": 34,
     "artists": 1,
@@ -33742,9 +33742,9 @@ window.FUMO_DATA = {
       "fileSize": "152 KB",
       "thumbBytes": 3994,
       "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "auto-orient strip fit1600 webp q80 m6",
       "mid": "mids/740-reimuFumo.webp",
-      "midBytes": 47606,
-      "midRecipe": "auto-orient strip fit1600 webp q80 m6"
+      "midBytes": 47606
     },
     {
       "id": 901741,
@@ -33783,6 +33783,428 @@ window.FUMO_DATA = {
       "thumbBytes": 10254,
       "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
       "midRecipe": "no mid: source is already smaller"
+    },
+    {
+      "id": 901742,
+      "type": "image",
+      "src": "fumos/742-20260930_215103.jpg",
+      "width": 4080,
+      "height": 3060,
+      "date": "2026-09-30 22:02",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 163,
+      "pitems": 1,
+      "favs": 18,
+      "comments": 3,
+      "views": 10585,
+      "thumb": "thumbs/742-20260930_215103.webp",
+      "srcMtime": 1790780528689,
+      "srcBytes": 267230,
+      "fileSize": "260 KB",
+      "thumbBytes": 8304,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "auto-orient strip fit1600 webp q80 m6",
+      "mid": "mids/742-20260930_215103.webp",
+      "midBytes": 80612
+    },
+    {
+      "id": 901743,
+      "type": "image",
+      "src": "fumos/743-Messenger_creation_5DE33F89-EEA5-45FB-8124-FFC09368DF7B.jpg",
+      "width": 1538,
+      "height": 2048,
+      "date": "2026-09-30 22:01",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 133,
+      "pitems": 1,
+      "favs": 116,
+      "comments": 6,
+      "views": 6078,
+      "thumb": "thumbs/743-Messenger_creation_5DE33F89-EEA5-45FB-8124-FFC09368DF7B.webp",
+      "srcMtime": 1790780516139,
+      "srcBytes": 112113,
+      "fileSize": "109 KB",
+      "thumbBytes": 7296,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: source is already smaller"
+    },
+    {
+      "id": 901744,
+      "type": "video",
+      "src": "fumos/744-fumo-touhou-sex.mp4",
+      "width": 640,
+      "height": 640,
+      "date": "2026-10-01 01:58",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 65,
+      "pitems": 1,
+      "favs": 54,
+      "comments": 3,
+      "views": 13138,
+      "thumb": "thumbs/744-fumo-touhou-sex.webp",
+      "srcMtime": 1790794730179,
+      "srcBytes": 445138,
+      "fileSize": "434 KB",
+      "thumbBytes": 5326,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901745,
+      "type": "image",
+      "src": "fumos/745-cirno-nooooooo-v0-4mgscdsjr9qh1.webp",
+      "width": 1080,
+      "height": 810,
+      "date": "2026-10-01 02:04",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 187,
+      "pitems": 4,
+      "favs": 28,
+      "comments": 4,
+      "views": 1131,
+      "thumb": "thumbs/745-cirno-nooooooo-v0-4mgscdsjr9qh1.webp",
+      "srcMtime": 1790795063753,
+      "srcBytes": 69666,
+      "fileSize": "68 KB",
+      "thumbBytes": 8538,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "mid": "mids/745-cirno-nooooooo-v0-4mgscdsjr9qh1.webp",
+      "midBytes": 66736,
+      "midRecipe": "auto-orient strip fit1600 webp q80 m6"
+    },
+    {
+      "id": 901746,
+      "type": "video",
+      "src": "fumos/746-k.mp4",
+      "width": 480,
+      "height": 480,
+      "date": "2026-10-01 02:05",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 214,
+      "pitems": 3,
+      "favs": 59,
+      "comments": 2,
+      "views": 9525,
+      "thumb": "thumbs/746-k.webp",
+      "srcMtime": 1790795149582,
+      "srcBytes": 1267291,
+      "fileSize": "1.2 MB",
+      "thumbBytes": 9624,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901747,
+      "type": "video",
+      "src": "fumos/747-kk.mp4",
+      "width": 854,
+      "height": 480,
+      "date": "2026-10-01 02:07",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 324,
+      "pitems": 1,
+      "favs": 41,
+      "comments": 0,
+      "views": 10500,
+      "thumb": "thumbs/747-kk.webp",
+      "srcMtime": 1790795224681,
+      "srcBytes": 1626107,
+      "fileSize": "1.6 MB",
+      "thumbBytes": 4744,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901748,
+      "type": "video",
+      "src": "fumos/748-m2-res_480p.mp4",
+      "width": 854,
+      "height": 480,
+      "date": "2026-10-01 02:02",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 248,
+      "pitems": 3,
+      "favs": 63,
+      "comments": 3,
+      "views": 3125,
+      "thumb": "thumbs/748-m2-res_480p.webp",
+      "srcMtime": 1790794977044,
+      "srcBytes": 1727233,
+      "fileSize": "1.6 MB",
+      "thumbBytes": 11616,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901749,
+      "type": "video",
+      "src": "fumos/749-m2-res_480pf.mp4",
+      "width": 360,
+      "height": 480,
+      "date": "2026-10-01 02:03",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 307,
+      "pitems": 1,
+      "favs": 69,
+      "comments": 6,
+      "views": 8683,
+      "thumb": "thumbs/749-m2-res_480pf.webp",
+      "srcMtime": 1790794998542,
+      "srcBytes": 1189810,
+      "fileSize": "1.1 MB",
+      "thumbBytes": 12468,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901750,
+      "type": "video",
+      "src": "fumos/750-m2-res_600p.mp4",
+      "width": 480,
+      "height": 600,
+      "date": "2026-10-01 02:02",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 187,
+      "pitems": 1,
+      "favs": 85,
+      "comments": 0,
+      "views": 3409,
+      "thumb": "thumbs/750-m2-res_600p.webp",
+      "srcMtime": 1790794939175,
+      "srcBytes": 354348,
+      "fileSize": "346 KB",
+      "thumbBytes": 6826,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901751,
+      "type": "video",
+      "src": "fumos/751-m2-res_674p.mp4",
+      "width": 480,
+      "height": 674,
+      "date": "2026-10-01 02:02",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 189,
+      "pitems": 3,
+      "favs": 88,
+      "comments": 3,
+      "views": 6797,
+      "thumb": "thumbs/751-m2-res_674p.webp",
+      "srcMtime": 1790794956589,
+      "srcBytes": 1595080,
+      "fileSize": "1.5 MB",
+      "thumbBytes": 6388,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
+    },
+    {
+      "id": 901752,
+      "type": "video",
+      "src": "fumos/752-m2-res_854p.mp4",
+      "width": 480,
+      "height": 854,
+      "date": "2026-10-01 02:06",
+      "source": "local://fumo",
+      "tags": {
+        "character": [],
+        "copyright": [
+          "touhou"
+        ],
+        "artist": [
+          "unknown"
+        ],
+        "general": [
+          "plush",
+          "photo"
+        ],
+        "meta": [
+          "tagme"
+        ]
+      },
+      "rating": "s",
+      "score": 224,
+      "pitems": 1,
+      "favs": 79,
+      "comments": 2,
+      "views": 13561,
+      "thumb": "thumbs/752-m2-res_854p.webp",
+      "srcMtime": 1790795166240,
+      "srcBytes": 1547299,
+      "fileSize": "1.5 MB",
+      "thumbBytes": 8872,
+      "thumbRecipe": "auto-orient strip fit300 webp q80 m6",
+      "midRecipe": "no mid: video"
     }
   ]
 };
