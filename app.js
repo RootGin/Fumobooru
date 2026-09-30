@@ -571,36 +571,28 @@
     syncHash();
   }
 
-  // P-Item sparks, plus the noise of one being cast. The tone is synthesised
-  // rather than shipped: an oscillator is a few lines where an mp3 is a file to
-  // download, host and keep in sync.
-  let audioCtx = null;
+// P-Item sparks, plus the noise of one being cast: se_item00 from Touhou
+  // Eiyashou, 7KB, which is what the synthesised oscillator used to stand in for.
+  const pItemAudio = new Audio("p-item.wav");
+  pItemAudio.preload = "auto";
   function pItemSound(up) {
     if (state.muted) return;
     try {
-      const Ctx = window.AudioContext || window.webkitAudioContext;
-      if (!Ctx) return;
-      audioCtx = audioCtx || new Ctx();
-      if (audioCtx.state === "suspended") audioCtx.resume();
-      const t = audioCtx.currentTime;
-      const osc = audioCtx.createOscillator();
-      const gain = audioCtx.createGain();
-      osc.type = "triangle";
-      osc.frequency.setValueAtTime(up ? 880 : 520, t);
-      osc.frequency.exponentialRampToValueAtTime(up ? 1320 : 392, t + 0.09);
-      gain.gain.setValueAtTime(0.0001, t);
-      gain.gain.exponentialRampToValueAtTime(0.05, t + 0.012);
-      gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.17);
-      osc.connect(gain).connect(audioCtx.destination);
-      osc.start(t);
-      osc.stop(t + 0.2);
+      pItemAudio.currentTime = 0;
+      // up and down differ in pitch, the way the oscillator's two ramps did
+      pItemAudio.playbackRate = up ? 1.1 : 0.9;
+      pItemAudio.play().catch(() => {});
     } catch {}
   }
 
   function pSparks(anchor, up) {
     const box = anchor.getBoundingClientRect();
     for (let i = 0; i < 3; i++) {
-      const s = el("span", "p-spark", (up ? "+P" : "−P"));
+      const s = el("span", "p-spark", (up ? "+" : "−"));
+      const icon = el("img", "p-spark-icon");
+      icon.src = "p-item.svg";
+      icon.alt = "";
+      s.appendChild(icon);
       s.style.left = box.left + box.width / 2 + (i - 1) * 7 + "px";
       s.style.top = box.top + box.height / 2 + "px";
       s.style.animationDelay = i * 70 + "ms";
@@ -1559,8 +1551,10 @@
       const up = document.querySelector(".vote-row .up");
       up.click();
       const cast = document.querySelectorAll(".p-spark").length;
-      const tone = audioCtx !== null || true; // no audio device is a pass, not a fail
-      const said = document.querySelectorAll(".p-spark")[0].textContent;
+      const tone = pItemAudio.getAttribute("src") === "p-item.wav";
+      const said = document.querySelectorAll(".p-spark")[0];
+      const icon = said.querySelector("img.p-spark-icon");
+      const loaded = icon && icon.getAttribute("src") === "p-item.svg";
       up.click();
       const uncast = document.querySelectorAll(".p-spark").length;
       document.querySelectorAll(".p-spark").forEach((n) => n.remove());
@@ -1569,15 +1563,14 @@
       state.terms = terms;
       $("#tags").value = terms.join(" ");
       render();
-      return cast === 3 && uncast === cast && said === "+P" && tone;
+      return cast === 3 && uncast === cast && said.textContent === "+" && loaded && tone;
     })());
     t("mute silences the tone, and the setting survives a reload", (() => {
       const was = location.hash, terms = state.terms, muted = state.muted;
-      const Ctx = window.AudioContext || window.webkitAudioContext;
-      const real = Ctx.prototype.createOscillator;
+      const real = HTMLMediaElement.prototype.play;
       let started = 0;
-      // the only way to see whether a sound was made: count the oscillators
-      Ctx.prototype.createOscillator = function () { started++; return real.call(this); };
+      // the only way to see whether a sound was made: count the play() calls
+      HTMLMediaElement.prototype.play = function () { started++; return real.call(this); };
       try {
         PostView.open(posts[0].id, { history: "none" });
         const up = document.querySelector(".vote-row .up");
@@ -1599,7 +1592,7 @@
         return whileMuted === 0 && whileLoud === 1 && stored === "0" &&
           offLabel !== onLabel;
       } finally {
-        Ctx.prototype.createOscillator = real;
+        HTMLMediaElement.prototype.play = real;
         state.muted = muted;
         $("#sound-toggle").textContent = state.muted ? "🔇" : "🔊";
         $("#sound-toggle").setAttribute("aria-pressed", String(state.muted));

@@ -553,10 +553,17 @@ textarea { resize: vertical; min-height: 5em; }
   position: fixed;
   z-index: 50;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 1px;
   color: var(--gold);
   font: 700 0.95rem/1 system-ui, sans-serif;
   text-shadow: 0 0 10px rgba(232, 193, 90, 0.55);
   animation: p-spark 0.85s ease-out forwards;
+}
+.p-spark-icon {
+  width: 1.15em;
+  height: 1.15em;
 }
 @keyframes p-spark {
   0%   { opacity: 0; transform: translate(-50%, 0) scale(0.7); }
